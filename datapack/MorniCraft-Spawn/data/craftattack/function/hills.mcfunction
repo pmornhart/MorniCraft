@@ -1,0 +1,16 @@
+fill ~21 ~1 ~-21 ~23 ~3 ~-19 air replace flowering_azalea
+fill ~17 ~ ~-25 ~27 ~2 ~-15 air replace grass_block
+fill ~17 ~ ~-25 ~27 ~2 ~-15 air replace dirt
+fill ~17 ~-1 ~-25 ~27 ~-1 ~-15 grass_block replace dirt
+fill ~-25 ~1 ~1 ~-23 ~3 ~3 air replace flowering_azalea
+fill ~-29 ~ ~-3 ~-19 ~2 ~7 air replace grass_block
+fill ~-29 ~ ~-3 ~-19 ~2 ~7 air replace dirt
+fill ~-29 ~-1 ~-3 ~-19 ~-1 ~7 grass_block replace dirt
+fill ~5 ~1 ~25 ~7 ~3 ~27 air replace flowering_azalea
+fill ~1 ~ ~21 ~11 ~2 ~31 air replace grass_block
+fill ~1 ~ ~21 ~11 ~2 ~31 air replace dirt
+fill ~1 ~-1 ~21 ~11 ~-1 ~31 grass_block replace dirt
+fill ~-7 ~1 ~-27 ~-5 ~3 ~-25 air replace flowering_azalea
+fill ~-11 ~ ~-31 ~-1 ~2 ~-21 air replace grass_block
+fill ~-11 ~ ~-31 ~-1 ~2 ~-21 air replace dirt
+fill ~-11 ~-1 ~-31 ~-1 ~-1 ~-21 grass_block replace dirt

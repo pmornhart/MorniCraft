@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "description": "MorniHosting MorniCraft: Spawn",
+    "pack_format": 41,
+    "supported_formats": {
+      "min_inclusive": 41,
+      "max_inclusive": 999
+    },
+    "min_format": 41,
+    "max_format": 999
+  }
+}
