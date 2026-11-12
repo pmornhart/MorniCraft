@@ -25,7 +25,7 @@
 |---|---|
 | 🏝️ **Spawn** | `/spawn`, geschützter Spawn-Bereich (nur Admins bauen), kein Schlafen und kein Kämpfen am Spawn – alles abschaltbar |
 | 👑 **Ränge** | Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler – Symbol und Farbe vor dem Namen im **Chat**, in der **Tab-Liste** und **über dem Kopf**, dazu passende Rechte. `/team` zeigt, wer welchen Rang hat |
-| 🪽 **Start-Elytra** | Am Spawn **2× Leertaste** = echte Flügel an und losgleiten (Überlebensmodus), kein Fallschaden, **F** (Bedrock: Schleichen) = ein Schub. Nach der Landung ist die eigene Brustplatte wieder da |
+| 🪽 **Start-Elytra** | Am Spawn abspringen und **2× Leertaste** = echte Flügel an und losgleiten (Überlebensmodus, ohne Schub nach oben), kein Fallschaden, **F** (Bedrock: Schleichen) = ein Schub. Nach der Landung ist die eigene Brustplatte wieder da |
 | 🏠 **Zuhause** | `/sethome`, `/home`, `/homes` (zum Anklicken), `/delhome`, `/back` – auch zurück zum Todesort |
 | 🤝 **Teleports** | `/tpa`, `/tpahere` mit Knöpfen **✔ Annehmen / ✖ Ablehnen**, 5 Sekunden stillstehen (Balken oben, Bewegen bricht ab) |
 | ✉️ **Nachrichten** | `/msg`, `/r`, `/mail` (auch an Spieler, die gerade nicht da sind), `/ignore`, `/afk` |
