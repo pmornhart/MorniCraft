@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.3.1: Auch der Rang „für alle anderen“ zeigt sein Abzeichen (wenn `badge` gesetzt ist), auch ohne Symbol.
 - Version 1.3.0: Rang-Abzeichen im Chat über ein Texturpaket (`pack.url` + `pack.sha1` in der config.yml, je Rang `badge` = Zeichen der Schrift): Paket wird beim Betreten angeboten (nie Pflicht, nicht für Bedrock), Chat pro Betrachter mit Abzeichen oder Symbol. Das Paket erzeugt MorniHosting (ohne Panel: selbst bauen, siehe README).
 - Version 1.2.0: Spawn 2.0 im Datapack (Turm weiß/rot mit MorniCraft-Flagge, Zeltdach, Maibaum, Tulpen, Himmelsrichtungen, fünf Ballons), `zones` (geschützte Stellen außerhalb des Kreises, `SpawnArea.inZone`), `/team <…>` reicht an Minecraft weiter, Alias `scoreboard` entfernt. Als Nächstes: Rang-Abzeichen (Variante C, Server-Texturpaket).
 - Version 1.1.1: Start-Elytra ohne Schub nach oben (Philip) – Flügel an, Gleiten mit eigenem Schwung; Hinweis „Spring ab und drück 2× Leertaste“.

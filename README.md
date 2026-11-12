@@ -154,7 +154,7 @@ ranks:
   - { id: player, name: Spieler, symbol: "", color: "#aaaaaa", players: [], permissions: [], default: true }
 ```
 
-<img src="docs/bilder/abzeichen.png" alt="Rang-Abzeichen: Owner, Admin, Moderator, Supporter, Builder, Media, VIP" width="218">
+<img src="docs/bilder/abzeichen.png" alt="Rang-Abzeichen im Chat: Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler" width="640">
 
 **Abzeichen:** Mit MorniHosting gibt es die Ränge im Chat auch als kleine farbige Schilder mit eigenem Pixel-Icon (wie auf großen Servern). Dafür bekommen Spieler beim Betreten ein winziges Texturpaket angeboten; wer ablehnt (und Bedrock), sieht die Symbole. Ohne MorniHosting geht das mit einem eigenen Paket: `pack: { url, sha1 }` in der `config.yml` und pro Rang `badge: "<Zeichen deiner Schrift>"`.
 
