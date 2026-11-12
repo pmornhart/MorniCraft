@@ -14,6 +14,9 @@
 
 </div>
 
+> [!TIP]
+> **Am besten zusammen mit [MorniHosting](https://github.com/pmornhart/MorniHosting).** MorniCraft läuft auch allein auf jedem Paper- oder Purpur-Server – richtig rund wird es aber mit MorniHosting, dem Web-Panel für eigene Minecraft-Server: ein Klick, und der Server steht fertig da, mit Spawn-Insel über dem Meer, allen Versionen, Statistik-Seite und **allen Einstellungen als Schalter im Browser** statt in einer Datei. [Mehr dazu ↓](#am-besten-mit-mornihosting)
+
 ---
 
 ## Was MorniCraft kann
@@ -138,9 +141,23 @@ Alle Befehle darf jeder. Dazu:
 
 Mit **Geyser + Floodgate** funktioniert alles auch auf Handy, Konsole und Windows: Bedrock-Spieler gleiten am Spawn genauso (Schub mit **Schleichen**), Teleport-Anfragen kommen als Ja/Nein-Fenster und `/info` öffnet ein Menü mit Knöpfen (Spawn, Nach Hause, Zuhause speichern, Nachrichten, Regeln).
 
-## Mit MorniHosting
+## Am besten mit MorniHosting
 
-MorniCraft ist auch fest in [**MorniHosting**](https://github.com/pmornhart/MorniHosting) eingebaut – dem Web-Panel für eigene Minecraft-Server. Dort bestellst du einen „MorniCraft“-Server mit einem Klick: Plugin, Spawn-Insel über dem Meer, alle Versionen, Statistik-Seite. Alle Einstellungen oben gibt es dort als Schalter im Dashboard.
+MorniCraft ist für [**MorniHosting**](https://github.com/pmornhart/MorniHosting) gebaut – das Web-Panel für eigene Minecraft-Server (Docker, auch als Proxmox-Einzeiler). Dort ist MorniCraft fest eingebaut und noch deutlich bequemer:
+
+| | MorniCraft allein | MorniCraft **mit MorniHosting** |
+|---|---|---|
+| Server einrichten | Paper installieren, Plugin reinlegen, Datei bearbeiten | **Ein Klick** beim Bestellen: „MorniCraft“ ankreuzen – fertig |
+| Einstellungen | `config.yml` bearbeiten, `/mornicraft reload` | **Schalter im Dashboard**, gelten sofort – auch am Handy |
+| Spawn-Insel | Datapack entpacken, `/function craftattack:here` | Wird **automatisch über dem Meer** gebaut, Welt drumherum vorgeneriert |
+| Alle Minecraft-Versionen | ViaVersion selbst installieren | Kommt **automatisch** mit |
+| Bedrock-Spieler | Geyser + Floodgate selbst einrichten | **Ein Schalter** im Reiter Netzwerk |
+| Updates | Neue `.jar` von hier holen | Das Panel hält MorniCraft **selbst aktuell** |
+| Befehls-Seite pro Spieler | – | `/info` verlinkt jedem Spieler **seine eigene Seite** mit genau seinen Befehlen |
+| Statistik-Seite | – | **Öffentliche Seite** mit Spielzeit, Toden, Kills und Bestenlisten |
+| Dazu | – | Backups, Zeitpläne, Datei-Manager, Konsole, Absturz-Helfer, Discord-Meldungen, eigene Domain … |
+
+👉 **[MorniHosting ansehen und installieren](https://github.com/pmornhart/MorniHosting)**
 
 ## Selbst bauen
 
