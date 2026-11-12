@@ -10,5 +10,6 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.0.2: Start-Elytra mit echten Flügeln (seit 1.21.2 nötig, Bedrock immer), Brustplatte sicher zurück (auch nach Absturz), Hinweis im Kreativmodus; Fehler-Durchsicht (Spawn-Schutz-Lücken, PvP vom Spawn aus, Tpa-Tausch, sichere Spielerdaten, Teleport bricht bei Schaden ab …); Spawn ohne Holzbänke. Elytra mit Test-Spieler auf 1.17.1, 1.20.4, 1.21.1, 1.21.11, 26.1.2 geprüft.
 - Version 1.0.1 (Paper 26: `Title.Times.of` gibt es dort nicht mehr → `Ui.title()` sucht `times`/`of` per Reflexion). Auf allen Paper-Versionen 1.17.1, 1.18.2, 1.19.4, 1.20.1, 1.20.4, 1.20.6, 1.21.1, 1.21.4, 1.21.8, 1.21.11, 26.1.2 mit Test-Spieler und 26.2/26.3 per Konsole geprüft (Java 17/21/25). Vorher: Version 1.0.0. Getestet auf echtem Paper 1.21.11 mit Test-Spielern (mineflayer): Begrüßung, /info, /rules, Zuhause, Teleport mit Balken und Abbruch, /tpa mit Knöpfen, /msg, /r, /mail, /near, /afk, /seen, Spawn-Schutz, Leiste, Standard-Konfiguration ohne Panel. Gebaut gegen Paper-API 1.17.1 und 1.21.11.
 - Nicht echt getestet: Flug der Start-Elytra mit echtem Client (Bot simuliert keine Gleitphysik; Doppelsprung löst Gleiten aus), Bedrock-Menüs (kein Bedrock-Client), Paper 26.x (braucht Java 25).

@@ -374,14 +374,6 @@ fill ~4 ~ ~-9 ~4 ~1 ~-9 stone_brick_wall
 setblock ~4 ~2 ~-9 lantern
 fill ~9 ~ ~-4 ~9 ~1 ~-4 stone_brick_wall
 setblock ~9 ~2 ~-4 lantern
-setblock ~5 ~ ~7 oak_stairs[facing=south]
-setblock ~7 ~ ~5 oak_stairs[facing=east]
-setblock ~-5 ~ ~7 oak_stairs[facing=south]
-setblock ~-7 ~ ~5 oak_stairs[facing=west]
-setblock ~5 ~ ~-7 oak_stairs[facing=north]
-setblock ~7 ~ ~-5 oak_stairs[facing=east]
-setblock ~-5 ~ ~-7 oak_stairs[facing=north]
-setblock ~-7 ~ ~-5 oak_stairs[facing=west]
 fill ~-2 ~-1 ~-30 ~2 ~-1 ~-11 stone_bricks
 fill ~-1 ~-1 ~-30 ~1 ~-1 ~-11 polished_andesite
 fill ~-2 ~ ~-32 ~2 ~4 ~-11 air
