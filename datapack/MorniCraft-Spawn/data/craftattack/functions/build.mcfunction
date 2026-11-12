@@ -12,3 +12,4 @@ scoreboard players set #rainbow mh_craftattack 1
 scoreboard players set #fountain mh_craftattack 1
 scoreboard players set #benches mh_craftattack 1
 scoreboard players set #renew mh_craftattack 1
+scoreboard players set #reeds mh_craftattack 1

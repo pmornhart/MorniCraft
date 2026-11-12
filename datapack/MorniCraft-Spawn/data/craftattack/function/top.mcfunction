@@ -1184,7 +1184,11 @@ fill ~13 ~-2 ~15 ~17 ~-2 ~15 clay
 fill ~14 ~-2 ~16 ~16 ~-2 ~16 clay
 setblock ~14 ~ ~13 lily_pad
 setblock ~16 ~ ~15 lily_pad
+setblock ~17 ~-1 ~12 water
+setblock ~18 ~-1 ~12 grass_block
 fill ~18 ~ ~12 ~18 ~1 ~12 sugar_cane
+setblock ~13 ~-1 ~16 water
+setblock ~12 ~-1 ~16 grass_block
 fill ~12 ~ ~16 ~12 ~2 ~16 sugar_cane
 fill ~7 ~5 ~17 ~9 ~5 ~17 oak_leaves[persistent=true]
 fill ~6 ~5 ~18 ~11 ~5 ~18 oak_leaves[persistent=true]
