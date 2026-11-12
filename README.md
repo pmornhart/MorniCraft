@@ -24,6 +24,7 @@
 | | |
 |---|---|
 | 🏝️ **Spawn** | `/spawn`, geschützter Spawn-Bereich (nur Admins bauen), kein Schlafen und kein Kämpfen am Spawn – alles abschaltbar |
+| 👑 **Ränge** | Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler – Symbol und Farbe vor dem Namen im **Chat**, in der **Tab-Liste** und **über dem Kopf**, dazu passende Rechte. `/team` zeigt, wer welchen Rang hat |
 | 🪽 **Start-Elytra** | Am Spawn **2× Leertaste** = echte Flügel an und losgleiten (Überlebensmodus), kein Fallschaden, **F** (Bedrock: Schleichen) = ein Schub. Nach der Landung ist die eigene Brustplatte wieder da |
 | 🏠 **Zuhause** | `/sethome`, `/home`, `/homes` (zum Anklicken), `/delhome`, `/back` – auch zurück zum Todesort |
 | 🤝 **Teleports** | `/tpa`, `/tpahere` mit Knöpfen **✔ Annehmen / ✖ Ablehnen**, 5 Sekunden stillstehen (Balken oben, Bewegen bricht ab) |
@@ -113,6 +114,7 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/afk` | Zeigt allen, dass du kurz weg bist |
 | `/seen <spieler>` · `/near` · `/getpos` · `/ping` | Wann zuletzt da · wer in der Nähe · Koordinaten · Verbindung |
 | `/info` · `/rules` · `/leiste` | Alle Befehle · Regeln · Leiste rechts ein/aus |
+| `/team` | Wer im Team ist (alle Ränge mit Spielern) |
 | `/mornicraft reload` | Einstellungen neu laden (Admins) |
 
 ## Einstellungen
@@ -135,6 +137,22 @@ Alles in `plugins/MorniCraft/config.yml`, danach `/mornicraft reload`.
 | `update-check` | `true` | Admins Bescheid geben, wenn es eine neue Version gibt |
 | `link` | leer | Link zu einer Befehls-Seite pro Spieler (`{name}` = Spielername) |
 | `rules` | 4 Regeln | Text für `/rules`, eine Regel pro Zeile |
+| `ranks` | 8 Ränge | Siehe unten |
+
+### Ränge
+
+<img src="docs/bilder/raenge.webp" alt="Ränge im Chat, in der Tab-Liste und in der Leiste">
+
+Jeder Rang hat einen Namen, ein Symbol, eine Farbe (`#rrggbb`), Rechte und Spieler. Der oberste Rang, in dem ein Spieler steht, zählt; `default: true` bekommen alle anderen.
+
+```yaml
+ranks:
+  - { id: owner, name: Owner, symbol: "♛", color: "#ff5555", players: [Morni], permissions: [mornicraft.build, minecraft.command.kick] }
+  - { id: media, name: Media, symbol: "▶", color: "#ff6ad5", players: [Streamer], permissions: [mornicraft.unlimitedhomes] }
+  - { id: player, name: Spieler, symbol: "", color: "#aaaaaa", players: [], permissions: [], default: true }
+```
+
+Im Chat steht dann `♛ Owner · Morni » Hallo!`, in der Tab-Liste und über dem Kopf `♛ Morni`. Rechte können alle MorniCraft-Rechte und Minecraft-Befehle sein (`minecraft.command.kick`, `minecraft.command.ban`, `minecraft.command.gamemode`, `minecraft.command.tp`, `minecraft.command.time` …). Mit **MorniHosting** stellst du das alles im Dashboard ein, und Server-Besitzer bekommen den Owner-Rang von selbst.
 
 ## Rechte
 
