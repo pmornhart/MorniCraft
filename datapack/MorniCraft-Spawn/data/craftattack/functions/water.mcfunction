@@ -48,8 +48,6 @@ setblock ~27 ~-1 ~-16 grass_block
 setblock ~23 ~ ~-14 mossy_cobblestone
 setblock ~-15 ~1 ~15 air
 setblock ~-15 ~9 ~15 air
-setblock ~-17 ~5 ~16 shroomlight
-setblock ~-13 ~10 ~14 shroomlight
 setblock ~-15 ~1 ~16 light[level=15]
 setblock ~-15 ~8 ~16 light[level=15]
 setblock ~-15 ~13 ~16 light[level=15]

@@ -1,14 +1,14 @@
-fill ~-41 ~ ~-41 ~41 ~30 ~-34 air
-fill ~-41 ~ ~-33 ~41 ~30 ~-26 air
-fill ~-41 ~ ~-25 ~41 ~30 ~-18 air
-fill ~-41 ~ ~-17 ~41 ~30 ~-10 air
-fill ~-41 ~ ~-9 ~41 ~30 ~-2 air
-fill ~-41 ~ ~-1 ~41 ~30 ~6 air
-fill ~-41 ~ ~7 ~41 ~30 ~14 air
-fill ~-41 ~ ~15 ~41 ~30 ~22 air
-fill ~-41 ~ ~23 ~41 ~30 ~30 air
-fill ~-41 ~ ~31 ~41 ~30 ~38 air
-fill ~-41 ~ ~39 ~41 ~30 ~41 air
+fill ~-41 ~ ~-41 ~41 ~40 ~-34 air
+fill ~-41 ~ ~-33 ~41 ~40 ~-26 air
+fill ~-41 ~ ~-25 ~41 ~40 ~-18 air
+fill ~-41 ~ ~-17 ~41 ~40 ~-10 air
+fill ~-41 ~ ~-9 ~41 ~40 ~-2 air
+fill ~-41 ~ ~-1 ~41 ~40 ~6 air
+fill ~-41 ~ ~7 ~41 ~40 ~14 air
+fill ~-41 ~ ~15 ~41 ~40 ~22 air
+fill ~-41 ~ ~23 ~41 ~40 ~30 air
+fill ~-41 ~ ~31 ~41 ~40 ~38 air
+fill ~-41 ~ ~39 ~41 ~40 ~41 air
 fill ~-5 ~ ~-31 ~6 ~ ~-31 azalea_leaves[persistent=true]
 fill ~-9 ~ ~-30 ~10 ~ ~-30 azalea_leaves[persistent=true]
 fill ~-12 ~ ~-29 ~12 ~ ~-29 azalea_leaves[persistent=true]
@@ -133,30 +133,198 @@ fill ~-13 ~ ~27 ~13 ~ ~27 air
 fill ~-10 ~ ~28 ~10 ~ ~28 air
 fill ~-7 ~ ~29 ~7 ~ ~29 air
 fill ~ ~ ~30 ~ ~ ~30 air
-setblock ~30 ~ ~4 flowering_azalea_leaves[persistent=true]
-setblock ~28 ~ ~12 flowering_azalea_leaves[persistent=true]
-setblock ~24 ~ ~19 flowering_azalea_leaves[persistent=true]
-setblock ~19 ~ ~24 flowering_azalea_leaves[persistent=true]
-setblock ~12 ~ ~28 flowering_azalea_leaves[persistent=true]
+setblock ~31 ~ ~2 flowering_azalea_leaves[persistent=true]
+setblock ~30 ~ ~5 flowering_azalea_leaves[persistent=true]
+setblock ~30 ~ ~7 flowering_azalea_leaves[persistent=true]
+setblock ~29 ~ ~10 flowering_azalea_leaves[persistent=true]
+setblock ~28 ~ ~13 flowering_azalea_leaves[persistent=true]
+setblock ~26 ~ ~16 flowering_azalea_leaves[persistent=true]
+setblock ~25 ~ ~18 flowering_azalea_leaves[persistent=true]
+setblock ~23 ~ ~21 flowering_azalea_leaves[persistent=true]
+setblock ~21 ~ ~23 flowering_azalea_leaves[persistent=true]
+setblock ~18 ~ ~25 flowering_azalea_leaves[persistent=true]
+setblock ~16 ~ ~26 flowering_azalea_leaves[persistent=true]
+setblock ~13 ~ ~28 flowering_azalea_leaves[persistent=true]
+setblock ~10 ~ ~29 flowering_azalea_leaves[persistent=true]
+setblock ~7 ~ ~30 flowering_azalea_leaves[persistent=true]
 setblock ~4 ~ ~30 flowering_azalea_leaves[persistent=true]
-setblock ~-4 ~ ~30 flowering_azalea_leaves[persistent=true]
-setblock ~-12 ~ ~28 flowering_azalea_leaves[persistent=true]
-setblock ~-19 ~ ~24 flowering_azalea_leaves[persistent=true]
-setblock ~-24 ~ ~19 flowering_azalea_leaves[persistent=true]
-setblock ~-28 ~ ~12 flowering_azalea_leaves[persistent=true]
+setblock ~1 ~ ~31 flowering_azalea_leaves[persistent=true]
+setblock ~-2 ~ ~31 flowering_azalea_leaves[persistent=true]
+setblock ~-5 ~ ~30 flowering_azalea_leaves[persistent=true]
+setblock ~-7 ~ ~30 flowering_azalea_leaves[persistent=true]
+setblock ~-10 ~ ~29 flowering_azalea_leaves[persistent=true]
+setblock ~-13 ~ ~28 flowering_azalea_leaves[persistent=true]
+setblock ~-16 ~ ~26 flowering_azalea_leaves[persistent=true]
+setblock ~-18 ~ ~25 flowering_azalea_leaves[persistent=true]
+setblock ~-21 ~ ~23 flowering_azalea_leaves[persistent=true]
+setblock ~-23 ~ ~21 flowering_azalea_leaves[persistent=true]
+setblock ~-25 ~ ~18 flowering_azalea_leaves[persistent=true]
+setblock ~-26 ~ ~16 flowering_azalea_leaves[persistent=true]
+setblock ~-28 ~ ~13 flowering_azalea_leaves[persistent=true]
+setblock ~-29 ~ ~10 flowering_azalea_leaves[persistent=true]
+setblock ~-30 ~ ~7 flowering_azalea_leaves[persistent=true]
 setblock ~-30 ~ ~4 flowering_azalea_leaves[persistent=true]
-setblock ~-30 ~ ~-4 flowering_azalea_leaves[persistent=true]
-setblock ~-28 ~ ~-12 flowering_azalea_leaves[persistent=true]
-setblock ~-24 ~ ~-19 flowering_azalea_leaves[persistent=true]
-setblock ~-19 ~ ~-24 flowering_azalea_leaves[persistent=true]
-setblock ~-12 ~ ~-28 flowering_azalea_leaves[persistent=true]
+setblock ~-31 ~ ~1 flowering_azalea_leaves[persistent=true]
+setblock ~-31 ~ ~-2 flowering_azalea_leaves[persistent=true]
+setblock ~-30 ~ ~-5 flowering_azalea_leaves[persistent=true]
+setblock ~-30 ~ ~-7 flowering_azalea_leaves[persistent=true]
+setblock ~-29 ~ ~-10 flowering_azalea_leaves[persistent=true]
+setblock ~-28 ~ ~-13 flowering_azalea_leaves[persistent=true]
+setblock ~-26 ~ ~-16 flowering_azalea_leaves[persistent=true]
+setblock ~-25 ~ ~-18 flowering_azalea_leaves[persistent=true]
+setblock ~-23 ~ ~-21 flowering_azalea_leaves[persistent=true]
+setblock ~-21 ~ ~-23 flowering_azalea_leaves[persistent=true]
+setblock ~-18 ~ ~-25 flowering_azalea_leaves[persistent=true]
+setblock ~-16 ~ ~-26 flowering_azalea_leaves[persistent=true]
+setblock ~-13 ~ ~-28 flowering_azalea_leaves[persistent=true]
+setblock ~-10 ~ ~-29 flowering_azalea_leaves[persistent=true]
+setblock ~-7 ~ ~-30 flowering_azalea_leaves[persistent=true]
 setblock ~-4 ~ ~-30 flowering_azalea_leaves[persistent=true]
-setblock ~4 ~ ~-30 flowering_azalea_leaves[persistent=true]
-setblock ~12 ~ ~-28 flowering_azalea_leaves[persistent=true]
-setblock ~19 ~ ~-24 flowering_azalea_leaves[persistent=true]
-setblock ~24 ~ ~-19 flowering_azalea_leaves[persistent=true]
-setblock ~28 ~ ~-12 flowering_azalea_leaves[persistent=true]
+setblock ~-1 ~ ~-31 flowering_azalea_leaves[persistent=true]
+setblock ~2 ~ ~-31 flowering_azalea_leaves[persistent=true]
+setblock ~5 ~ ~-30 flowering_azalea_leaves[persistent=true]
+setblock ~7 ~ ~-30 flowering_azalea_leaves[persistent=true]
+setblock ~10 ~ ~-29 flowering_azalea_leaves[persistent=true]
+setblock ~13 ~ ~-28 flowering_azalea_leaves[persistent=true]
+setblock ~16 ~ ~-26 flowering_azalea_leaves[persistent=true]
+setblock ~18 ~ ~-25 flowering_azalea_leaves[persistent=true]
+setblock ~21 ~ ~-23 flowering_azalea_leaves[persistent=true]
+setblock ~23 ~ ~-21 flowering_azalea_leaves[persistent=true]
+setblock ~25 ~ ~-18 flowering_azalea_leaves[persistent=true]
+setblock ~26 ~ ~-16 flowering_azalea_leaves[persistent=true]
+setblock ~28 ~ ~-13 flowering_azalea_leaves[persistent=true]
+setblock ~29 ~ ~-10 flowering_azalea_leaves[persistent=true]
+setblock ~30 ~ ~-7 flowering_azalea_leaves[persistent=true]
 setblock ~30 ~ ~-4 flowering_azalea_leaves[persistent=true]
+setblock ~31 ~ ~-1 flowering_azalea_leaves[persistent=true]
+setblock ~28 ~ ~5 pink_tulip keep
+setblock ~28 ~ ~7 red_tulip keep
+setblock ~28 ~ ~8 white_tulip keep
+setblock ~27 ~ ~9 orange_tulip keep
+setblock ~27 ~ ~11 pink_tulip keep
+setblock ~26 ~ ~12 red_tulip keep
+setblock ~25 ~ ~14 white_tulip keep
+setblock ~25 ~ ~15 orange_tulip keep
+setblock ~24 ~ ~16 pink_tulip keep
+setblock ~23 ~ ~17 red_tulip keep
+setblock ~22 ~ ~19 white_tulip keep
+setblock ~21 ~ ~20 orange_tulip keep
+setblock ~20 ~ ~21 pink_tulip keep
+setblock ~19 ~ ~22 red_tulip keep
+setblock ~18 ~ ~23 white_tulip keep
+setblock ~16 ~ ~24 orange_tulip keep
+setblock ~15 ~ ~24 pink_tulip keep
+setblock ~14 ~ ~25 red_tulip keep
+setblock ~13 ~ ~26 white_tulip keep
+setblock ~11 ~ ~27 orange_tulip keep
+setblock ~10 ~ ~27 pink_tulip keep
+setblock ~8 ~ ~28 red_tulip keep
+setblock ~7 ~ ~28 white_tulip keep
+setblock ~5 ~ ~28 orange_tulip keep
+setblock ~-5 ~ ~28 white_tulip keep
+setblock ~-7 ~ ~28 orange_tulip keep
+setblock ~-8 ~ ~28 pink_tulip keep
+setblock ~-9 ~ ~27 red_tulip keep
+setblock ~-11 ~ ~27 white_tulip keep
+setblock ~-12 ~ ~26 orange_tulip keep
+setblock ~-14 ~ ~25 pink_tulip keep
+setblock ~-15 ~ ~25 red_tulip keep
+setblock ~-16 ~ ~24 white_tulip keep
+setblock ~-17 ~ ~23 orange_tulip keep
+setblock ~-19 ~ ~22 pink_tulip keep
+setblock ~-20 ~ ~21 red_tulip keep
+setblock ~-21 ~ ~20 white_tulip keep
+setblock ~-22 ~ ~19 orange_tulip keep
+setblock ~-23 ~ ~18 pink_tulip keep
+setblock ~-24 ~ ~16 red_tulip keep
+setblock ~-24 ~ ~15 white_tulip keep
+setblock ~-25 ~ ~14 orange_tulip keep
+setblock ~-26 ~ ~13 pink_tulip keep
+setblock ~-27 ~ ~11 red_tulip keep
+setblock ~-27 ~ ~10 white_tulip keep
+setblock ~-28 ~ ~8 orange_tulip keep
+setblock ~-28 ~ ~7 pink_tulip keep
+setblock ~-28 ~ ~5 red_tulip keep
+setblock ~-28 ~ ~-5 pink_tulip keep
+setblock ~-28 ~ ~-7 red_tulip keep
+setblock ~-28 ~ ~-8 white_tulip keep
+setblock ~-27 ~ ~-9 orange_tulip keep
+setblock ~-27 ~ ~-11 pink_tulip keep
+setblock ~-26 ~ ~-12 red_tulip keep
+setblock ~-25 ~ ~-14 white_tulip keep
+setblock ~-25 ~ ~-15 orange_tulip keep
+setblock ~-24 ~ ~-16 pink_tulip keep
+setblock ~-23 ~ ~-17 red_tulip keep
+setblock ~-22 ~ ~-19 white_tulip keep
+setblock ~-21 ~ ~-20 orange_tulip keep
+setblock ~-20 ~ ~-21 pink_tulip keep
+setblock ~-19 ~ ~-22 red_tulip keep
+setblock ~-18 ~ ~-23 white_tulip keep
+setblock ~-16 ~ ~-24 orange_tulip keep
+setblock ~-15 ~ ~-24 pink_tulip keep
+setblock ~-14 ~ ~-25 red_tulip keep
+setblock ~-13 ~ ~-26 white_tulip keep
+setblock ~-11 ~ ~-27 orange_tulip keep
+setblock ~-10 ~ ~-27 pink_tulip keep
+setblock ~-8 ~ ~-28 red_tulip keep
+setblock ~-7 ~ ~-28 white_tulip keep
+setblock ~-5 ~ ~-28 orange_tulip keep
+setblock ~5 ~ ~-28 white_tulip keep
+setblock ~7 ~ ~-28 orange_tulip keep
+setblock ~8 ~ ~-28 pink_tulip keep
+setblock ~9 ~ ~-27 red_tulip keep
+setblock ~11 ~ ~-27 white_tulip keep
+setblock ~12 ~ ~-26 orange_tulip keep
+setblock ~14 ~ ~-25 pink_tulip keep
+setblock ~15 ~ ~-25 red_tulip keep
+setblock ~16 ~ ~-24 white_tulip keep
+setblock ~17 ~ ~-23 orange_tulip keep
+setblock ~19 ~ ~-22 pink_tulip keep
+setblock ~20 ~ ~-21 red_tulip keep
+setblock ~21 ~ ~-20 white_tulip keep
+setblock ~22 ~ ~-19 orange_tulip keep
+setblock ~23 ~ ~-18 pink_tulip keep
+setblock ~24 ~ ~-16 red_tulip keep
+setblock ~24 ~ ~-15 white_tulip keep
+setblock ~25 ~ ~-14 orange_tulip keep
+setblock ~26 ~ ~-13 pink_tulip keep
+setblock ~27 ~ ~-11 red_tulip keep
+setblock ~27 ~ ~-10 white_tulip keep
+setblock ~28 ~ ~-8 orange_tulip keep
+setblock ~28 ~ ~-7 pink_tulip keep
+setblock ~28 ~ ~-5 red_tulip keep
+fill ~27 ~ ~5 ~27 ~1 ~5 oak_fence
+setblock ~27 ~2 ~5 lantern
+fill ~23 ~ ~15 ~23 ~1 ~15 oak_fence
+setblock ~23 ~2 ~15 lantern
+fill ~15 ~ ~23 ~15 ~1 ~23 oak_fence
+setblock ~15 ~2 ~23 lantern
+fill ~5 ~ ~27 ~5 ~1 ~27 oak_fence
+setblock ~5 ~2 ~27 lantern
+fill ~-5 ~ ~27 ~-5 ~1 ~27 oak_fence
+setblock ~-5 ~2 ~27 lantern
+fill ~-15 ~ ~23 ~-15 ~1 ~23 oak_fence
+setblock ~-15 ~2 ~23 lantern
+fill ~-23 ~ ~15 ~-23 ~1 ~15 oak_fence
+setblock ~-23 ~2 ~15 lantern
+fill ~-27 ~ ~5 ~-27 ~1 ~5 oak_fence
+setblock ~-27 ~2 ~5 lantern
+fill ~-27 ~ ~-5 ~-27 ~1 ~-5 oak_fence
+setblock ~-27 ~2 ~-5 lantern
+fill ~-23 ~ ~-15 ~-23 ~1 ~-15 oak_fence
+setblock ~-23 ~2 ~-15 lantern
+fill ~-15 ~ ~-23 ~-15 ~1 ~-23 oak_fence
+setblock ~-15 ~2 ~-23 lantern
+fill ~-5 ~ ~-27 ~-5 ~1 ~-27 oak_fence
+setblock ~-5 ~2 ~-27 lantern
+fill ~5 ~ ~-27 ~5 ~1 ~-27 oak_fence
+setblock ~5 ~2 ~-27 lantern
+fill ~15 ~ ~-23 ~15 ~1 ~-23 oak_fence
+setblock ~15 ~2 ~-23 lantern
+fill ~23 ~ ~-15 ~23 ~1 ~-15 oak_fence
+setblock ~23 ~2 ~-15 lantern
+fill ~27 ~ ~-5 ~27 ~1 ~-5 oak_fence
+setblock ~27 ~2 ~-5 lantern
 fill ~-3 ~-1 ~-11 ~3 ~-1 ~-11 stone_bricks
 fill ~-5 ~-1 ~-10 ~5 ~-1 ~-10 stone_bricks
 fill ~-7 ~-1 ~-9 ~7 ~-1 ~-9 stone_bricks
@@ -233,26 +401,26 @@ fill ~-6 ~-1 ~4 ~6 ~-1 ~4 smooth_stone
 fill ~-5 ~-1 ~5 ~5 ~-1 ~5 smooth_stone
 fill ~-4 ~-1 ~6 ~4 ~-1 ~6 smooth_stone
 fill ~-2 ~-1 ~7 ~2 ~-1 ~7 smooth_stone
-setblock ~ ~-1 ~-6 polished_deepslate
-setblock ~ ~-1 ~-7 polished_deepslate
-setblock ~ ~-1 ~-8 polished_deepslate
-setblock ~ ~-1 ~-9 polished_deepslate
-setblock ~ ~-1 ~-10 polished_deepslate
-setblock ~ ~-1 ~6 polished_deepslate
-setblock ~ ~-1 ~7 polished_deepslate
-setblock ~ ~-1 ~8 polished_deepslate
-setblock ~ ~-1 ~9 polished_deepslate
-setblock ~ ~-1 ~10 polished_deepslate
-setblock ~6 ~-1 ~ polished_deepslate
-setblock ~7 ~-1 ~ polished_deepslate
-setblock ~8 ~-1 ~ polished_deepslate
-setblock ~9 ~-1 ~ polished_deepslate
-setblock ~10 ~-1 ~ polished_deepslate
-setblock ~-6 ~-1 ~ polished_deepslate
-setblock ~-7 ~-1 ~ polished_deepslate
-setblock ~-8 ~-1 ~ polished_deepslate
-setblock ~-9 ~-1 ~ polished_deepslate
-setblock ~-10 ~-1 ~ polished_deepslate
+setblock ~ ~-1 ~-6 light_blue_concrete
+setblock ~ ~-1 ~-7 light_blue_concrete
+setblock ~ ~-1 ~-8 light_blue_concrete
+setblock ~ ~-1 ~-9 light_blue_concrete
+setblock ~ ~-1 ~-10 light_blue_concrete
+setblock ~ ~-1 ~6 red_concrete
+setblock ~ ~-1 ~7 red_concrete
+setblock ~ ~-1 ~8 red_concrete
+setblock ~ ~-1 ~9 red_concrete
+setblock ~ ~-1 ~10 red_concrete
+setblock ~6 ~-1 ~ yellow_concrete
+setblock ~7 ~-1 ~ yellow_concrete
+setblock ~8 ~-1 ~ yellow_concrete
+setblock ~9 ~-1 ~ yellow_concrete
+setblock ~10 ~-1 ~ yellow_concrete
+setblock ~-6 ~-1 ~ lime_concrete
+setblock ~-7 ~-1 ~ lime_concrete
+setblock ~-8 ~-1 ~ lime_concrete
+setblock ~-9 ~-1 ~ lime_concrete
+setblock ~-10 ~-1 ~ lime_concrete
 fill ~-2 ~-1 ~-5 ~2 ~-1 ~-5 quartz_bricks
 fill ~-3 ~-1 ~-4 ~3 ~-1 ~-4 quartz_bricks
 fill ~-4 ~-1 ~-3 ~4 ~-1 ~-3 quartz_bricks
@@ -377,67 +545,285 @@ setblock ~9 ~2 ~-4 lantern
 fill ~-2 ~-1 ~-30 ~2 ~-1 ~-11 stone_bricks
 fill ~-1 ~-1 ~-30 ~1 ~-1 ~-11 polished_andesite
 fill ~-2 ~ ~-32 ~2 ~4 ~-11 air
-fill ~-3 ~ ~-15 ~-3 ~2 ~-15 dark_oak_fence
+fill ~-3 ~ ~-15 ~-3 ~2 ~-15 oak_fence
 setblock ~-3 ~3 ~-15 lantern
-fill ~3 ~ ~-15 ~3 ~2 ~-15 dark_oak_fence
+fill ~3 ~ ~-15 ~3 ~2 ~-15 oak_fence
 setblock ~3 ~3 ~-15 lantern
-fill ~-3 ~ ~-21 ~-3 ~2 ~-21 dark_oak_fence
+fill ~-3 ~ ~-21 ~-3 ~2 ~-21 oak_fence
 setblock ~-3 ~3 ~-21 lantern
-fill ~3 ~ ~-21 ~3 ~2 ~-21 dark_oak_fence
+fill ~3 ~ ~-21 ~3 ~2 ~-21 oak_fence
 setblock ~3 ~3 ~-21 lantern
 setblock ~ ~-1 ~-13 cracked_stone_bricks
 setblock ~-1 ~-1 ~-18 cracked_stone_bricks
-setblock ~1 ~-1 ~-23 cracked_stone_bricks
+setblock ~-3 ~ ~-12 red_tulip keep
+setblock ~3 ~ ~-12 orange_tulip keep
+setblock ~-3 ~ ~-13 white_tulip keep
+setblock ~3 ~ ~-13 pink_tulip keep
+setblock ~-3 ~ ~-14 orange_tulip keep
+setblock ~3 ~ ~-14 red_tulip keep
+setblock ~-3 ~ ~-16 red_tulip keep
+setblock ~3 ~ ~-16 orange_tulip keep
+setblock ~-3 ~ ~-17 white_tulip keep
+setblock ~3 ~ ~-17 pink_tulip keep
+setblock ~-3 ~ ~-18 orange_tulip keep
+setblock ~3 ~ ~-18 red_tulip keep
+setblock ~-3 ~ ~-19 pink_tulip keep
+setblock ~3 ~ ~-19 white_tulip keep
+setblock ~-3 ~ ~-20 red_tulip keep
+setblock ~3 ~ ~-20 orange_tulip keep
+setblock ~-3 ~ ~-22 orange_tulip keep
+setblock ~3 ~ ~-22 red_tulip keep
+setblock ~-3 ~ ~-23 pink_tulip keep
+setblock ~3 ~ ~-23 white_tulip keep
+setblock ~-3 ~ ~-24 red_tulip keep
+setblock ~3 ~ ~-24 orange_tulip keep
+setblock ~-3 ~ ~-25 white_tulip keep
+setblock ~3 ~ ~-25 pink_tulip keep
+setblock ~-3 ~ ~-26 orange_tulip keep
+setblock ~3 ~ ~-26 red_tulip keep
+setblock ~-3 ~ ~-27 pink_tulip keep
+setblock ~3 ~ ~-27 white_tulip keep
+setblock ~-3 ~ ~-28 red_tulip keep
+setblock ~3 ~ ~-28 orange_tulip keep
+setblock ~-2 ~-1 ~-28 light_blue_concrete
+setblock ~-1 ~-1 ~-28 white_concrete
+setblock ~ ~-1 ~-28 white_concrete
+setblock ~1 ~-1 ~-28 white_concrete
+setblock ~2 ~-1 ~-28 light_blue_concrete
+setblock ~-2 ~-1 ~-27 light_blue_concrete
+setblock ~-1 ~-1 ~-27 light_blue_concrete
+setblock ~ ~-1 ~-27 white_concrete
+setblock ~1 ~-1 ~-27 white_concrete
+setblock ~2 ~-1 ~-27 light_blue_concrete
+setblock ~-2 ~-1 ~-26 light_blue_concrete
+setblock ~-1 ~-1 ~-26 white_concrete
+setblock ~ ~-1 ~-26 light_blue_concrete
+setblock ~1 ~-1 ~-26 white_concrete
+setblock ~2 ~-1 ~-26 light_blue_concrete
+setblock ~-2 ~-1 ~-25 light_blue_concrete
+setblock ~-1 ~-1 ~-25 white_concrete
+setblock ~ ~-1 ~-25 white_concrete
+setblock ~1 ~-1 ~-25 light_blue_concrete
+setblock ~2 ~-1 ~-25 light_blue_concrete
+setblock ~-2 ~-1 ~-24 light_blue_concrete
+setblock ~-1 ~-1 ~-24 white_concrete
+setblock ~ ~-1 ~-24 white_concrete
+setblock ~1 ~-1 ~-24 white_concrete
+setblock ~2 ~-1 ~-24 light_blue_concrete
 fill ~-2 ~-1 ~11 ~2 ~-1 ~30 stone_bricks
 fill ~-1 ~-1 ~11 ~1 ~-1 ~30 polished_andesite
 fill ~-2 ~ ~11 ~2 ~4 ~32 air
-fill ~3 ~ ~15 ~3 ~2 ~15 dark_oak_fence
+fill ~3 ~ ~15 ~3 ~2 ~15 oak_fence
 setblock ~3 ~3 ~15 lantern
-fill ~-3 ~ ~15 ~-3 ~2 ~15 dark_oak_fence
+fill ~-3 ~ ~15 ~-3 ~2 ~15 oak_fence
 setblock ~-3 ~3 ~15 lantern
-fill ~3 ~ ~21 ~3 ~2 ~21 dark_oak_fence
+fill ~3 ~ ~21 ~3 ~2 ~21 oak_fence
 setblock ~3 ~3 ~21 lantern
-fill ~-3 ~ ~21 ~-3 ~2 ~21 dark_oak_fence
+fill ~-3 ~ ~21 ~-3 ~2 ~21 oak_fence
 setblock ~-3 ~3 ~21 lantern
 setblock ~ ~-1 ~13 cracked_stone_bricks
 setblock ~1 ~-1 ~18 cracked_stone_bricks
-setblock ~-1 ~-1 ~23 cracked_stone_bricks
+setblock ~3 ~ ~12 red_tulip keep
+setblock ~-3 ~ ~12 orange_tulip keep
+setblock ~3 ~ ~13 white_tulip keep
+setblock ~-3 ~ ~13 pink_tulip keep
+setblock ~3 ~ ~14 orange_tulip keep
+setblock ~-3 ~ ~14 red_tulip keep
+setblock ~3 ~ ~16 red_tulip keep
+setblock ~-3 ~ ~16 orange_tulip keep
+setblock ~3 ~ ~17 white_tulip keep
+setblock ~-3 ~ ~17 pink_tulip keep
+setblock ~3 ~ ~18 orange_tulip keep
+setblock ~-3 ~ ~18 red_tulip keep
+setblock ~3 ~ ~19 pink_tulip keep
+setblock ~-3 ~ ~19 white_tulip keep
+setblock ~3 ~ ~20 red_tulip keep
+setblock ~-3 ~ ~20 orange_tulip keep
+setblock ~3 ~ ~22 orange_tulip keep
+setblock ~-3 ~ ~22 red_tulip keep
+setblock ~3 ~ ~23 pink_tulip keep
+setblock ~-3 ~ ~23 white_tulip keep
+setblock ~3 ~ ~24 red_tulip keep
+setblock ~-3 ~ ~24 orange_tulip keep
+setblock ~3 ~ ~25 white_tulip keep
+setblock ~-3 ~ ~25 pink_tulip keep
+setblock ~3 ~ ~26 orange_tulip keep
+setblock ~-3 ~ ~26 red_tulip keep
+setblock ~3 ~ ~27 pink_tulip keep
+setblock ~-3 ~ ~27 white_tulip keep
+setblock ~3 ~ ~28 red_tulip keep
+setblock ~-3 ~ ~28 orange_tulip keep
+setblock ~2 ~-1 ~28 white_concrete
+setblock ~1 ~-1 ~28 red_concrete
+setblock ~ ~-1 ~28 red_concrete
+setblock ~-1 ~-1 ~28 red_concrete
+setblock ~-2 ~-1 ~28 red_concrete
+setblock ~2 ~-1 ~27 red_concrete
+setblock ~1 ~-1 ~27 white_concrete
+setblock ~ ~-1 ~27 white_concrete
+setblock ~-1 ~-1 ~27 white_concrete
+setblock ~-2 ~-1 ~27 white_concrete
+setblock ~2 ~-1 ~26 white_concrete
+setblock ~1 ~-1 ~26 red_concrete
+setblock ~ ~-1 ~26 red_concrete
+setblock ~-1 ~-1 ~26 red_concrete
+setblock ~-2 ~-1 ~26 white_concrete
+setblock ~2 ~-1 ~25 white_concrete
+setblock ~1 ~-1 ~25 white_concrete
+setblock ~ ~-1 ~25 white_concrete
+setblock ~-1 ~-1 ~25 white_concrete
+setblock ~-2 ~-1 ~25 red_concrete
+setblock ~2 ~-1 ~24 red_concrete
+setblock ~1 ~-1 ~24 red_concrete
+setblock ~ ~-1 ~24 red_concrete
+setblock ~-1 ~-1 ~24 red_concrete
+setblock ~-2 ~-1 ~24 white_concrete
 fill ~11 ~-1 ~-2 ~30 ~-1 ~2 stone_bricks
 fill ~11 ~-1 ~-1 ~30 ~-1 ~1 polished_andesite
 fill ~11 ~ ~-2 ~32 ~4 ~2 air
-fill ~15 ~ ~-3 ~15 ~2 ~-3 dark_oak_fence
+fill ~15 ~ ~-3 ~15 ~2 ~-3 oak_fence
 setblock ~15 ~3 ~-3 lantern
-fill ~15 ~ ~3 ~15 ~2 ~3 dark_oak_fence
+fill ~15 ~ ~3 ~15 ~2 ~3 oak_fence
 setblock ~15 ~3 ~3 lantern
-fill ~21 ~ ~-3 ~21 ~2 ~-3 dark_oak_fence
+fill ~21 ~ ~-3 ~21 ~2 ~-3 oak_fence
 setblock ~21 ~3 ~-3 lantern
-fill ~21 ~ ~3 ~21 ~2 ~3 dark_oak_fence
+fill ~21 ~ ~3 ~21 ~2 ~3 oak_fence
 setblock ~21 ~3 ~3 lantern
 setblock ~13 ~-1 ~ cracked_stone_bricks
 setblock ~18 ~-1 ~-1 cracked_stone_bricks
-setblock ~23 ~-1 ~1 cracked_stone_bricks
+setblock ~12 ~ ~-3 red_tulip keep
+setblock ~12 ~ ~3 orange_tulip keep
+setblock ~13 ~ ~-3 white_tulip keep
+setblock ~13 ~ ~3 pink_tulip keep
+setblock ~14 ~ ~-3 orange_tulip keep
+setblock ~14 ~ ~3 red_tulip keep
+setblock ~16 ~ ~-3 red_tulip keep
+setblock ~16 ~ ~3 orange_tulip keep
+setblock ~17 ~ ~-3 white_tulip keep
+setblock ~17 ~ ~3 pink_tulip keep
+setblock ~18 ~ ~-3 orange_tulip keep
+setblock ~18 ~ ~3 red_tulip keep
+setblock ~19 ~ ~-3 pink_tulip keep
+setblock ~19 ~ ~3 white_tulip keep
+setblock ~20 ~ ~-3 red_tulip keep
+setblock ~20 ~ ~3 orange_tulip keep
+setblock ~22 ~ ~-3 orange_tulip keep
+setblock ~22 ~ ~3 red_tulip keep
+setblock ~23 ~ ~-3 pink_tulip keep
+setblock ~23 ~ ~3 white_tulip keep
+setblock ~24 ~ ~-3 red_tulip keep
+setblock ~24 ~ ~3 orange_tulip keep
+setblock ~25 ~ ~-3 white_tulip keep
+setblock ~25 ~ ~3 pink_tulip keep
+setblock ~26 ~ ~-3 orange_tulip keep
+setblock ~26 ~ ~3 red_tulip keep
+setblock ~27 ~ ~-3 pink_tulip keep
+setblock ~27 ~ ~3 white_tulip keep
+setblock ~28 ~ ~-3 red_tulip keep
+setblock ~28 ~ ~3 orange_tulip keep
+setblock ~28 ~-1 ~-2 white_concrete
+setblock ~28 ~-1 ~-1 yellow_concrete
+setblock ~28 ~-1 ~ yellow_concrete
+setblock ~28 ~-1 ~1 yellow_concrete
+setblock ~28 ~-1 ~2 white_concrete
+setblock ~27 ~-1 ~-2 yellow_concrete
+setblock ~27 ~-1 ~-1 white_concrete
+setblock ~27 ~-1 ~ white_concrete
+setblock ~27 ~-1 ~1 white_concrete
+setblock ~27 ~-1 ~2 yellow_concrete
+setblock ~26 ~-1 ~-2 yellow_concrete
+setblock ~26 ~-1 ~-1 white_concrete
+setblock ~26 ~-1 ~ white_concrete
+setblock ~26 ~-1 ~1 white_concrete
+setblock ~26 ~-1 ~2 yellow_concrete
+setblock ~25 ~-1 ~-2 yellow_concrete
+setblock ~25 ~-1 ~-1 white_concrete
+setblock ~25 ~-1 ~ white_concrete
+setblock ~25 ~-1 ~1 white_concrete
+setblock ~25 ~-1 ~2 yellow_concrete
+setblock ~24 ~-1 ~-2 white_concrete
+setblock ~24 ~-1 ~-1 yellow_concrete
+setblock ~24 ~-1 ~ yellow_concrete
+setblock ~24 ~-1 ~1 yellow_concrete
+setblock ~24 ~-1 ~2 white_concrete
 fill ~-30 ~-1 ~-2 ~-11 ~-1 ~2 stone_bricks
 fill ~-30 ~-1 ~-1 ~-11 ~-1 ~1 polished_andesite
 fill ~-32 ~ ~-2 ~-11 ~4 ~2 air
-fill ~-15 ~ ~3 ~-15 ~2 ~3 dark_oak_fence
+fill ~-15 ~ ~3 ~-15 ~2 ~3 oak_fence
 setblock ~-15 ~3 ~3 lantern
-fill ~-15 ~ ~-3 ~-15 ~2 ~-3 dark_oak_fence
+fill ~-15 ~ ~-3 ~-15 ~2 ~-3 oak_fence
 setblock ~-15 ~3 ~-3 lantern
-fill ~-21 ~ ~3 ~-21 ~2 ~3 dark_oak_fence
+fill ~-21 ~ ~3 ~-21 ~2 ~3 oak_fence
 setblock ~-21 ~3 ~3 lantern
-fill ~-21 ~ ~-3 ~-21 ~2 ~-3 dark_oak_fence
+fill ~-21 ~ ~-3 ~-21 ~2 ~-3 oak_fence
 setblock ~-21 ~3 ~-3 lantern
 setblock ~-13 ~-1 ~ cracked_stone_bricks
 setblock ~-18 ~-1 ~1 cracked_stone_bricks
-setblock ~-23 ~-1 ~-1 cracked_stone_bricks
+setblock ~-12 ~ ~3 red_tulip keep
+setblock ~-12 ~ ~-3 orange_tulip keep
+setblock ~-13 ~ ~3 white_tulip keep
+setblock ~-13 ~ ~-3 pink_tulip keep
+setblock ~-14 ~ ~3 orange_tulip keep
+setblock ~-14 ~ ~-3 red_tulip keep
+setblock ~-16 ~ ~3 red_tulip keep
+setblock ~-16 ~ ~-3 orange_tulip keep
+setblock ~-17 ~ ~3 white_tulip keep
+setblock ~-17 ~ ~-3 pink_tulip keep
+setblock ~-18 ~ ~3 orange_tulip keep
+setblock ~-18 ~ ~-3 red_tulip keep
+setblock ~-19 ~ ~3 pink_tulip keep
+setblock ~-19 ~ ~-3 white_tulip keep
+setblock ~-20 ~ ~3 red_tulip keep
+setblock ~-20 ~ ~-3 orange_tulip keep
+setblock ~-22 ~ ~3 orange_tulip keep
+setblock ~-22 ~ ~-3 red_tulip keep
+setblock ~-23 ~ ~3 pink_tulip keep
+setblock ~-23 ~ ~-3 white_tulip keep
+setblock ~-24 ~ ~3 red_tulip keep
+setblock ~-24 ~ ~-3 orange_tulip keep
+setblock ~-25 ~ ~3 white_tulip keep
+setblock ~-25 ~ ~-3 pink_tulip keep
+setblock ~-26 ~ ~3 orange_tulip keep
+setblock ~-26 ~ ~-3 red_tulip keep
+setblock ~-27 ~ ~3 pink_tulip keep
+setblock ~-27 ~ ~-3 white_tulip keep
+setblock ~-28 ~ ~3 red_tulip keep
+setblock ~-28 ~ ~-3 orange_tulip keep
+setblock ~-28 ~-1 ~2 lime_concrete
+setblock ~-28 ~-1 ~1 white_concrete
+setblock ~-28 ~-1 ~ white_concrete
+setblock ~-28 ~-1 ~-1 white_concrete
+setblock ~-28 ~-1 ~-2 lime_concrete
+setblock ~-27 ~-1 ~2 lime_concrete
+setblock ~-27 ~-1 ~1 white_concrete
+setblock ~-27 ~-1 ~ white_concrete
+setblock ~-27 ~-1 ~-1 white_concrete
+setblock ~-27 ~-1 ~-2 lime_concrete
+setblock ~-26 ~-1 ~2 lime_concrete
+setblock ~-26 ~-1 ~1 white_concrete
+setblock ~-26 ~-1 ~ lime_concrete
+setblock ~-26 ~-1 ~-1 white_concrete
+setblock ~-26 ~-1 ~-2 lime_concrete
+setblock ~-25 ~-1 ~2 lime_concrete
+setblock ~-25 ~-1 ~1 lime_concrete
+setblock ~-25 ~-1 ~ white_concrete
+setblock ~-25 ~-1 ~-1 lime_concrete
+setblock ~-25 ~-1 ~-2 lime_concrete
+setblock ~-24 ~-1 ~2 lime_concrete
+setblock ~-24 ~-1 ~1 white_concrete
+setblock ~-24 ~-1 ~ white_concrete
+setblock ~-24 ~-1 ~-1 white_concrete
+setblock ~-24 ~-1 ~-2 lime_concrete
 fill ~-2 ~-1 ~-39 ~2 ~-1 ~-30 spruce_planks
 fill ~ ~-1 ~-39 ~ ~-1 ~-30 stripped_spruce_log
 fill ~-3 ~ ~-38 ~-3 ~ ~-30 spruce_fence
 fill ~3 ~ ~-38 ~3 ~ ~-30 spruce_fence
-fill ~-2 ~ ~-39 ~2 ~ ~-39 lime_carpet
-fill ~-3 ~ ~-30 ~-3 ~3 ~-30 spruce_log
-fill ~3 ~ ~-30 ~3 ~3 ~-30 spruce_log
-fill ~-4 ~4 ~-30 ~4 ~4 ~-30 spruce_log[axis=x]
+fill ~-2 ~ ~-39 ~2 ~ ~-39 light_blue_carpet
+setblock ~-3 ~2 ~-29 light_blue_wall_banner[facing=south]
+setblock ~3 ~2 ~-29 light_blue_wall_banner[facing=south]
+fill ~-3 ~ ~-30 ~-3 ~3 ~-30 stripped_spruce_log
+fill ~3 ~ ~-30 ~3 ~3 ~-30 stripped_spruce_log
+fill ~-4 ~4 ~-30 ~4 ~4 ~-30 stripped_spruce_log[axis=x]
 fill ~-2 ~5 ~-30 ~2 ~5 ~-30 spruce_slab
 setblock ~ ~3 ~-30 lantern[hanging=true]
 setblock ~-4 ~5 ~-30 lantern
@@ -454,10 +840,12 @@ fill ~-2 ~-1 ~30 ~2 ~-1 ~39 spruce_planks
 fill ~ ~-1 ~30 ~ ~-1 ~39 stripped_spruce_log
 fill ~3 ~ ~30 ~3 ~ ~38 spruce_fence
 fill ~-3 ~ ~30 ~-3 ~ ~38 spruce_fence
-fill ~-2 ~ ~39 ~2 ~ ~39 lime_carpet
-fill ~3 ~ ~30 ~3 ~3 ~30 spruce_log
-fill ~-3 ~ ~30 ~-3 ~3 ~30 spruce_log
-fill ~-4 ~4 ~30 ~4 ~4 ~30 spruce_log[axis=x]
+fill ~-2 ~ ~39 ~2 ~ ~39 red_carpet
+setblock ~3 ~2 ~29 red_wall_banner[facing=north]
+setblock ~-3 ~2 ~29 red_wall_banner[facing=north]
+fill ~3 ~ ~30 ~3 ~3 ~30 stripped_spruce_log
+fill ~-3 ~ ~30 ~-3 ~3 ~30 stripped_spruce_log
+fill ~-4 ~4 ~30 ~4 ~4 ~30 stripped_spruce_log[axis=x]
 fill ~-2 ~5 ~30 ~2 ~5 ~30 spruce_slab
 setblock ~ ~3 ~30 lantern[hanging=true]
 setblock ~4 ~5 ~30 lantern
@@ -474,10 +862,12 @@ fill ~30 ~-1 ~-2 ~39 ~-1 ~2 spruce_planks
 fill ~30 ~-1 ~ ~39 ~-1 ~ stripped_spruce_log
 fill ~30 ~ ~-3 ~38 ~ ~-3 spruce_fence
 fill ~30 ~ ~3 ~38 ~ ~3 spruce_fence
-fill ~39 ~ ~-2 ~39 ~ ~2 lime_carpet
-fill ~30 ~ ~-3 ~30 ~3 ~-3 spruce_log
-fill ~30 ~ ~3 ~30 ~3 ~3 spruce_log
-fill ~30 ~4 ~-4 ~30 ~4 ~4 spruce_log[axis=z]
+fill ~39 ~ ~-2 ~39 ~ ~2 yellow_carpet
+setblock ~29 ~2 ~-3 yellow_wall_banner[facing=west]
+setblock ~29 ~2 ~3 yellow_wall_banner[facing=west]
+fill ~30 ~ ~-3 ~30 ~3 ~-3 stripped_spruce_log
+fill ~30 ~ ~3 ~30 ~3 ~3 stripped_spruce_log
+fill ~30 ~4 ~-4 ~30 ~4 ~4 stripped_spruce_log[axis=z]
 fill ~30 ~5 ~-2 ~30 ~5 ~2 spruce_slab
 setblock ~30 ~3 ~ lantern[hanging=true]
 setblock ~30 ~5 ~-4 lantern
@@ -495,9 +885,11 @@ fill ~-39 ~-1 ~ ~-30 ~-1 ~ stripped_spruce_log
 fill ~-38 ~ ~3 ~-30 ~ ~3 spruce_fence
 fill ~-38 ~ ~-3 ~-30 ~ ~-3 spruce_fence
 fill ~-39 ~ ~-2 ~-39 ~ ~2 lime_carpet
-fill ~-30 ~ ~3 ~-30 ~3 ~3 spruce_log
-fill ~-30 ~ ~-3 ~-30 ~3 ~-3 spruce_log
-fill ~-30 ~4 ~-4 ~-30 ~4 ~4 spruce_log[axis=z]
+setblock ~-29 ~2 ~3 lime_wall_banner[facing=east]
+setblock ~-29 ~2 ~-3 lime_wall_banner[facing=east]
+fill ~-30 ~ ~3 ~-30 ~3 ~3 stripped_spruce_log
+fill ~-30 ~ ~-3 ~-30 ~3 ~-3 stripped_spruce_log
+fill ~-30 ~4 ~-4 ~-30 ~4 ~4 stripped_spruce_log[axis=z]
 fill ~-30 ~5 ~-2 ~-30 ~5 ~2 spruce_slab
 setblock ~-30 ~3 ~ lantern[hanging=true]
 setblock ~-30 ~5 ~4 lantern
@@ -510,53 +902,173 @@ setblock ~-38 ~-4 ~2 lantern[hanging=true]
 setblock ~-38 ~-4 ~-2 lantern[hanging=true]
 fill ~-33 ~-4 ~2 ~-33 ~-2 ~2 spruce_log
 fill ~-33 ~-4 ~-2 ~-33 ~-2 ~-2 spruce_log
-fill ~-17 ~-1 ~13 ~-13 ~15 ~17 stone_bricks
+fill ~-17 ~-1 ~13 ~-13 ~2 ~17 stone_bricks
+fill ~-17 ~3 ~13 ~-13 ~15 ~17 white_concrete
 fill ~-16 ~ ~14 ~-14 ~15 ~16 air
-fill ~-17 ~3 ~13 ~-13 ~3 ~17 mossy_stone_bricks replace stone_bricks
-setblock ~-17 ~4 ~15 glass_pane
-setblock ~-15 ~4 ~17 glass_pane
-fill ~-17 ~8 ~13 ~-13 ~8 ~17 mossy_stone_bricks replace stone_bricks
-setblock ~-17 ~9 ~15 glass_pane
-setblock ~-15 ~9 ~17 glass_pane
-fill ~-17 ~13 ~13 ~-13 ~13 ~17 mossy_stone_bricks replace stone_bricks
-setblock ~-17 ~14 ~15 glass_pane
-setblock ~-15 ~14 ~17 glass_pane
+fill ~-17 ~3 ~13 ~-13 ~3 ~17 spruce_planks replace white_concrete
+fill ~-17 ~9 ~13 ~-13 ~9 ~17 spruce_planks replace white_concrete
+fill ~-17 ~15 ~13 ~-13 ~15 ~17 spruce_planks replace white_concrete
+fill ~-17 ~ ~13 ~-17 ~15 ~13 stripped_spruce_log
+fill ~-13 ~ ~13 ~-13 ~15 ~13 stripped_spruce_log
+fill ~-17 ~ ~17 ~-17 ~15 ~17 stripped_spruce_log
+fill ~-13 ~ ~17 ~-13 ~15 ~17 stripped_spruce_log
+setblock ~-17 ~6 ~15 glass_pane
+setblock ~-17 ~7 ~15 glass_pane
+setblock ~-18 ~5 ~15 flowering_azalea_leaves[persistent=true]
+setblock ~-13 ~6 ~15 glass_pane
+setblock ~-13 ~7 ~15 glass_pane
+setblock ~-12 ~5 ~15 flowering_azalea_leaves[persistent=true]
+setblock ~-15 ~6 ~13 glass_pane
+setblock ~-15 ~7 ~13 glass_pane
+setblock ~-15 ~5 ~12 flowering_azalea_leaves[persistent=true]
+setblock ~-15 ~6 ~17 glass_pane
+setblock ~-15 ~7 ~17 glass_pane
+setblock ~-15 ~5 ~18 flowering_azalea_leaves[persistent=true]
+setblock ~-17 ~12 ~15 glass_pane
+setblock ~-17 ~13 ~15 glass_pane
+setblock ~-18 ~11 ~15 flowering_azalea_leaves[persistent=true]
+setblock ~-13 ~12 ~15 glass_pane
+setblock ~-13 ~13 ~15 glass_pane
+setblock ~-12 ~11 ~15 flowering_azalea_leaves[persistent=true]
+setblock ~-15 ~12 ~13 glass_pane
+setblock ~-15 ~13 ~13 glass_pane
+setblock ~-15 ~11 ~12 flowering_azalea_leaves[persistent=true]
+setblock ~-15 ~12 ~17 glass_pane
+setblock ~-15 ~13 ~17 glass_pane
+setblock ~-15 ~11 ~18 flowering_azalea_leaves[persistent=true]
 fill ~-13 ~ ~15 ~-13 ~1 ~15 air
 fill ~-15 ~ ~14 ~-15 ~16 ~14 ladder[facing=south]
-fill ~-18 ~16 ~12 ~-12 ~16 ~18 stone_bricks
+fill ~-18 ~16 ~12 ~-12 ~16 ~18 spruce_planks
 setblock ~-15 ~16 ~14 ladder[facing=south]
-fill ~-18 ~17 ~12 ~-12 ~17 ~18 stone_brick_wall
+fill ~-18 ~17 ~12 ~-12 ~17 ~18 spruce_fence
 fill ~-17 ~17 ~13 ~-13 ~17 ~17 air
-setblock ~-18 ~18 ~12 lantern
-setblock ~-12 ~18 ~12 lantern
-setblock ~-18 ~18 ~18 lantern
-setblock ~-12 ~18 ~18 lantern
-fill ~-13 ~17 ~17 ~-13 ~21 ~17 spruce_fence
-fill ~-13 ~20 ~18 ~-13 ~21 ~20 lime_wool
-setblock ~-17 ~5 ~16 shroomlight
-setblock ~-13 ~10 ~14 shroomlight
+fill ~-18 ~17 ~12 ~-18 ~19 ~12 stripped_spruce_log
+fill ~-12 ~17 ~12 ~-12 ~19 ~12 stripped_spruce_log
+fill ~-18 ~17 ~18 ~-18 ~19 ~18 stripped_spruce_log
+fill ~-12 ~17 ~18 ~-12 ~19 ~18 stripped_spruce_log
+setblock ~-18 ~17 ~15 air
+fill ~-20 ~16 ~15 ~-19 ~16 ~15 spruce_slab[type=top]
+fill ~-19 ~20 ~11 ~-11 ~20 ~19 brick_slab
+fill ~-18 ~20 ~12 ~-12 ~21 ~18 bricks
+fill ~-17 ~22 ~13 ~-13 ~23 ~17 bricks
+fill ~-16 ~24 ~14 ~-14 ~25 ~16 bricks
+setblock ~-15 ~26 ~15 bricks
+fill ~-17 ~20 ~13 ~-13 ~21 ~17 air
+setblock ~-15 ~21 ~15 lantern[hanging=true]
+fill ~-15 ~27 ~15 ~-15 ~37 ~15 spruce_fence
+fill ~-14 ~36 ~15 ~-8 ~36 ~15 emerald_block
+fill ~-14 ~35 ~15 ~-14 ~35 ~15 emerald_block
+fill ~-12 ~35 ~15 ~-10 ~35 ~15 emerald_block
+fill ~-8 ~35 ~15 ~-8 ~35 ~15 emerald_block
+fill ~-13 ~35 ~15 ~-13 ~35 ~15 white_wool
+fill ~-9 ~35 ~15 ~-9 ~35 ~15 white_wool
+fill ~-7 ~35 ~15 ~-7 ~35 ~15 white_wool
+fill ~-5 ~35 ~15 ~-5 ~35 ~15 white_wool
+fill ~-3 ~35 ~15 ~-3 ~35 ~15 white_wool
+fill ~-14 ~34 ~15 ~-14 ~34 ~15 emerald_block
+fill ~-11 ~34 ~15 ~-11 ~34 ~15 emerald_block
+fill ~-8 ~34 ~15 ~-8 ~34 ~15 emerald_block
+fill ~-13 ~34 ~15 ~-12 ~34 ~15 white_wool
+fill ~-10 ~34 ~15 ~-9 ~34 ~15 white_wool
+fill ~-6 ~34 ~15 ~-6 ~34 ~15 white_wool
+fill ~-4 ~34 ~15 ~-4 ~34 ~15 white_wool
+fill ~-2 ~34 ~15 ~-2 ~34 ~15 white_wool
+fill ~-14 ~33 ~15 ~-14 ~33 ~15 emerald_block
+fill ~-12 ~33 ~15 ~-12 ~33 ~15 emerald_block
+fill ~-10 ~33 ~15 ~-10 ~33 ~15 emerald_block
+fill ~-8 ~33 ~15 ~-8 ~33 ~15 emerald_block
+fill ~-13 ~33 ~15 ~-13 ~33 ~15 white_wool
+fill ~-11 ~33 ~15 ~-11 ~33 ~15 white_wool
+fill ~-9 ~33 ~15 ~-9 ~33 ~15 white_wool
+fill ~-7 ~33 ~15 ~-7 ~33 ~15 white_wool
+fill ~-5 ~33 ~15 ~-5 ~33 ~15 white_wool
+fill ~-3 ~33 ~15 ~-3 ~33 ~15 white_wool
+fill ~-14 ~32 ~15 ~-14 ~32 ~15 emerald_block
+fill ~-12 ~32 ~15 ~-10 ~32 ~15 emerald_block
+fill ~-8 ~32 ~15 ~-8 ~32 ~15 emerald_block
+fill ~-13 ~32 ~15 ~-13 ~32 ~15 white_wool
+fill ~-9 ~32 ~15 ~-9 ~32 ~15 white_wool
+fill ~-6 ~32 ~15 ~-6 ~32 ~15 white_wool
+fill ~-4 ~32 ~15 ~-4 ~32 ~15 white_wool
+fill ~-2 ~32 ~15 ~-2 ~32 ~15 white_wool
+fill ~-14 ~31 ~15 ~-14 ~31 ~15 emerald_block
+fill ~-12 ~31 ~15 ~-10 ~31 ~15 emerald_block
+fill ~-8 ~31 ~15 ~-8 ~31 ~15 emerald_block
+fill ~-13 ~31 ~15 ~-13 ~31 ~15 white_wool
+fill ~-9 ~31 ~15 ~-9 ~31 ~15 white_wool
+fill ~-7 ~31 ~15 ~-7 ~31 ~15 white_wool
+fill ~-5 ~31 ~15 ~-5 ~31 ~15 white_wool
+fill ~-3 ~31 ~15 ~-3 ~31 ~15 white_wool
+fill ~-14 ~30 ~15 ~-8 ~30 ~15 emerald_block
+fill ~-7 ~30 ~15 ~-7 ~30 ~15 light_blue_wool
+fill ~-5 ~30 ~15 ~-5 ~30 ~15 light_blue_wool
+fill ~-3 ~30 ~15 ~-3 ~30 ~15 light_blue_wool
+fill ~-7 ~32 ~15 ~-7 ~32 ~15 light_blue_wool
+fill ~-5 ~32 ~15 ~-5 ~32 ~15 light_blue_wool
+fill ~-3 ~32 ~15 ~-3 ~32 ~15 light_blue_wool
+fill ~-7 ~34 ~15 ~-7 ~34 ~15 light_blue_wool
+fill ~-5 ~34 ~15 ~-5 ~34 ~15 light_blue_wool
+fill ~-3 ~34 ~15 ~-3 ~34 ~15 light_blue_wool
+fill ~-7 ~36 ~15 ~-7 ~36 ~15 light_blue_wool
+fill ~-5 ~36 ~15 ~-5 ~36 ~15 light_blue_wool
+fill ~-3 ~36 ~15 ~-3 ~36 ~15 light_blue_wool
+fill ~-6 ~30 ~15 ~-6 ~30 ~15 white_wool
+fill ~-4 ~30 ~15 ~-4 ~30 ~15 white_wool
+fill ~-2 ~30 ~15 ~-2 ~30 ~15 white_wool
+fill ~-6 ~31 ~15 ~-6 ~31 ~15 light_blue_wool
+fill ~-4 ~31 ~15 ~-4 ~31 ~15 light_blue_wool
+fill ~-2 ~31 ~15 ~-2 ~31 ~15 light_blue_wool
+fill ~-6 ~33 ~15 ~-6 ~33 ~15 light_blue_wool
+fill ~-4 ~33 ~15 ~-4 ~33 ~15 light_blue_wool
+fill ~-2 ~33 ~15 ~-2 ~33 ~15 light_blue_wool
+fill ~-6 ~35 ~15 ~-6 ~35 ~15 light_blue_wool
+fill ~-4 ~35 ~15 ~-4 ~35 ~15 light_blue_wool
+fill ~-2 ~35 ~15 ~-2 ~35 ~15 light_blue_wool
+fill ~-6 ~36 ~15 ~-6 ~36 ~15 white_wool
+fill ~-4 ~36 ~15 ~-4 ~36 ~15 white_wool
+fill ~-2 ~36 ~15 ~-2 ~36 ~15 white_wool
 setblock ~-15 ~1 ~16 light[level=15]
 setblock ~-15 ~8 ~16 light[level=15]
 setblock ~-15 ~13 ~16 light[level=15]
-fill ~-18 ~-1 ~-18 ~-10 ~-1 ~-10 dark_oak_planks
-fill ~-17 ~-1 ~-17 ~-11 ~-1 ~-11 spruce_planks
-fill ~-18 ~ ~-18 ~-18 ~3 ~-18 dark_oak_log
-fill ~-10 ~ ~-18 ~-10 ~3 ~-18 dark_oak_log
-fill ~-18 ~ ~-10 ~-18 ~3 ~-10 dark_oak_log
-fill ~-10 ~ ~-10 ~-10 ~3 ~-10 dark_oak_log
-fill ~-19 ~4 ~-19 ~-9 ~4 ~-9 dark_oak_slab
-fill ~-18 ~4 ~-18 ~-10 ~4 ~-10 dark_oak_planks
-fill ~-17 ~5 ~-17 ~-11 ~5 ~-11 dark_oak_slab
-fill ~-16 ~5 ~-16 ~-12 ~5 ~-12 dark_oak_planks
-fill ~-15 ~6 ~-15 ~-13 ~6 ~-13 dark_oak_slab
-setblock ~-14 ~6 ~-14 dark_oak_planks
+setblock ~-14 ~17 ~16 light[level=15]
+fill ~-18 ~-1 ~-18 ~-10 ~-1 ~-10 oak_planks
+fill ~-17 ~-1 ~-17 ~-11 ~-1 ~-11 birch_planks
+fill ~-18 ~ ~-18 ~-18 ~3 ~-18 stripped_oak_log
+fill ~-10 ~ ~-18 ~-10 ~3 ~-18 stripped_oak_log
+fill ~-18 ~ ~-10 ~-18 ~3 ~-10 stripped_oak_log
+fill ~-10 ~ ~-10 ~-10 ~3 ~-10 stripped_oak_log
+fill ~-19 ~4 ~-19 ~-19 ~4 ~-9 light_blue_wool
+fill ~-18 ~4 ~-19 ~-18 ~4 ~-9 white_wool
+fill ~-17 ~4 ~-19 ~-17 ~4 ~-9 light_blue_wool
+fill ~-16 ~4 ~-19 ~-16 ~4 ~-9 white_wool
+fill ~-15 ~4 ~-19 ~-15 ~4 ~-9 light_blue_wool
+fill ~-14 ~4 ~-19 ~-14 ~4 ~-9 white_wool
+fill ~-13 ~4 ~-19 ~-13 ~4 ~-9 light_blue_wool
+fill ~-12 ~4 ~-19 ~-12 ~4 ~-9 white_wool
+fill ~-11 ~4 ~-19 ~-11 ~4 ~-9 light_blue_wool
+fill ~-10 ~4 ~-19 ~-10 ~4 ~-9 white_wool
+fill ~-9 ~4 ~-19 ~-9 ~4 ~-9 light_blue_wool
+fill ~-17 ~5 ~-17 ~-17 ~5 ~-11 light_blue_wool
+fill ~-16 ~5 ~-17 ~-16 ~5 ~-11 white_wool
+fill ~-15 ~5 ~-17 ~-15 ~5 ~-11 light_blue_wool
+fill ~-14 ~5 ~-17 ~-14 ~5 ~-11 white_wool
+fill ~-13 ~5 ~-17 ~-13 ~5 ~-11 light_blue_wool
+fill ~-12 ~5 ~-17 ~-12 ~5 ~-11 white_wool
+fill ~-11 ~5 ~-17 ~-11 ~5 ~-11 light_blue_wool
+fill ~-15 ~6 ~-15 ~-15 ~6 ~-13 light_blue_wool
+fill ~-14 ~6 ~-15 ~-14 ~6 ~-13 white_wool
+fill ~-13 ~6 ~-15 ~-13 ~6 ~-13 light_blue_wool
 setblock ~-14 ~7 ~-14 lantern
-setblock ~-14 ~3 ~-14 lantern[hanging=true]
-fill ~-17 ~ ~-17 ~-11 ~ ~-17 spruce_stairs[facing=north]
-fill ~-17 ~ ~-11 ~-15 ~ ~-11 spruce_stairs[facing=south]
-fill ~-17 ~ ~-16 ~-17 ~ ~-12 spruce_stairs[facing=west]
-setblock ~-14 ~ ~-14 spruce_fence
-setblock ~-14 ~1 ~-14 spruce_pressure_plate
+setblock ~-14 ~3 ~-11 lantern[hanging=true]
+setblock ~-14 ~3 ~-17 lantern[hanging=true]
+fill ~-17 ~ ~-17 ~-11 ~ ~-17 birch_stairs[facing=north]
+fill ~-17 ~ ~-11 ~-15 ~ ~-11 birch_stairs[facing=south]
+fill ~-17 ~ ~-16 ~-17 ~ ~-12 birch_stairs[facing=west]
+fill ~-15 ~ ~-15 ~-13 ~ ~-14 oak_slab[type=top]
+setblock ~-14 ~1 ~-15 cake
+setblock ~-15 ~1 ~-14 candle[candles=3,lit=true]
+setblock ~-13 ~1 ~-14 potted_cornflower
+setblock ~-13 ~1 ~-15 potted_red_tulip
 setblock ~-10 ~ ~-12 potted_red_tulip
 setblock ~-10 ~ ~-16 potted_blue_orchid
 fill ~13 ~4 ~-18 ~15 ~4 ~-18 cherry_leaves[persistent=true]
@@ -701,86 +1213,113 @@ setblock ~20 ~ ~6 campfire[lit=true]
 setblock ~22 ~ ~6 oak_log[axis=z]
 setblock ~18 ~ ~6 oak_log[axis=z]
 setblock ~20 ~ ~8 oak_log[axis=x]
-fill ~26 ~ ~11 ~26 ~2 ~11 dark_oak_fence
-setblock ~26 ~3 ~11 lantern
-fill ~11 ~ ~26 ~11 ~2 ~26 dark_oak_fence
-setblock ~11 ~3 ~26 lantern
-fill ~-11 ~ ~26 ~-11 ~2 ~26 dark_oak_fence
-setblock ~-11 ~3 ~26 lantern
-fill ~-26 ~ ~11 ~-26 ~2 ~11 dark_oak_fence
-setblock ~-26 ~3 ~11 lantern
-fill ~-26 ~ ~-11 ~-26 ~2 ~-11 dark_oak_fence
-setblock ~-26 ~3 ~-11 lantern
-fill ~-11 ~ ~-26 ~-11 ~2 ~-26 dark_oak_fence
-setblock ~-11 ~3 ~-26 lantern
-fill ~11 ~ ~-26 ~11 ~2 ~-26 dark_oak_fence
-setblock ~11 ~3 ~-26 lantern
-fill ~26 ~ ~-11 ~26 ~2 ~-11 dark_oak_fence
-setblock ~26 ~3 ~-11 lantern
+setblock ~11 ~ ~11 sunflower[half=lower]
+setblock ~11 ~1 ~11 sunflower[half=upper]
+setblock ~19 ~ ~17 sunflower[half=lower]
+setblock ~19 ~1 ~17 sunflower[half=upper]
+setblock ~12 ~ ~18 sunflower[half=lower]
+setblock ~12 ~1 ~18 sunflower[half=upper]
+setblock ~19 ~ ~10 sunflower[half=lower]
+setblock ~19 ~1 ~10 sunflower[half=upper]
+setblock ~-24 ~-1 ~6 stone_bricks
+setblock ~-24 ~ ~6 white_concrete
+setblock ~-24 ~1 ~6 light_blue_concrete
+setblock ~-24 ~2 ~6 white_concrete
+setblock ~-24 ~3 ~6 light_blue_concrete
+setblock ~-24 ~4 ~6 white_concrete
+setblock ~-24 ~5 ~6 light_blue_concrete
+setblock ~-24 ~6 ~6 white_concrete
+setblock ~-24 ~7 ~6 light_blue_concrete
+setblock ~-24 ~8 ~6 white_concrete
+setblock ~-24 ~9 ~6 light_blue_concrete
+setblock ~-24 ~10 ~6 white_concrete
+setblock ~-24 ~11 ~6 light_blue_concrete
+setblock ~-24 ~12 ~6 white_concrete
+setblock ~-24 ~13 ~6 light_blue_concrete
+setblock ~-24 ~14 ~6 lantern
+setblock ~-23 ~10 ~6 oak_fence
+setblock ~-25 ~10 ~6 oak_fence
+setblock ~-24 ~10 ~7 oak_fence
+setblock ~-24 ~10 ~5 oak_fence
+setblock ~-22 ~10 ~6 oak_leaves[persistent=true]
+setblock ~-26 ~10 ~6 oak_leaves[persistent=true]
+setblock ~-24 ~10 ~8 oak_leaves[persistent=true]
+setblock ~-24 ~10 ~4 oak_leaves[persistent=true]
+setblock ~-22 ~10 ~7 oak_leaves[persistent=true]
+setblock ~-22 ~10 ~5 oak_leaves[persistent=true]
+setblock ~-26 ~10 ~7 oak_leaves[persistent=true]
+setblock ~-26 ~10 ~5 oak_leaves[persistent=true]
+setblock ~-23 ~10 ~8 oak_leaves[persistent=true]
+setblock ~-25 ~10 ~8 oak_leaves[persistent=true]
+setblock ~-23 ~10 ~4 oak_leaves[persistent=true]
+setblock ~-25 ~10 ~4 oak_leaves[persistent=true]
+setblock ~-23 ~7 ~6 light_blue_wall_banner[facing=east]
+setblock ~-25 ~7 ~6 white_wall_banner[facing=west]
+setblock ~-24 ~7 ~7 light_blue_wall_banner[facing=south]
+setblock ~-24 ~7 ~5 white_wall_banner[facing=north]
+setblock ~-22 ~ ~6 red_tulip keep
+setblock ~-26 ~ ~6 white_tulip keep
+setblock ~-24 ~ ~8 orange_tulip keep
+setblock ~-24 ~ ~4 pink_tulip keep
+setblock ~-22 ~ ~7 red_tulip keep
+setblock ~-22 ~ ~5 white_tulip keep
+setblock ~-26 ~ ~7 orange_tulip keep
+setblock ~-26 ~ ~5 pink_tulip keep
 setblock ~5 ~ ~-26 short_grass keep
 setblock ~6 ~ ~27 cornflower keep
 setblock ~12 ~ ~-22 oxeye_daisy keep
 setblock ~-26 ~ ~-5 lily_of_the_valley keep
 setblock ~-17 ~ ~-22 red_tulip keep
-setblock ~11 ~ ~-23 oxeye_daisy keep
-setblock ~9 ~ ~-27 lily_of_the_valley keep
-setblock ~16 ~ ~-16 red_tulip keep
-setblock ~6 ~ ~-20 dandelion keep
-setblock ~-14 ~ ~-6 allium keep
-setblock ~6 ~ ~17 oxeye_daisy keep
-setblock ~25 ~ ~7 red_tulip keep
-setblock ~5 ~ ~28 poppy keep
-setblock ~16 ~ ~-4 dandelion keep
+setblock ~11 ~ ~-23 dandelion keep
+setblock ~9 ~ ~-27 allium keep
+setblock ~16 ~ ~-16 oxeye_daisy keep
+setblock ~6 ~ ~-20 lily_of_the_valley keep
+setblock ~-14 ~ ~-6 orange_tulip keep
+setblock ~6 ~ ~17 pink_tulip keep
+setblock ~25 ~ ~7 dandelion keep
+setblock ~5 ~ ~28 cornflower keep
 setblock ~-12 ~ ~-6 short_grass keep
-setblock ~-5 ~ ~20 oxeye_daisy keep
-setblock ~-25 ~ ~5 lily_of_the_valley keep
-setblock ~20 ~ ~-19 red_tulip keep
-setblock ~-4 ~ ~-24 dandelion keep
-setblock ~-6 ~ ~-21 cornflower keep
+setblock ~-5 ~ ~20 lily_of_the_valley keep
+setblock ~20 ~ ~-19 pink_tulip keep
+setblock ~-6 ~ ~-21 dandelion keep
 setblock ~-18 ~ ~8 short_grass keep
-setblock ~17 ~ ~-15 azure_bluet keep
-setblock ~-20 ~ ~-4 lily_of_the_valley keep
-setblock ~-6 ~ ~19 red_tulip keep
-setblock ~14 ~ ~-5 dandelion keep
-setblock ~18 ~ ~-14 cornflower keep
-setblock ~28 ~ ~-5 allium keep
-setblock ~9 ~ ~-25 oxeye_daisy keep
-setblock ~4 ~ ~-25 short_grass keep
-setblock ~19 ~ ~-10 lily_of_the_valley keep
-setblock ~20 ~ ~21 dandelion keep
-setblock ~18 ~ ~20 poppy keep
-setblock ~19 ~ ~-12 oxeye_daisy keep
-setblock ~-22 ~ ~-12 azure_bluet keep
-setblock ~-14 ~ ~-25 poppy keep
-setblock ~8 ~ ~25 dandelion keep
-setblock ~-20 ~ ~6 allium keep
-setblock ~17 ~ ~-9 oxeye_daisy keep
-setblock ~-25 ~ ~7 cornflower keep
-setblock ~24 ~ ~-5 allium keep
-setblock ~5 ~ ~19 oxeye_daisy keep
-setblock ~-6 ~ ~21 lily_of_the_valley keep
-setblock ~9 ~ ~-13 poppy keep
-setblock ~15 ~ ~-4 allium keep
-setblock ~26 ~ ~-14 oxeye_daisy keep
-setblock ~20 ~ ~-6 azure_bluet keep
-setblock ~-23 ~ ~12 lily_of_the_valley keep
+setblock ~17 ~ ~-15 oxeye_daisy keep
+setblock ~-6 ~ ~19 lily_of_the_valley keep
+setblock ~14 ~ ~-5 orange_tulip keep
+setblock ~18 ~ ~-14 pink_tulip keep
+setblock ~28 ~ ~-5 white_tulip keep
+setblock ~9 ~ ~-25 poppy keep
+setblock ~19 ~ ~-10 cornflower keep
+setblock ~20 ~ ~21 azure_bluet keep
+setblock ~18 ~ ~20 dandelion keep
+setblock ~19 ~ ~-12 azure_bluet keep
+setblock ~-22 ~ ~-12 lily_of_the_valley keep
+setblock ~-14 ~ ~-25 pink_tulip keep
+setblock ~8 ~ ~25 white_tulip keep
+setblock ~-20 ~ ~6 dandelion keep
+setblock ~17 ~ ~-9 cornflower keep
+setblock ~24 ~ ~-5 pink_tulip keep
+setblock ~5 ~ ~19 white_tulip keep
+setblock ~-6 ~ ~21 dandelion keep
+setblock ~9 ~ ~-13 allium keep
+setblock ~26 ~ ~-14 red_tulip keep
+setblock ~20 ~ ~-6 orange_tulip keep
+setblock ~-23 ~ ~12 pink_tulip keep
 setblock ~11 ~ ~20 dandelion keep
 setblock ~-23 ~ ~-14 allium keep
 setblock ~12 ~ ~26 lily_of_the_valley keep
 setblock ~6 ~ ~-20 red_tulip keep
-setblock ~-20 ~ ~15 poppy keep
-setblock ~26 ~ ~11 dandelion keep
-setblock ~22 ~ ~-9 azure_bluet keep
-setblock ~10 ~ ~-22 lily_of_the_valley keep
-setblock ~21 ~ ~-4 cornflower keep
-setblock ~12 ~ ~-14 lily_of_the_valley keep
-setblock ~-6 ~ ~19 red_tulip keep
-setblock ~-28 ~ ~4 poppy keep
-setblock ~-6 ~ ~-13 dandelion keep
-setblock ~27 ~ ~9 cornflower keep
-setblock ~12 ~ ~-7 allium keep
+setblock ~-20 ~ ~15 orange_tulip keep
+setblock ~26 ~ ~11 pink_tulip keep
+setblock ~22 ~ ~-9 cornflower keep
+setblock ~10 ~ ~-22 allium keep
+setblock ~12 ~ ~-14 poppy keep
+setblock ~-6 ~ ~19 dandelion keep
+setblock ~-6 ~ ~-13 allium keep
+setblock ~27 ~ ~9 oxeye_daisy keep
+setblock ~12 ~ ~-7 azure_bluet keep
 setblock ~14 ~ ~-9 short_grass keep
-setblock ~18 ~ ~22 lily_of_the_valley keep
+setblock ~18 ~ ~22 orange_tulip keep
 setblock ~-20 ~ ~-20 light[level=15] keep
 setblock ~-20 ~ ~-12 light[level=15] keep
 setblock ~-20 ~ ~-4 light[level=15] keep

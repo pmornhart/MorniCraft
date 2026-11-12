@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.2.0: Spawn 2.0 im Datapack (Turm weiß/rot mit MorniCraft-Flagge, Zeltdach, Maibaum, Tulpen, Himmelsrichtungen, fünf Ballons), `zones` (geschützte Stellen außerhalb des Kreises, `SpawnArea.inZone`), `/team <…>` reicht an Minecraft weiter, Alias `scoreboard` entfernt. Als Nächstes: Rang-Abzeichen (Variante C, Server-Texturpaket).
 - Version 1.1.1: Start-Elytra ohne Schub nach oben (Philip) – Flügel an, Gleiten mit eigenem Schwung; Hinweis „Spring ab und drück 2× Leertaste“.
 - Version 1.1.0: Ränge (`Ranks`, `DefaultRanks`): Symbol + Farbe im Chat (Renderer), in der Tab-Liste, über dem Kopf (Teams `mcr00…` auch auf den Leisten-Scoreboards) und in der Leiste, Rechte per PermissionAttachment (auch `minecraft.command.*`), `/team`. Standard: Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler (default). Mit Test-Spielern geprüft (siehe unten).
 - Version 1.0.2: Start-Elytra mit echten Flügeln (seit 1.21.2 nötig, Bedrock immer), Brustplatte sicher zurück (auch nach Absturz), Hinweis im Kreativmodus; Fehler-Durchsicht (Spawn-Schutz-Lücken, PvP vom Spawn aus, Tpa-Tausch, sichere Spielerdaten, Teleport bricht bei Schaden ab …); Spawn ohne Holzbänke. Elytra mit Test-Spieler auf 1.17.1, 1.20.4, 1.21.1, 1.21.11, 26.1.2 geprüft.

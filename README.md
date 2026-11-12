@@ -88,9 +88,10 @@ Fertig. Hattest du vorher **EssentialsX** oder **SpawnElytra**? Dann diese Plugi
 
 ### Spawn-Insel (Datapack, optional)
 
-Eine schwebende Insel hoch über der Welt: Brunnen mit drei Schalen, Aussichtsturm, Pavillon, Kirschbäume, Absprung-Stege für die Start-Elytra, kleine Nebeninseln und ein Heißluftballon. Braucht **Minecraft 1.20.5 oder neuer**.
+Eine schwebende Insel hoch über der Welt, hell und bunt mit etwas Bayern-Flair: Brunnen mit drei Schalen, weißer Aussichtsturm mit rotem Dach und MorniCraft-Flagge, Pavillon mit weiß-blauem Zeltdach, Maibaum, Kirschbäume, Tulpen an allen Wegen, Absprung-Stege für die Start-Elytra (die Himmelsrichtung steht im Pflaster), kleine Nebeninseln und fünf Heißluftballons. Braucht **Minecraft 1.20.5 oder neuer**.
 
-<img src="docs/bilder/insel.png" alt="Die Spawn-Insel von schräg oben" width="640">
+<img src="docs/bilder/spawn2.webp" alt="Die Spawn-Insel mit Turm, Flagge und Ballons" width="640">
+
 
 1. [`MorniCraft-Spawn.zip`](https://github.com/pmornhart/MorniCraft/releases/latest) herunterladen.
 2. Den Inhalt nach `world/datapacks/MorniCraft-Spawn/` entpacken (der Ordner enthält `pack.mcmeta`).
@@ -137,6 +138,7 @@ Alles in `plugins/MorniCraft/config.yml`, danach `/mornicraft reload`.
 | `update-check` | `true` | Admins Bescheid geben, wenn es eine neue Version gibt |
 | `link` | leer | Link zu einer Befehls-Seite pro Spieler (`{name}` = Spielername) |
 | `rules` | 4 Regeln | Text für `/rules`, eine Regel pro Zeile |
+| `zones` | leer | Weitere geschützte Stellen außerhalb des Spawn-Kreises: `{ x, z, r }` vom Welt-Spawn aus (z. B. Nebeninseln) |
 | `ranks` | 8 Ränge | Siehe unten |
 
 ### Ränge

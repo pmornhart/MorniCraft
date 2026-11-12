@@ -13,3 +13,5 @@ execute if score #built mh_craftattack matches 1 unless score #fountain mh_craft
 execute if score #built mh_craftattack matches 1 unless score #fountain mh_craftattack matches 1 run schedule function craftattack:fix_fountain 60t
 execute if score #built mh_craftattack matches 1 unless score #benches mh_craftattack matches 1 run forceload add -64 -64 64 64
 execute if score #built mh_craftattack matches 1 unless score #benches mh_craftattack matches 1 run schedule function craftattack:fix_benches 60t
+execute if score #built mh_craftattack matches 1 unless score #renew mh_craftattack matches 1 run forceload add -64 -64 64 64
+execute if score #built mh_craftattack matches 1 unless score #renew mh_craftattack matches 1 run schedule function craftattack:fix_renew 60t
