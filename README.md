@@ -154,6 +154,10 @@ ranks:
   - { id: player, name: Spieler, symbol: "", color: "#aaaaaa", players: [], permissions: [], default: true }
 ```
 
+<img src="docs/bilder/abzeichen.png" alt="Rang-Abzeichen: Owner, Admin, Moderator, Supporter, Builder, Media, VIP" width="218">
+
+**Abzeichen:** Mit MorniHosting gibt es die Ränge im Chat auch als kleine farbige Schilder mit eigenem Pixel-Icon (wie auf großen Servern). Dafür bekommen Spieler beim Betreten ein winziges Texturpaket angeboten; wer ablehnt (und Bedrock), sieht die Symbole. Ohne MorniHosting geht das mit einem eigenen Paket: `pack: { url, sha1 }` in der `config.yml` und pro Rang `badge: "<Zeichen deiner Schrift>"`.
+
 Im Chat steht dann `♛ Owner · Morni » Hallo!`, in der Tab-Liste und über dem Kopf `♛ Morni`. Rechte können alle MorniCraft-Rechte und Minecraft-Befehle sein (`minecraft.command.kick`, `minecraft.command.ban`, `minecraft.command.gamemode`, `minecraft.command.tp`, `minecraft.command.time` …). Mit **MorniHosting** stellst du das alles im Dashboard ein, und Server-Besitzer bekommen den Owner-Rang von selbst.
 
 ## Rechte
