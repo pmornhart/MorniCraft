@@ -56,6 +56,16 @@
 
 <sub>Die Bilder sind echte Nachrichten eines Test-Servers, für die Vorschau im Minecraft-Stil nachgezeichnet.</sub>
 
+## Getestet
+
+Mit echtem Paper-Server und Test-Spieler geprüft (Plugin startet, Begrüßung, Titel, Teleport-Balken, Zuhause, Leiste, `/info`):
+
+| 1.17.1 | 1.18.2 | 1.19.4 | 1.20.1 | 1.20.4 | 1.20.6 | 1.21.1 | 1.21.4 | 1.21.8 | 1.21.11 | 26.1.2 | 26.2 | 26.3 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅¹ | ✅¹ |
+
+<sub>¹ Plugin startet und alle Befehle antworten; der Test-Spieler kann diese Versionen noch nicht, deshalb ohne Spieler geprüft.</sub>
+
 ## Installation
 
 Du brauchst einen **Paper**- oder **Purpur**-Server ab **1.17** (bis zur neuesten Version, auch 26.x) mit **Java 17** oder neuer.
