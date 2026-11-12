@@ -13,3 +13,6 @@ scoreboard players set #fountain mh_craftattack 1
 scoreboard players set #benches mh_craftattack 1
 scoreboard players set #renew mh_craftattack 1
 scoreboard players set #reeds mh_craftattack 1
+scoreboard players set #ladder mh_craftattack 1
+scoreboard players set #flag mh_craftattack 1
+scoreboard players set #letters mh_craftattack 1

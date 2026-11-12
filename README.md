@@ -2,7 +2,7 @@
 
 # ✦ MorniCraft
 
-**Das Plugin für deinen Freunde-Server – Spawn, Zuhause, Teleports, Nachrichten, Start-Elytra und eine schöne Leiste. Alles in einem, auf Deutsch und Englisch.**
+**Das Plugin für deinen Freunde-Server – Spawn, Zuhause, Teleports, Nachrichten, Start-Elytra, Gräber, Team-Werkzeuge, Streamer-Modus und eine schöne Leiste. Alles in einem, auf Deutsch und Englisch.**
 
 [![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-34d399.svg)](LICENSE)
 [![Paper & Purpur](https://img.shields.io/badge/Paper%20%26%20Purpur-1.17%20bis%2026.x-22d3ee.svg)](#installation)
@@ -23,13 +23,17 @@
 
 | | |
 |---|---|
-| 🏝️ **Spawn** | `/spawn`, geschützter Spawn-Bereich (nur Admins bauen), kein Schlafen und kein Kämpfen am Spawn – alles abschaltbar |
-| 👑 **Ränge** | Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler – Symbol und Farbe vor dem Namen im **Chat**, in der **Tab-Liste** und **über dem Kopf**, dazu passende Rechte. `/team` zeigt, wer welchen Rang hat |
+| 🏝️ **Spawn** | `/spawn`, geschützter Spawn-Bereich (nur Admins bauen), kein Schlafen und kein Kämpfen am Spawn – alles abschaltbar. Auf der Insel und den Nebeninseln tauchen keine Tiere oder Monster auf, unter der Insel keine Monster, und wer runterfällt, bekommt keinen Fallschaden |
+| 👑 **Ränge** | Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler – Symbol und Farbe (oder ein Abzeichen) vor dem Namen im **Chat**, in der **Tab-Liste** und **über dem Kopf**, dazu passende Rechte. `/team` zeigt, wer welchen Rang hat |
 | 🪽 **Start-Elytra** | Am Spawn abspringen und **2× Leertaste** = echte Flügel an und losgleiten (Überlebensmodus, ohne Schub nach oben), kein Fallschaden, **F** (Bedrock: Schleichen) = ein Schub. Nach der Landung ist die eigene Brustplatte wieder da |
-| 🏠 **Zuhause** | `/sethome`, `/home`, `/homes` (zum Anklicken), `/delhome`, `/back` – auch zurück zum Todesort |
+| 🏠 **Zuhause** | `/sethome`, `/home`, `/homes` öffnen ein Fenster mit einem **Bett pro Zuhause** (Linksklick = hin, 2× Rechtsklick = löschen, graue Betten = freie Plätze), `/delhome`, `/back` – auch zurück zum Todesort |
+| ⚰️ **Gräber** | Wer stirbt, bekommt ein Grab mit Steinkreuz und seinem Kopf. Alle Sachen, die XP und der eigene Kopf als Andenken liegen darin – anklicken, rausnehmen. Die ersten 15 Minuten nur für dich (und das Team), danach für alle. Leer = Grab verschwindet |
+| 🛡️ **Team-Werkzeuge** | Gefängnis, Stummschalten, Einfrieren – mit Dauer und Grund. Ducken + Rechtsklick auf einen Spieler öffnet ein Team-Fenster (Infos, hin/herholen, Zuhause, Inventar, heilen, kicken …) |
+| 🎥 **Streamer-Modus** | `/streamer` versteckt IP-Adressen, Koordinaten und private Nachrichten. Die anderen sehen „● LIVE“ vor deinem Namen |
 | 🤝 **Teleports** | `/tpa`, `/tpahere` mit Knöpfen **✔ Annehmen / ✖ Ablehnen**, 5 Sekunden stillstehen (Balken oben, Bewegen bricht ab) |
 | ✉️ **Nachrichten** | `/msg`, `/r`, `/mail` (auch an Spieler, die gerade nicht da sind), `/ignore`, `/afk` |
-| 📋 **Leiste rechts** | Uhrzeit, Spielzeit (Tag/Nacht), wer online ist, Ping und die wichtigsten Befehle – jeder kann sie mit `/leiste` ausblenden |
+| 📋 **Leiste rechts** | Uhrzeit, Spielzeit (Tag/Nacht), wer online ist, Ping und die wichtigsten Befehle, sauber in Spalten – jeder kann sie mit `/leiste` ausblenden |
+| ⚔️ **Tab-Liste** | Kills ⚔ und Tode ☠ neben jedem Namen, nach Rang sortiert |
 | 👋 **Begrüßung** | Großer Titel und eine Karte mit Knöpfen – nur beim allerersten Betreten |
 | 🧨 **Welt-Schalter** | TNT, Creeper-Löcher, Feuer-Ausbreitung, Endermen – jeweils an oder aus |
 | 📱 **Bedrock** | Mit Floodgate echte Bedrock-Menüs: Teleport-Anfragen als Ja/Nein-Fenster, `/info` als Menü mit Knöpfen |
@@ -116,7 +120,21 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/seen <spieler>` · `/near` · `/getpos` · `/ping` | Wann zuletzt da · wer in der Nähe · Koordinaten · Verbindung |
 | `/info` · `/rules` · `/leiste` | Alle Befehle · Regeln · Leiste rechts ein/aus |
 | `/team` | Wer im Team ist (alle Ränge mit Spielern) |
+| `/streamer` | Streamer-Modus: Menü mit Schaltern (auch `/streamermodus`, `/stream`) |
 | `/mornicraft reload` | Einstellungen neu laden (Admins) |
+
+**Für das Team** (Recht `mornicraft.moderate`, Admins immer):
+
+| Befehl | Was er macht |
+|---|---|
+| `/gefaengnis <spieler> [10m\|1h\|1d] [grund]` | Ab in die schwebende Zelle (Abenteuermodus, Balken zeigt die Restzeit, nur `/msg`, `/mail`, `/info` erlaubt). Danach geht es zurück an den alten Ort |
+| `/gefaengnis hier` | Setzt die Zelle an deinen Ort (nur Admins) |
+| `/frei <spieler>` | Aus dem Gefängnis holen |
+| `/stumm <spieler> [10m\|1h\|1d] [grund]` · `/entstummen <spieler>` | Stummschalten · wieder reden lassen |
+| `/einfrieren <spieler>` | Einfrieren oder auftauen |
+| `/mod <spieler>` | Team-Fenster (geht auch mit **Ducken + Rechtsklick** auf den Spieler) |
+
+Das Team-Fenster zeigt Rang, Leben, Ping, Koordinaten, Spielzeit und Status. Von dort: hinreisen oder herholen, Zuhause ansehen (hin, löschen), Inventar und Endertruhe ansehen (Admins dürfen ändern), heilen, einfrieren, Gefängnis oder Stumm mit Dauer, kicken. Das Team bekommt zu jeder Aktion einen Hinweis.
 
 ## Einstellungen
 
@@ -138,7 +156,10 @@ Alles in `plugins/MorniCraft/config.yml`, danach `/mornicraft reload`.
 | `update-check` | `true` | Admins Bescheid geben, wenn es eine neue Version gibt |
 | `link` | leer | Link zu einer Befehls-Seite pro Spieler (`{name}` = Spielername) |
 | `rules` | 4 Regeln | Text für `/rules`, eine Regel pro Zeile |
-| `zones` | leer | Weitere geschützte Stellen außerhalb des Spawn-Kreises: `{ x, z, r }` vom Welt-Spawn aus (z. B. Nebeninseln) |
+| `zones` | leer | Weitere geschützte Stellen außerhalb des Spawn-Kreises: `{ x, z, r }` vom Welt-Spawn aus (z. B. Nebeninseln) – dort auch keine Mobs und kein Fallschaden |
+| `graves` · `grave-private-minutes` | `true` · `15` | Gräber an · so viele Minuten gehört das Grab nur dem Toten (und dem Team) |
+| `tab-stats` | `true` | Kills und Tode in der Tab-Liste |
+| `streamer.hide` | leer | Eigene Adressen, die der Streamer-Modus als ••• zeigt (z. B. `[mein-server.de]`); IP-Adressen versteckt er immer |
 | `ranks` | 8 Ränge | Siehe unten |
 
 ### Ränge
@@ -156,7 +177,7 @@ ranks:
 
 <img src="docs/bilder/abzeichen.png" alt="Rang-Abzeichen im Chat: Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler" width="640">
 
-**Abzeichen:** Mit MorniHosting gibt es die Ränge im Chat auch als kleine farbige Schilder mit eigenem Pixel-Icon (wie auf großen Servern). Dafür bekommen Spieler beim Betreten ein winziges Texturpaket angeboten; wer ablehnt (und Bedrock), sieht die Symbole. Ohne MorniHosting geht das mit einem eigenen Paket: `pack: { url, sha1 }` in der `config.yml` und pro Rang `badge: "<Zeichen deiner Schrift>"`.
+**Abzeichen:** Mit MorniHosting gibt es die Ränge im Chat auch als kleine farbige Schilder mit eigenem Pixel-Icon (wie auf großen Servern). Dafür bekommen Spieler beim Betreten ein winziges Texturpaket angeboten; wer ablehnt, bekommt einen kurzen Hinweis im Chat und sieht – wie Bedrock-Spieler – die Symbole. Die Abzeichen stehen im Chat, in der Tab-Liste und über dem Kopf; jeder sieht die Variante, die bei ihm geht. Ohne MorniHosting geht das mit einem eigenen Paket: `pack: { url, sha1 }` in der `config.yml` und pro Rang `badge: "<Zeichen deiner Schrift>"`.
 
 Im Chat steht dann `♛ Owner · Morni » Hallo!`, in der Tab-Liste und über dem Kopf `♛ Morni`. Rechte können alle MorniCraft-Rechte und Minecraft-Befehle sein (`minecraft.command.kick`, `minecraft.command.ban`, `minecraft.command.gamemode`, `minecraft.command.tp`, `minecraft.command.time` …). Mit **MorniHosting** stellst du das alles im Dashboard ein, und Server-Besitzer bekommen den Owner-Rang von selbst.
 
@@ -170,6 +191,7 @@ Alle Befehle darf jeder. Dazu:
 | `mornicraft.build` | OP | Darf den Spawn verändern |
 | `mornicraft.unlimitedhomes` | OP | Beliebig viele Zuhause |
 | `mornicraft.admin` | OP | `/mornicraft reload` |
+| `mornicraft.moderate` | OP | Team-Werkzeuge: Gefängnis, Stumm, Einfrieren, Team-Fenster (in MorniHosting: Rang-Schalter „Moderieren“) |
 
 ## Bedrock-Spieler
 
@@ -207,6 +229,10 @@ mvn package          # Java 17+ und Maven nötig
 **Geht es auch auf Spigot?** Nein, MorniCraft braucht Paper oder einen Paper-Ableger (Purpur, Pufferfish …).
 
 **Die roten Zahlen in der Leiste?** Ab Paper 1.20.4 blendet MorniCraft sie aus, auf älteren Versionen bleiben sie sichtbar.
+
+**Ich streame – sieht man meine Koordinaten trotzdem?** `/streamer` versteckt sie im Chat. Den F3-Bildschirm blendest du selbst aus: Optionen → Chat → **Reduzierte Debug-Infos**.
+
+**Gehen die Gräber auf alten Versionen?** Ja. Ab 1.19.4 gibt es Kreuz und Kopf in Einzelteilen, davor ein einfacheres Grab aus Steinziegel-Mauern und einem Kopf.
 
 **Kann ich Texte ändern?** Sprache (`de`/`en`), Server-Name und Regeln stehen in der `config.yml`; die übrigen Texte sind fest im Plugin.
 

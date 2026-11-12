@@ -586,29 +586,29 @@ setblock ~3 ~ ~-27 white_tulip keep
 setblock ~-3 ~ ~-28 red_tulip keep
 setblock ~3 ~ ~-28 orange_tulip keep
 setblock ~-2 ~-1 ~-28 light_blue_concrete
-setblock ~-1 ~-1 ~-28 white_concrete
-setblock ~ ~-1 ~-28 white_concrete
-setblock ~1 ~-1 ~-28 white_concrete
+setblock ~-1 ~-1 ~-28 polished_andesite
+setblock ~ ~-1 ~-28 polished_andesite
+setblock ~1 ~-1 ~-28 polished_andesite
 setblock ~2 ~-1 ~-28 light_blue_concrete
 setblock ~-2 ~-1 ~-27 light_blue_concrete
 setblock ~-1 ~-1 ~-27 light_blue_concrete
-setblock ~ ~-1 ~-27 white_concrete
-setblock ~1 ~-1 ~-27 white_concrete
+setblock ~ ~-1 ~-27 polished_andesite
+setblock ~1 ~-1 ~-27 polished_andesite
 setblock ~2 ~-1 ~-27 light_blue_concrete
 setblock ~-2 ~-1 ~-26 light_blue_concrete
-setblock ~-1 ~-1 ~-26 white_concrete
+setblock ~-1 ~-1 ~-26 polished_andesite
 setblock ~ ~-1 ~-26 light_blue_concrete
-setblock ~1 ~-1 ~-26 white_concrete
+setblock ~1 ~-1 ~-26 polished_andesite
 setblock ~2 ~-1 ~-26 light_blue_concrete
 setblock ~-2 ~-1 ~-25 light_blue_concrete
-setblock ~-1 ~-1 ~-25 white_concrete
-setblock ~ ~-1 ~-25 white_concrete
+setblock ~-1 ~-1 ~-25 polished_andesite
+setblock ~ ~-1 ~-25 polished_andesite
 setblock ~1 ~-1 ~-25 light_blue_concrete
 setblock ~2 ~-1 ~-25 light_blue_concrete
 setblock ~-2 ~-1 ~-24 light_blue_concrete
-setblock ~-1 ~-1 ~-24 white_concrete
-setblock ~ ~-1 ~-24 white_concrete
-setblock ~1 ~-1 ~-24 white_concrete
+setblock ~-1 ~-1 ~-24 polished_andesite
+setblock ~ ~-1 ~-24 polished_andesite
+setblock ~1 ~-1 ~-24 polished_andesite
 setblock ~2 ~-1 ~-24 light_blue_concrete
 fill ~-2 ~-1 ~11 ~2 ~-1 ~30 stone_bricks
 fill ~-1 ~-1 ~11 ~1 ~-1 ~30 polished_andesite
@@ -653,31 +653,31 @@ setblock ~3 ~ ~27 pink_tulip keep
 setblock ~-3 ~ ~27 white_tulip keep
 setblock ~3 ~ ~28 red_tulip keep
 setblock ~-3 ~ ~28 orange_tulip keep
-setblock ~2 ~-1 ~28 white_concrete
+setblock ~2 ~-1 ~28 stone_bricks
 setblock ~1 ~-1 ~28 red_concrete
 setblock ~ ~-1 ~28 red_concrete
 setblock ~-1 ~-1 ~28 red_concrete
 setblock ~-2 ~-1 ~28 red_concrete
 setblock ~2 ~-1 ~27 red_concrete
-setblock ~1 ~-1 ~27 white_concrete
-setblock ~ ~-1 ~27 white_concrete
-setblock ~-1 ~-1 ~27 white_concrete
-setblock ~-2 ~-1 ~27 white_concrete
-setblock ~2 ~-1 ~26 white_concrete
+setblock ~1 ~-1 ~27 polished_andesite
+setblock ~ ~-1 ~27 polished_andesite
+setblock ~-1 ~-1 ~27 polished_andesite
+setblock ~-2 ~-1 ~27 stone_bricks
+setblock ~2 ~-1 ~26 stone_bricks
 setblock ~1 ~-1 ~26 red_concrete
 setblock ~ ~-1 ~26 red_concrete
 setblock ~-1 ~-1 ~26 red_concrete
-setblock ~-2 ~-1 ~26 white_concrete
-setblock ~2 ~-1 ~25 white_concrete
-setblock ~1 ~-1 ~25 white_concrete
-setblock ~ ~-1 ~25 white_concrete
-setblock ~-1 ~-1 ~25 white_concrete
+setblock ~-2 ~-1 ~26 stone_bricks
+setblock ~2 ~-1 ~25 stone_bricks
+setblock ~1 ~-1 ~25 polished_andesite
+setblock ~ ~-1 ~25 polished_andesite
+setblock ~-1 ~-1 ~25 polished_andesite
 setblock ~-2 ~-1 ~25 red_concrete
 setblock ~2 ~-1 ~24 red_concrete
 setblock ~1 ~-1 ~24 red_concrete
 setblock ~ ~-1 ~24 red_concrete
 setblock ~-1 ~-1 ~24 red_concrete
-setblock ~-2 ~-1 ~24 white_concrete
+setblock ~-2 ~-1 ~24 stone_bricks
 fill ~11 ~-1 ~-2 ~30 ~-1 ~2 stone_bricks
 fill ~11 ~-1 ~-1 ~30 ~-1 ~1 polished_andesite
 fill ~11 ~ ~-2 ~32 ~4 ~2 air
@@ -721,31 +721,31 @@ setblock ~27 ~ ~-3 pink_tulip keep
 setblock ~27 ~ ~3 white_tulip keep
 setblock ~28 ~ ~-3 red_tulip keep
 setblock ~28 ~ ~3 orange_tulip keep
-setblock ~28 ~-1 ~-2 white_concrete
+setblock ~28 ~-1 ~-2 stone_bricks
 setblock ~28 ~-1 ~-1 yellow_concrete
 setblock ~28 ~-1 ~ yellow_concrete
 setblock ~28 ~-1 ~1 yellow_concrete
-setblock ~28 ~-1 ~2 white_concrete
+setblock ~28 ~-1 ~2 stone_bricks
 setblock ~27 ~-1 ~-2 yellow_concrete
-setblock ~27 ~-1 ~-1 white_concrete
-setblock ~27 ~-1 ~ white_concrete
-setblock ~27 ~-1 ~1 white_concrete
+setblock ~27 ~-1 ~-1 polished_andesite
+setblock ~27 ~-1 ~ polished_andesite
+setblock ~27 ~-1 ~1 polished_andesite
 setblock ~27 ~-1 ~2 yellow_concrete
 setblock ~26 ~-1 ~-2 yellow_concrete
-setblock ~26 ~-1 ~-1 white_concrete
-setblock ~26 ~-1 ~ white_concrete
-setblock ~26 ~-1 ~1 white_concrete
+setblock ~26 ~-1 ~-1 polished_andesite
+setblock ~26 ~-1 ~ polished_andesite
+setblock ~26 ~-1 ~1 polished_andesite
 setblock ~26 ~-1 ~2 yellow_concrete
 setblock ~25 ~-1 ~-2 yellow_concrete
-setblock ~25 ~-1 ~-1 white_concrete
-setblock ~25 ~-1 ~ white_concrete
-setblock ~25 ~-1 ~1 white_concrete
+setblock ~25 ~-1 ~-1 polished_andesite
+setblock ~25 ~-1 ~ polished_andesite
+setblock ~25 ~-1 ~1 polished_andesite
 setblock ~25 ~-1 ~2 yellow_concrete
-setblock ~24 ~-1 ~-2 white_concrete
+setblock ~24 ~-1 ~-2 stone_bricks
 setblock ~24 ~-1 ~-1 yellow_concrete
 setblock ~24 ~-1 ~ yellow_concrete
 setblock ~24 ~-1 ~1 yellow_concrete
-setblock ~24 ~-1 ~2 white_concrete
+setblock ~24 ~-1 ~2 stone_bricks
 fill ~-30 ~-1 ~-2 ~-11 ~-1 ~2 stone_bricks
 fill ~-30 ~-1 ~-1 ~-11 ~-1 ~1 polished_andesite
 fill ~-32 ~ ~-2 ~-11 ~4 ~2 air
@@ -790,29 +790,29 @@ setblock ~-27 ~ ~-3 white_tulip keep
 setblock ~-28 ~ ~3 red_tulip keep
 setblock ~-28 ~ ~-3 orange_tulip keep
 setblock ~-28 ~-1 ~2 lime_concrete
-setblock ~-28 ~-1 ~1 white_concrete
-setblock ~-28 ~-1 ~ white_concrete
-setblock ~-28 ~-1 ~-1 white_concrete
+setblock ~-28 ~-1 ~1 polished_andesite
+setblock ~-28 ~-1 ~ polished_andesite
+setblock ~-28 ~-1 ~-1 polished_andesite
 setblock ~-28 ~-1 ~-2 lime_concrete
 setblock ~-27 ~-1 ~2 lime_concrete
-setblock ~-27 ~-1 ~1 white_concrete
-setblock ~-27 ~-1 ~ white_concrete
-setblock ~-27 ~-1 ~-1 white_concrete
+setblock ~-27 ~-1 ~1 polished_andesite
+setblock ~-27 ~-1 ~ polished_andesite
+setblock ~-27 ~-1 ~-1 polished_andesite
 setblock ~-27 ~-1 ~-2 lime_concrete
 setblock ~-26 ~-1 ~2 lime_concrete
-setblock ~-26 ~-1 ~1 white_concrete
+setblock ~-26 ~-1 ~1 polished_andesite
 setblock ~-26 ~-1 ~ lime_concrete
-setblock ~-26 ~-1 ~-1 white_concrete
+setblock ~-26 ~-1 ~-1 polished_andesite
 setblock ~-26 ~-1 ~-2 lime_concrete
 setblock ~-25 ~-1 ~2 lime_concrete
 setblock ~-25 ~-1 ~1 lime_concrete
-setblock ~-25 ~-1 ~ white_concrete
+setblock ~-25 ~-1 ~ polished_andesite
 setblock ~-25 ~-1 ~-1 lime_concrete
 setblock ~-25 ~-1 ~-2 lime_concrete
 setblock ~-24 ~-1 ~2 lime_concrete
-setblock ~-24 ~-1 ~1 white_concrete
-setblock ~-24 ~-1 ~ white_concrete
-setblock ~-24 ~-1 ~-1 white_concrete
+setblock ~-24 ~-1 ~1 polished_andesite
+setblock ~-24 ~-1 ~ polished_andesite
+setblock ~-24 ~-1 ~-1 polished_andesite
 setblock ~-24 ~-1 ~-2 lime_concrete
 fill ~-2 ~-1 ~-39 ~2 ~-1 ~-30 spruce_planks
 fill ~ ~-1 ~-39 ~ ~-1 ~-30 stripped_spruce_log
@@ -918,9 +918,6 @@ setblock ~-18 ~5 ~15 flowering_azalea_leaves[persistent=true]
 setblock ~-13 ~6 ~15 glass_pane
 setblock ~-13 ~7 ~15 glass_pane
 setblock ~-12 ~5 ~15 flowering_azalea_leaves[persistent=true]
-setblock ~-15 ~6 ~13 glass_pane
-setblock ~-15 ~7 ~13 glass_pane
-setblock ~-15 ~5 ~12 flowering_azalea_leaves[persistent=true]
 setblock ~-15 ~6 ~17 glass_pane
 setblock ~-15 ~7 ~17 glass_pane
 setblock ~-15 ~5 ~18 flowering_azalea_leaves[persistent=true]
@@ -930,9 +927,6 @@ setblock ~-18 ~11 ~15 flowering_azalea_leaves[persistent=true]
 setblock ~-13 ~12 ~15 glass_pane
 setblock ~-13 ~13 ~15 glass_pane
 setblock ~-12 ~11 ~15 flowering_azalea_leaves[persistent=true]
-setblock ~-15 ~12 ~13 glass_pane
-setblock ~-15 ~13 ~13 glass_pane
-setblock ~-15 ~11 ~12 flowering_azalea_leaves[persistent=true]
 setblock ~-15 ~12 ~17 glass_pane
 setblock ~-15 ~13 ~17 glass_pane
 setblock ~-15 ~11 ~18 flowering_azalea_leaves[persistent=true]
@@ -956,77 +950,35 @@ setblock ~-15 ~26 ~15 bricks
 fill ~-17 ~20 ~13 ~-13 ~21 ~17 air
 setblock ~-15 ~21 ~15 lantern[hanging=true]
 fill ~-15 ~27 ~15 ~-15 ~37 ~15 spruce_fence
-fill ~-14 ~36 ~15 ~-8 ~36 ~15 emerald_block
-fill ~-14 ~35 ~15 ~-14 ~35 ~15 emerald_block
-fill ~-12 ~35 ~15 ~-10 ~35 ~15 emerald_block
-fill ~-8 ~35 ~15 ~-8 ~35 ~15 emerald_block
-fill ~-13 ~35 ~15 ~-13 ~35 ~15 white_wool
-fill ~-9 ~35 ~15 ~-9 ~35 ~15 white_wool
-fill ~-7 ~35 ~15 ~-7 ~35 ~15 white_wool
-fill ~-5 ~35 ~15 ~-5 ~35 ~15 white_wool
-fill ~-3 ~35 ~15 ~-3 ~35 ~15 white_wool
-fill ~-14 ~34 ~15 ~-14 ~34 ~15 emerald_block
-fill ~-11 ~34 ~15 ~-11 ~34 ~15 emerald_block
-fill ~-8 ~34 ~15 ~-8 ~34 ~15 emerald_block
-fill ~-13 ~34 ~15 ~-12 ~34 ~15 white_wool
-fill ~-10 ~34 ~15 ~-9 ~34 ~15 white_wool
-fill ~-6 ~34 ~15 ~-6 ~34 ~15 white_wool
-fill ~-4 ~34 ~15 ~-4 ~34 ~15 white_wool
-fill ~-2 ~34 ~15 ~-2 ~34 ~15 white_wool
-fill ~-14 ~33 ~15 ~-14 ~33 ~15 emerald_block
-fill ~-12 ~33 ~15 ~-12 ~33 ~15 emerald_block
-fill ~-10 ~33 ~15 ~-10 ~33 ~15 emerald_block
-fill ~-8 ~33 ~15 ~-8 ~33 ~15 emerald_block
-fill ~-13 ~33 ~15 ~-13 ~33 ~15 white_wool
-fill ~-11 ~33 ~15 ~-11 ~33 ~15 white_wool
-fill ~-9 ~33 ~15 ~-9 ~33 ~15 white_wool
-fill ~-7 ~33 ~15 ~-7 ~33 ~15 white_wool
-fill ~-5 ~33 ~15 ~-5 ~33 ~15 white_wool
-fill ~-3 ~33 ~15 ~-3 ~33 ~15 white_wool
-fill ~-14 ~32 ~15 ~-14 ~32 ~15 emerald_block
-fill ~-12 ~32 ~15 ~-10 ~32 ~15 emerald_block
-fill ~-8 ~32 ~15 ~-8 ~32 ~15 emerald_block
-fill ~-13 ~32 ~15 ~-13 ~32 ~15 white_wool
-fill ~-9 ~32 ~15 ~-9 ~32 ~15 white_wool
-fill ~-6 ~32 ~15 ~-6 ~32 ~15 white_wool
-fill ~-4 ~32 ~15 ~-4 ~32 ~15 white_wool
-fill ~-2 ~32 ~15 ~-2 ~32 ~15 white_wool
-fill ~-14 ~31 ~15 ~-14 ~31 ~15 emerald_block
-fill ~-12 ~31 ~15 ~-10 ~31 ~15 emerald_block
-fill ~-8 ~31 ~15 ~-8 ~31 ~15 emerald_block
-fill ~-13 ~31 ~15 ~-13 ~31 ~15 white_wool
-fill ~-9 ~31 ~15 ~-9 ~31 ~15 white_wool
-fill ~-7 ~31 ~15 ~-7 ~31 ~15 white_wool
-fill ~-5 ~31 ~15 ~-5 ~31 ~15 white_wool
-fill ~-3 ~31 ~15 ~-3 ~31 ~15 white_wool
-fill ~-14 ~30 ~15 ~-8 ~30 ~15 emerald_block
-fill ~-7 ~30 ~15 ~-7 ~30 ~15 light_blue_wool
-fill ~-5 ~30 ~15 ~-5 ~30 ~15 light_blue_wool
-fill ~-3 ~30 ~15 ~-3 ~30 ~15 light_blue_wool
-fill ~-7 ~32 ~15 ~-7 ~32 ~15 light_blue_wool
-fill ~-5 ~32 ~15 ~-5 ~32 ~15 light_blue_wool
-fill ~-3 ~32 ~15 ~-3 ~32 ~15 light_blue_wool
-fill ~-7 ~34 ~15 ~-7 ~34 ~15 light_blue_wool
-fill ~-5 ~34 ~15 ~-5 ~34 ~15 light_blue_wool
-fill ~-3 ~34 ~15 ~-3 ~34 ~15 light_blue_wool
-fill ~-7 ~36 ~15 ~-7 ~36 ~15 light_blue_wool
-fill ~-5 ~36 ~15 ~-5 ~36 ~15 light_blue_wool
-fill ~-3 ~36 ~15 ~-3 ~36 ~15 light_blue_wool
-fill ~-6 ~30 ~15 ~-6 ~30 ~15 white_wool
-fill ~-4 ~30 ~15 ~-4 ~30 ~15 white_wool
-fill ~-2 ~30 ~15 ~-2 ~30 ~15 white_wool
-fill ~-6 ~31 ~15 ~-6 ~31 ~15 light_blue_wool
-fill ~-4 ~31 ~15 ~-4 ~31 ~15 light_blue_wool
-fill ~-2 ~31 ~15 ~-2 ~31 ~15 light_blue_wool
-fill ~-6 ~33 ~15 ~-6 ~33 ~15 light_blue_wool
-fill ~-4 ~33 ~15 ~-4 ~33 ~15 light_blue_wool
-fill ~-2 ~33 ~15 ~-2 ~33 ~15 light_blue_wool
-fill ~-6 ~35 ~15 ~-6 ~35 ~15 light_blue_wool
-fill ~-4 ~35 ~15 ~-4 ~35 ~15 light_blue_wool
-fill ~-2 ~35 ~15 ~-2 ~35 ~15 light_blue_wool
-fill ~-6 ~36 ~15 ~-6 ~36 ~15 white_wool
-fill ~-4 ~36 ~15 ~-4 ~36 ~15 white_wool
-fill ~-2 ~36 ~15 ~-2 ~36 ~15 white_wool
+fill ~-14 ~36 ~15 ~-6 ~36 ~15 emerald_block
+fill ~-14 ~35 ~15 ~-13 ~35 ~15 emerald_block
+fill ~-11 ~35 ~15 ~-9 ~35 ~15 emerald_block
+fill ~-7 ~35 ~15 ~-6 ~35 ~15 emerald_block
+fill ~-12 ~35 ~15 ~-12 ~35 ~15 white_wool
+fill ~-8 ~35 ~15 ~-8 ~35 ~15 white_wool
+fill ~-14 ~34 ~15 ~-13 ~34 ~15 emerald_block
+fill ~-10 ~34 ~15 ~-10 ~34 ~15 emerald_block
+fill ~-7 ~34 ~15 ~-6 ~34 ~15 emerald_block
+fill ~-12 ~34 ~15 ~-11 ~34 ~15 white_wool
+fill ~-9 ~34 ~15 ~-8 ~34 ~15 white_wool
+fill ~-14 ~33 ~15 ~-13 ~33 ~15 emerald_block
+fill ~-11 ~33 ~15 ~-11 ~33 ~15 emerald_block
+fill ~-9 ~33 ~15 ~-9 ~33 ~15 emerald_block
+fill ~-7 ~33 ~15 ~-6 ~33 ~15 emerald_block
+fill ~-12 ~33 ~15 ~-12 ~33 ~15 white_wool
+fill ~-10 ~33 ~15 ~-10 ~33 ~15 white_wool
+fill ~-8 ~33 ~15 ~-8 ~33 ~15 white_wool
+fill ~-14 ~32 ~15 ~-13 ~32 ~15 emerald_block
+fill ~-11 ~32 ~15 ~-9 ~32 ~15 emerald_block
+fill ~-7 ~32 ~15 ~-6 ~32 ~15 emerald_block
+fill ~-12 ~32 ~15 ~-12 ~32 ~15 white_wool
+fill ~-8 ~32 ~15 ~-8 ~32 ~15 white_wool
+fill ~-14 ~31 ~15 ~-13 ~31 ~15 emerald_block
+fill ~-11 ~31 ~15 ~-9 ~31 ~15 emerald_block
+fill ~-7 ~31 ~15 ~-6 ~31 ~15 emerald_block
+fill ~-12 ~31 ~15 ~-12 ~31 ~15 white_wool
+fill ~-8 ~31 ~15 ~-8 ~31 ~15 white_wool
+fill ~-14 ~30 ~15 ~-6 ~30 ~15 emerald_block
 setblock ~-15 ~1 ~16 light[level=15]
 setblock ~-15 ~8 ~16 light[level=15]
 setblock ~-15 ~13 ~16 light[level=15]

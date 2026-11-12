@@ -17,3 +17,9 @@ execute if score #built mh_craftattack matches 1 unless score #renew mh_craftatt
 execute if score #built mh_craftattack matches 1 unless score #renew mh_craftattack matches 1 run schedule function craftattack:fix_renew 60t
 execute if score #built mh_craftattack matches 1 unless score #reeds mh_craftattack matches 1 run forceload add -64 -64 64 64
 execute if score #built mh_craftattack matches 1 unless score #reeds mh_craftattack matches 1 run schedule function craftattack:fix_reeds 60t
+execute if score #built mh_craftattack matches 1 unless score #ladder mh_craftattack matches 1 run forceload add -64 -64 64 64
+execute if score #built mh_craftattack matches 1 unless score #ladder mh_craftattack matches 1 run schedule function craftattack:fix_ladder 60t
+execute if score #built mh_craftattack matches 1 unless score #flag mh_craftattack matches 1 run forceload add -64 -64 64 64
+execute if score #built mh_craftattack matches 1 unless score #flag mh_craftattack matches 1 run schedule function craftattack:fix_flag 60t
+execute if score #built mh_craftattack matches 1 unless score #letters mh_craftattack matches 1 run forceload add -64 -64 64 64
+execute if score #built mh_craftattack matches 1 unless score #letters mh_craftattack matches 1 run schedule function craftattack:fix_letters 60t
