@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.5.0: Kampf-System (Combat.java, combat-seconds), Abzeichen als Pflicht-Paket (pack.required, pack.server).
 - Version 1.4.2: Abzeichen-Paket wird bei Fehler oder ohne Antwort erneut geschickt (bis 5×), /abzeichen, LIVE in Tab-Liste und über dem Kopf.
 - Version 1.4.1: Start-Elytra löst den Elytra-Erfolg nicht mehr aus (nur echte Elytra).
 - Version 1.4.0: Gräber (`Graves`: Steinkreuz + eingesunkener Kopf mit „x x“-Augen per Block-/Item-/Text-Displays ab 1.19.4, älter Mauern + Kopf-Block; Items, XP und Kopf als Andenken in einer Truhe, erst `grave-private-minutes` nur Besitzer + Team, unzerstörbar, leer → Boden wie vorher), Moderation (`Moderation`, Recht `mornicraft.moderate`: /gefaengnis, /frei, /stumm, /entstummen, /einfrieren, /mod, Team-Fenster per Ducken + Rechtsklick), Streamer-Modus (`Streamer`, /streamer: IPs und `streamer.hide` als •••, Koordinaten, Nachrichten und Mail verdeckt, „● LIVE“), Zuhause als Betten (`HomeMenu`), Kills ⚔/Tode ☠ in der Tab-Liste (`tab-stats`), Abzeichen auch in Tab-Liste und über dem Kopf (pro Betrachter), Hinweis bei abgelehntem/gescheitertem Paket, Leiste in Spalten, keine Mobs und kein Fallschaden am Spawn und an `zones`. Mit Test-Spielern auf echtem Paper geprüft: Mobs am Spawn, Sturz, Moderation über /mod, Zuhause-Fenster, Streamer-Modus. Nicht echt getestet: Ducken + Rechtsklick, Aussehen von Grab und Abzeichen im echten Java-Client, Bedrock.
