@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.7.4: Sitzen (`Seats`), `GamemodeGuard` (Kreativ nur mit `mornicraft.creative`), Skelettschädel am Grab, Bann-Text mit Dauer, Team-Dashboard-Einstellungen nur mit `mornicraft.admin`, Rang-Befehle nur bei Änderung neu angemeldet, config.yml ohne Admin/Supporter.
 - Version 1.7.3: Grab-Nachricht nur grob (Entfernung + Richtung vom Spawn), X-Augen höher.
 - Version 1.7.2: Ränge als echte Befehle (CommandMap, `registerCommands`), kein Schaden im Gefängnis, Fallhöhe 0 beim Einsperren. Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.7.1: Ränge Admin und Supporter entfernt (Philip), Team-Dashboard für Moderatoren und Owner.
