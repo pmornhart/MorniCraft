@@ -141,7 +141,7 @@ Das Team-Fenster zeigt Rang, Leben, Ping, Koordinaten, Spielzeit und Status. Von
 
 `/teamdashboard` öffnet eine Webseite fürs Team: alle Spieler mit Inventar und Endertruhe, wer im Gefängnis sitzt, stumm oder eingefroren ist, Banns und der ganze Strafen-Verlauf. Knöpfe je nach Rolle: Gefängnis, Stumm, Einfrieren (ganzes Team), Rauswerfen und Bannen (wer `/kick` bzw. `/ban` darf), Ränge vergeben und Regeln ändern (Owner und Admin).
 
-<img src="https://raw.githubusercontent.com/pmornhart/MorniHosting/claude/gallant-clarke-bipv7b/docs/screenshots/team-dashboard.webp" alt="Team-Dashboard" width="100%">
+<img src="https://raw.githubusercontent.com/pmornhart/MorniHosting/main/docs/screenshots/team-dashboard.webp" alt="Team-Dashboard" width="100%">
 
 ## Einstellungen
 
