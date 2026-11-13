@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.7.2: Ränge als echte Befehle (CommandMap, `registerCommands`), kein Schaden im Gefängnis, Fallhöhe 0 beim Einsperren. Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.7.1: Ränge Admin und Supporter entfernt (Philip), Team-Dashboard für Moderatoren und Owner.
 - Version 1.7.0: Team-Dashboard (`TeamBoard`: /teamdashboard → persönlicher Link `team-link#key`, Dateien unter `plugins/MorniCraft/team/`: `links/<sha256>.json`, `state.json` alle 5 s, `actions/*.json` vom Panel jede Sekunde, `history.jsonl`; Fähigkeiten moderate/kick/ban/locate/ranks/rules aus Rang-Rechten). Mit Test-Spielern auf Paper 1.21.11 geprüft (Link, Status, Gefängnis, Freilassen, Stumm, Einfrieren, Bann für immer, Entbannen, Rauswerfen, Verlauf), gegen API 26.3 gebaut.
 - Version 1.6.0: Ränge im Spiel vergeben (`RankCommands`: /<rang> <spieler> [weg], /rang, Recht `mornicraft.ranks`, keine Ränge über dem eigenen; `ranks-ingame.yml` bzw. mit Panel `rank-changes.json`), /team mit Rängen aus dem Spiel, Team-Fenster jetzt `/ansehen`.
