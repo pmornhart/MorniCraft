@@ -30,7 +30,7 @@
 | ⚰️ **Gräber** | Wer stirbt, bekommt ein Grab mit Steinkreuz und seinem Kopf. Alle Sachen, die XP und der eigene Kopf als Andenken liegen darin – anklicken, rausnehmen. Die ersten 15 Minuten nur für dich (und das Team), danach für alle. Leer = Grab verschwindet |
 | 🛡️ **Team-Werkzeuge** | Gefängnis, Stummschalten, Einfrieren – mit Dauer und Grund. Ducken + Rechtsklick auf einen Spieler öffnet ein Team-Fenster (Infos, hin/herholen, Zuhause, Inventar, heilen, kicken …) |
 | 🎥 **Streamer-Modus** | `/streamer` versteckt IP-Adressen, Koordinaten und private Nachrichten. Die anderen sehen „● LIVE“ vor deinem Namen |
-| ⚑ **Clans** | Jeder kann mit `/clan` einen Clan gründen: Menü mit Mitgliedern, **Clan-Basis** als gemeinsames Zuhause, Clan-Chat `/cc`, Kürzel `[TAG]` hinter dem Namen im Chat, kein Schaden unter Mitgliedern (abschaltbar) |
+| ⚑ **Clans** | Jeder kann mit `/clan` einen Clan gründen: Menü mit Mitgliedern, **Clan-Basis** als gemeinsames Zuhause, Clan-Chat `/cc`, eigenes Kürzel (bis 4 Zeichen) wie `[MC]` vor dem Namen – im Chat, in der Tab-Liste und über dem Kopf, kein Schaden unter Mitgliedern (abschaltbar) |
 | ⏱️ **Begrenzungen** | `/spawn`, `/home`, `/tpa`, `/back` z. B. nur 1× pro Stunde oder 3× am Tag – oder ganz abschalten. Admins sind frei |
 | 🤝 **Teleports** | `/tpa`, `/tpahere` mit Knöpfen **✔ Annehmen / ✖ Ablehnen**, 5 Sekunden stillstehen (Balken oben, Bewegen bricht ab) |
 | ✉️ **Nachrichten** | `/msg`, `/r`, `/mail` (auch an Spieler, die gerade nicht da sind), `/ignore`, `/afk` |

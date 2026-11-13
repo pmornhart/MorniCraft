@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.8.1: Clan-Kürzel 2–4 Zeichen vor dem Namen in Chat, Tab-Liste und über dem Kopf (eigenes Team pro Clan-Mitglied). Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.8.0: Clans (`Clans`: Menü, Clan-Basis, `/cc`, Kürzel im Chat, kein Clan-Schaden, `clans.yml`), Begrenzungen (`Limits`: `limits.<spawn|home|tpa|back>.uses/hours`, Zeitstempel `uses.<cmd>` in den Spielerdaten, OPs/`mornicraft.admin` frei), Schalter `spawn-command` und `homes`. Mit Test-Spielern auf 1.17.1, 1.21.11, 26.1.2 geprüft, gegen API 26.3 gebaut.
 - Version 1.7.6: Sitz als Block-Display (keine Reittier-Herzen), höher sitzen (`SEAT_Y` 0.55).
 - Version 1.7.5: Namensschild am Kreuz (`nameSign`), kein Kopf-Andenken, kein schwebender Name, Builder raus.
