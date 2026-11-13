@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.8.4: Meldung „Das Gefängnis bleibt, wie es ist“ in der Zelle (`jail.protected`).
 - Version 1.8.3: Grab-Kreuz aus glattem Stein mit Andesit-Kappen, kleines Namensbrett an der Kreuzung (`crossSign`, Block- + Text-Display), kein Wandschild. Geprüft auf 1.21.11, 26.1.2.
 - Version 1.8.2: Gefängnis-Gitter verbunden (`joinBars`, alte Zellen repariert), Kreuz rückt ans Namensschild (`TO_SIGN`), Gräber standardmäßig sofort für alle offen (`grave-private-minutes: 0`). Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.8.1: Clan-Kürzel 2–4 Zeichen vor dem Namen in Chat, Tab-Liste und über dem Kopf (eigenes Team pro Clan-Mitglied). Geprüft auf 1.17.1, 1.21.11, 26.1.2.
