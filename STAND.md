@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.7.6: Sitz als Block-Display (keine Reittier-Herzen), höher sitzen (`SEAT_Y` 0.55).
 - Version 1.7.5: Namensschild am Kreuz (`nameSign`), kein Kopf-Andenken, kein schwebender Name, Builder raus.
 - Version 1.7.4: Sitzen (`Seats`), `GamemodeGuard` (Kreativ nur mit `mornicraft.creative`), Skelettschädel am Grab, Bann-Text mit Dauer, Team-Dashboard-Einstellungen nur mit `mornicraft.admin`, Rang-Befehle nur bei Änderung neu angemeldet, config.yml ohne Admin/Supporter.
 - Version 1.7.3: Grab-Nachricht nur grob (Entfernung + Richtung vom Spawn), X-Augen höher.
