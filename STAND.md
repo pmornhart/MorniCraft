@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.9.0: `Portals` (/nether, /end [weg], Team): Netherportal auf der Wiese im Nordwesten, Häuschen im Westen mit Treppe hinab zu einer Kuppel mit Endportal unter dem Platz; alle Blöcke werden vorher in `portals/<art>.txt` gemerkt, „weg“ stellt sie wieder her. `HardDragon` (`hard-dragon`): 600 Leben, Treffer ×1,75, Phantome bei ¾/½/¼, Extra-Erfahrung, Meldung mit Mitkämpfern. Mit Test-Spieler auf 1.17.1, 1.21.11, 26.1.2 geprüft (durch beide Portale gegangen, Drache 600 → aus 200 → an 600, Brut, Sieg), gegen API 26.3 gebaut.
 - Version 1.8.6: `CommandFilter` – Vorschläge nur mit Befehlen aus der Befehlsliste, ohne Aliase und `mornicraft:`-Zwillinge, Server-Befehle (/plugins, /version) nur für OPs. Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.8.5: Clan-Farben (`/clan farbe`, `PALETTE` + `#rrggbb`, Menü-Knopf, `clans.yml` `color`). Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.8.4: Meldung „Das Gefängnis bleibt, wie es ist“ in der Zelle (`jail.protected`).

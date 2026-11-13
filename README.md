@@ -139,6 +139,8 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/frei <spieler>` | Aus dem Gefängnis holen |
 | `/stumm <spieler> [10m\|1h\|1d] [grund]` · `/entstummen <spieler>` | Stummschalten · wieder reden lassen |
 | `/einfrieren <spieler>` | Einfrieren oder auftauen |
+| `/nether` · `/nether weg` | Baut ein funktionierendes Netherportal auf der Wiese im Nordwesten des Spawns (Schwarzstein-Platz, Seelenlaternen) – oder nimmt es wieder weg |
+| `/end` · `/end weg` | Öffnet im Westen ein Häuschen mit einer Treppe ins Innere der Spawn-Insel, unten wartet eine Kuppel mit fertigem Endportal – oder schließt es wieder |
 | `/ansehen <spieler>` | Team-Fenster (geht auch mit **Ducken + Rechtsklick** auf den Spieler) |
 | `/teamdashboard` | Persönlicher Link zum Team-Dashboard im Browser (für Moderatoren und Owner, 12 Stunden gültig, braucht MorniHosting) |
 
@@ -168,6 +170,7 @@ Alles in `plugins/MorniCraft/config.yml`, danach `/mornicraft reload`.
 | `sleep-at-spawn` · `pvp-at-spawn` | `false` · `false` | Am Spawn schlafen · kämpfen erlaubt? |
 | `elytra` · `elytra-radius` · `elytra-boost` | `true` · `45` · `true` | Start-Elytra, wo sie startet, Schub mit F |
 | `tnt` · `creeper-damage` · `fire-spread` · `enderman-grief` | `true` | Welt-Schalter (`false` = aus) |
+| `hard-dragon` | `true` | Mächtiger Enderdrache: dreimal so viel Leben (600), härtere Treffer, ruft bei ¾, ½ und ¼ Leben Phantome zu Hilfe, gibt mehr Erfahrung |
 | `welcome` · `sidebar` | `true` · `true` | Begrüßung beim ersten Betreten · Leiste rechts |
 | `update-check` | `true` | Admins Bescheid geben, wenn es eine neue Version gibt |
 | `link` | leer | Link zu einer Befehls-Seite pro Spieler (`{name}` = Spielername) |
