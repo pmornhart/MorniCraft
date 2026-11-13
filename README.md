@@ -24,7 +24,7 @@
 | | |
 |---|---|
 | 🏝️ **Spawn** | `/spawn`, geschützter Spawn-Bereich (nur Admins bauen), kein Schlafen und kein Kämpfen am Spawn – alles abschaltbar. Auf der Insel und den Nebeninseln tauchen keine Tiere oder Monster auf, unter der Insel keine Monster, und wer runterfällt, bekommt keinen Fallschaden |
-| 👑 **Ränge** | Owner, Admin, Moderator, Supporter, Builder, Media, VIP, Spieler – Symbol und Farbe (oder ein Abzeichen) vor dem Namen im **Chat**, in der **Tab-Liste** und **über dem Kopf**, dazu passende Rechte. `/team` zeigt, wer welchen Rang hat |
+| 👑 **Ränge** | Owner, Moderator, Builder, Media, VIP, Spieler – Symbol und Farbe (oder ein Abzeichen) vor dem Namen im **Chat**, in der **Tab-Liste** und **über dem Kopf**, dazu passende Rechte. `/team` zeigt, wer welchen Rang hat |
 | 🪽 **Start-Elytra** | Am Spawn abspringen und **2× Leertaste** = echte Flügel an und losgleiten (Überlebensmodus, ohne Schub nach oben), kein Fallschaden, **F** (Bedrock: Schleichen) = ein Schub. Nach der Landung ist die eigene Brustplatte wieder da |
 | 🏠 **Zuhause** | `/sethome`, `/home`, `/homes` öffnen ein Fenster mit einem **Bett pro Zuhause** (Linksklick = hin, 2× Rechtsklick = löschen, graue Betten = freie Plätze), `/delhome`, `/back` – auch zurück zum Todesort |
 | ⚰️ **Gräber** | Wer stirbt, bekommt ein Grab mit Steinkreuz und seinem Kopf. Alle Sachen, die XP und der eigene Kopf als Andenken liegen darin – anklicken, rausnehmen. Die ersten 15 Minuten nur für dich (und das Team), danach für alle. Leer = Grab verschwindet |
