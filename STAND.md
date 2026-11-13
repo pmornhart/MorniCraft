@@ -4,12 +4,13 @@
 
 ## Aufbau
 
-- `src/main/java/de/mornihosting/mornicraft/`: `MorniCraft` (Start), `Settings` (config.yml), `Texts` (de/en), `Ui` (Karten, zentriert nach Minecraft-Zeichenbreiten, Knöpfe; Bedrock ohne Zentrierung), `Teleporter` (Wartezeit mit Bossbar, /back), `SpawnArea`, `SpawnGuard` (Schutz, Schlafen, PvP, keine Mobs und kein Fallschaden am Spawn), `SpawnElytra`, `Social` (tpa, msg, mail, ignore, afk), `Commands`, `Welcome` (einmal pro Spieler), `Sidebar`, `WorldRules` (TNT, Creeper, Feuer, Endermen), `Bedrock` + `FloodgateMenus` (nur mit Floodgate geladen), `UpdateCheck` (GitHub-Release), `Ranks` + `DefaultRanks` (Ränge), `DefaultCommands` (eingebaute /info-Liste), `PlayerStore` (players/<uuid>.yml, übernimmt EssentialsX-Homes), `Graves` (Gräber mit Truhe), `Moderation` (Gefängnis, Stumm, Einfrieren, Team-Fenster), `Streamer` (Streamer-Modus), `HomeMenu` (Zuhause als Betten), `TeamBoard` (Team-Dashboard), `Clans` (Clans), `Limits` (Begrenzungen).
+- `src/main/java/de/mornihosting/mornicraft/`: `MorniCraft` (Start), `Settings` (config.yml), `Texts` (de/en), `Ui` (Karten, zentriert nach Minecraft-Zeichenbreiten, Knöpfe; Bedrock ohne Zentrierung), `Teleporter` (Wartezeit mit Bossbar, /back), `SpawnArea`, `SpawnGuard` (Schutz, Schlafen, PvP, keine Mobs und kein Fallschaden am Spawn), `SpawnElytra`, `Social` (tpa, msg, mail, ignore, afk), `Commands`, `Welcome` (einmal pro Spieler), `Sidebar`, `WorldRules` (TNT, Creeper, Feuer, Endermen), `Bedrock` + `FloodgateMenus` (nur mit Floodgate geladen), `UpdateCheck` (GitHub-Release), `Ranks` + `DefaultRanks` (Ränge), `DefaultCommands` (eingebaute /info-Liste), `PlayerStore` (players/<uuid>.yml, übernimmt EssentialsX-Homes), `Graves` (Gräber mit Truhe), `Moderation` (Gefängnis, Stumm, Einfrieren, Team-Fenster), `Streamer` (Streamer-Modus), `HomeMenu` (Zuhause als Betten), `TeamBoard` (Team-Dashboard), `Clans` (Clans), `Limits` (Begrenzungen), `CommandFilter` (Befehlsvorschläge).
 - `datapack/MorniCraft-Spawn/`: Spawn-Insel, erzeugt aus MorniHosting `apps/server/src/craftattack/spawn.ts` (`spawnPackFiles()` + Funktion `here`).
 - `.github/workflows/build.yml`: baut bei jedem Push, Release bei neuer Version auf `main`.
 
 ## Stand (12.11.2026)
 
+- Version 1.8.6: `CommandFilter` – Vorschläge nur mit Befehlen aus der Befehlsliste, ohne Aliase und `mornicraft:`-Zwillinge, Server-Befehle (/plugins, /version) nur für OPs. Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.8.5: Clan-Farben (`/clan farbe`, `PALETTE` + `#rrggbb`, Menü-Knopf, `clans.yml` `color`). Geprüft auf 1.17.1, 1.21.11, 26.1.2.
 - Version 1.8.4: Meldung „Das Gefängnis bleibt, wie es ist“ in der Zelle (`jail.protected`).
 - Version 1.8.3: Grab-Kreuz aus glattem Stein mit Andesit-Kappen, kleines Namensbrett an der Kreuzung (`crossSign`, Block- + Text-Display), kein Wandschild. Geprüft auf 1.21.11, 26.1.2.
