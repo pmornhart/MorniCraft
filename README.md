@@ -133,13 +133,13 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/stumm <spieler> [10m\|1h\|1d] [grund]` · `/entstummen <spieler>` | Stummschalten · wieder reden lassen |
 | `/einfrieren <spieler>` | Einfrieren oder auftauen |
 | `/ansehen <spieler>` | Team-Fenster (geht auch mit **Ducken + Rechtsklick** auf den Spieler) |
-| `/teamdashboard` | Persönlicher Link zum Team-Dashboard im Browser (ab Supporter, 12 Stunden gültig, braucht MorniHosting) |
+| `/teamdashboard` | Persönlicher Link zum Team-Dashboard im Browser (für Moderatoren und Owner, 12 Stunden gültig, braucht MorniHosting) |
 
 Das Team-Fenster zeigt Rang, Leben, Ping, Koordinaten, Spielzeit und Status. Von dort: hinreisen oder herholen, Zuhause ansehen (hin, löschen), Inventar und Endertruhe ansehen (Admins dürfen ändern), heilen, einfrieren, Gefängnis oder Stumm mit Dauer, kicken. Das Team bekommt zu jeder Aktion einen Hinweis.
 
 ### Team-Dashboard (mit MorniHosting)
 
-`/teamdashboard` öffnet eine Webseite fürs Team: alle Spieler mit Inventar und Endertruhe, wer im Gefängnis sitzt, stumm oder eingefroren ist, Banns und der ganze Strafen-Verlauf. Knöpfe je nach Rolle: Gefängnis, Stumm, Einfrieren (ganzes Team), Rauswerfen und Bannen (wer `/kick` bzw. `/ban` darf), Ränge vergeben und Regeln ändern (Owner und Admin).
+`/teamdashboard` öffnet eine Webseite fürs Team: alle Spieler mit Inventar und Endertruhe, wer im Gefängnis sitzt, stumm oder eingefroren ist, Banns und der ganze Strafen-Verlauf. Knöpfe je nach Rolle: Gefängnis, Stumm, Einfrieren (ganzes Team), Rauswerfen und Bannen (wer `/kick` bzw. `/ban` darf), Ränge vergeben und Regeln ändern (Owner).
 
 <img src="https://raw.githubusercontent.com/pmornhart/MorniHosting/main/docs/screenshots/team-dashboard.webp" alt="Team-Dashboard" width="100%">
 

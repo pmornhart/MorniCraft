@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.7.1: Ränge Admin und Supporter entfernt (Philip), Team-Dashboard für Moderatoren und Owner.
 - Version 1.7.0: Team-Dashboard (`TeamBoard`: /teamdashboard → persönlicher Link `team-link#key`, Dateien unter `plugins/MorniCraft/team/`: `links/<sha256>.json`, `state.json` alle 5 s, `actions/*.json` vom Panel jede Sekunde, `history.jsonl`; Fähigkeiten moderate/kick/ban/locate/ranks/rules aus Rang-Rechten). Mit Test-Spielern auf Paper 1.21.11 geprüft (Link, Status, Gefängnis, Freilassen, Stumm, Einfrieren, Bann für immer, Entbannen, Rauswerfen, Verlauf), gegen API 26.3 gebaut.
 - Version 1.6.0: Ränge im Spiel vergeben (`RankCommands`: /<rang> <spieler> [weg], /rang, Recht `mornicraft.ranks`, keine Ränge über dem eigenen; `ranks-ingame.yml` bzw. mit Panel `rank-changes.json`), /team mit Rängen aus dem Spiel, Team-Fenster jetzt `/ansehen`.
 - Version 1.5.1: Rote Zahlen der Leiste wirklich weg, Kills/Tode in der Tab-Liste als Text – Reflexion sucht Methoden jetzt an den öffentlichen API-Schnittstellen (Objective, Score, Display, Server, Player) statt an den nicht öffentlichen Craft-Klassen (IllegalAccess, wurde still geschluckt).
