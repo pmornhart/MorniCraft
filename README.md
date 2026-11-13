@@ -117,6 +117,7 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/tpaccept` · `/tpdeny` | Anfrage annehmen / ablehnen (oder einfach auf den Knopf klicken) |
 | `/clan` | Clan-Menü (gründen, einladen, Basis, Mitglieder) |
 | `/clan create <name> [kürzel]` · `/clan invite <spieler>` · `/clan accept` | Clan gründen · einladen · beitreten |
+| `/clan farbe <farbe>` | Farbe des Kürzels (13 Farben oder z. B. `#ff8800`, auch im Menü) |
 | `/clan base` · `/clan setbase` · `/cc <text>` | Zur Clan-Basis · Basis setzen (Anführung) · Clan-Chat |
 | `/clan leave` · `/clan kick` · `/clan disband` · `/clan tag` · `/clan pvp` · `/clan leader` | Verlassen · rauswerfen · auflösen · Kürzel · Kämpfen im Clan · Anführung abgeben |
 | `/msg <spieler> <text>` · `/r <text>` | Private Nachricht / antworten |
