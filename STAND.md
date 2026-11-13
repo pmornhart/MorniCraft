@@ -10,6 +10,7 @@
 
 ## Stand (12.11.2026)
 
+- Version 1.5.1: Rote Zahlen der Leiste wirklich weg, Kills/Tode in der Tab-Liste als Text – Reflexion sucht Methoden jetzt an den öffentlichen API-Schnittstellen (Objective, Score, Display, Server, Player) statt an den nicht öffentlichen Craft-Klassen (IllegalAccess, wurde still geschluckt).
 - Version 1.5.0: Kampf-System (`Combat`, `combat-seconds`), Abzeichen als Pflicht-Paket (`pack.required`, `pack.server`), Leiste aufgeräumt (gleicher Punkt vor jeder Zeile, Werte in einer Spalte, ohne Sonne/Mond).
 - Version 1.4.2: Abzeichen-Paket wird bei Fehler oder ohne Antwort erneut geschickt (bis 5×), /abzeichen, LIVE in Tab-Liste und über dem Kopf.
 - Version 1.4.1: Start-Elytra löst den Elytra-Erfolg nicht mehr aus (nur echte Elytra).
