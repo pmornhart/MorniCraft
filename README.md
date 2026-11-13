@@ -30,6 +30,8 @@
 | ⚰️ **Gräber** | Wer stirbt, bekommt ein Grab mit Steinkreuz und seinem Kopf. Alle Sachen, die XP und der eigene Kopf als Andenken liegen darin – anklicken, rausnehmen. Die ersten 15 Minuten nur für dich (und das Team), danach für alle. Leer = Grab verschwindet |
 | 🛡️ **Team-Werkzeuge** | Gefängnis, Stummschalten, Einfrieren – mit Dauer und Grund. Ducken + Rechtsklick auf einen Spieler öffnet ein Team-Fenster (Infos, hin/herholen, Zuhause, Inventar, heilen, kicken …) |
 | 🎥 **Streamer-Modus** | `/streamer` versteckt IP-Adressen, Koordinaten und private Nachrichten. Die anderen sehen „● LIVE“ vor deinem Namen |
+| ⚑ **Clans** | Jeder kann mit `/clan` einen Clan gründen: Menü mit Mitgliedern, **Clan-Basis** als gemeinsames Zuhause, Clan-Chat `/cc`, Kürzel `[TAG]` hinter dem Namen im Chat, kein Schaden unter Mitgliedern (abschaltbar) |
+| ⏱️ **Begrenzungen** | `/spawn`, `/home`, `/tpa`, `/back` z. B. nur 1× pro Stunde oder 3× am Tag – oder ganz abschalten. Admins sind frei |
 | 🤝 **Teleports** | `/tpa`, `/tpahere` mit Knöpfen **✔ Annehmen / ✖ Ablehnen**, 5 Sekunden stillstehen (Balken oben, Bewegen bricht ab) |
 | ✉️ **Nachrichten** | `/msg`, `/r`, `/mail` (auch an Spieler, die gerade nicht da sind), `/ignore`, `/afk` |
 | 📋 **Leiste rechts** | Uhrzeit, Spielzeit (Tag/Nacht), wer online ist, Ping und die wichtigsten Befehle, sauber in Spalten – jeder kann sie mit `/leiste` ausblenden |
@@ -113,6 +115,10 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/back` | Zurück zum letzten Ort – auch nach dem Tod |
 | `/tpa <spieler>` · `/tpahere <spieler>` | Fragen, ob du zu jemandem darfst / ob jemand zu dir kommt |
 | `/tpaccept` · `/tpdeny` | Anfrage annehmen / ablehnen (oder einfach auf den Knopf klicken) |
+| `/clan` | Clan-Menü (gründen, einladen, Basis, Mitglieder) |
+| `/clan create <name> [kürzel]` · `/clan invite <spieler>` · `/clan accept` | Clan gründen · einladen · beitreten |
+| `/clan base` · `/clan setbase` · `/cc <text>` | Zur Clan-Basis · Basis setzen (Anführung) · Clan-Chat |
+| `/clan leave` · `/clan kick` · `/clan disband` · `/clan tag` · `/clan pvp` · `/clan leader` | Verlassen · rauswerfen · auflösen · Kürzel · Kämpfen im Clan · Anführung abgeben |
 | `/msg <spieler> <text>` · `/r <text>` | Private Nachricht / antworten |
 | `/mail send <spieler> <text>` · `/mail read` | Nachricht für später / Post lesen |
 | `/ignore <spieler>` | Jemanden im Chat ausblenden |
@@ -154,7 +160,9 @@ Alles in `plugins/MorniCraft/config.yml`, danach `/mornicraft reload`.
 | `timezone` | `Europe/Berlin` | Zeitzone für die Uhrzeit in der Leiste |
 | `teleport-delay` | `5` | Sekunden stillstehen vor dem Teleport (`0` = sofort; Admins immer sofort) |
 | `max-homes` | `5` | Zuhause pro Spieler |
-| `tpa` · `back` | `true` | Teleport-Anfragen · `/back` an oder aus |
+| `spawn-command` · `homes` · `tpa` · `back` | `true` | `/spawn` · Zuhause (mit Clan-Basis) · Teleport-Anfragen · `/back` an oder aus |
+| `limits.<spawn\|home\|tpa\|back>` | `{ uses: 0, hours: 24 }` | So oft pro so viele Stunden (`uses: 0` = unbegrenzt), z. B. `spawn: { uses: 1, hours: 1 }` = einmal pro Stunde. Admins und OPs sind frei |
+| `clans.enabled` · `clans.max-members` | `true` · `10` | Clans an · höchstens so viele Mitglieder |
 | `spawn-protection` · `spawn-radius` | `true` · `55` | Spawn geschützt, wie weit um den Welt-Spawn herum |
 | `sleep-at-spawn` · `pvp-at-spawn` | `false` · `false` | Am Spawn schlafen · kämpfen erlaubt? |
 | `elytra` · `elytra-radius` · `elytra-boost` | `true` · `45` · `true` | Start-Elytra, wo sie startet, Schub mit F |
