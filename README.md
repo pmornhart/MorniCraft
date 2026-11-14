@@ -129,6 +129,7 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/team` | Wer im Team ist (alle Ränge mit Spielern) |
 | `/streamer` | Streamer-Modus: Menü mit Schaltern (auch `/streamermodus`, `/stream`) |
 | `/mornicraft reload` | Einstellungen neu laden (Admins) |
+| `/mornicraft drache <blitze\|feuerregen\|zaehne\|endermen\|schweben\|fluegel\|brut\|wut\|kristalle>` | Startet sofort einen Angriff des mächtigen Drachen – zum Ausprobieren (Admins) |
 
 **Für das Team** (Recht `mornicraft.moderate`, Admins immer):
 
@@ -139,7 +140,7 @@ Die Insel entsteht auf Höhe 170 genau über dir, der Welt-Spawn wird in die Mit
 | `/frei <spieler>` | Aus dem Gefängnis holen |
 | `/stumm <spieler> [10m\|1h\|1d] [grund]` · `/entstummen <spieler>` | Stummschalten · wieder reden lassen |
 | `/einfrieren <spieler>` | Einfrieren oder auftauen |
-| `/nether` · `/nether weg` | Baut ein funktionierendes Netherportal auf der Wiese im Nordwesten des Spawns (Schwarzstein-Platz, Seelenlaternen) – oder nimmt es wieder weg |
+| `/nether` · `/nether weg` | Ein Netherziegel-Tor in der Hecke im Nordwesten, eine Treppenbrücke hinab zu einer Nebeninsel, die der Nether befallen hat – dort steht das Netherportal. Oder alles wieder weg |
 | `/end` · `/end weg` | Öffnet im Westen ein Häuschen mit einer Treppe ins Innere der Spawn-Insel, unten wartet eine Kuppel mit fertigem Endportal – oder schließt es wieder |
 | `/ansehen <spieler>` | Team-Fenster (geht auch mit **Ducken + Rechtsklick** auf den Spieler) |
 | `/teamdashboard` | Persönlicher Link zum Team-Dashboard im Browser (für Moderatoren und Owner, 12 Stunden gültig, braucht MorniHosting) |
@@ -170,7 +171,10 @@ Alles in `plugins/MorniCraft/config.yml`, danach `/mornicraft reload`.
 | `sleep-at-spawn` · `pvp-at-spawn` | `false` · `false` | Am Spawn schlafen · kämpfen erlaubt? |
 | `elytra` · `elytra-radius` · `elytra-boost` | `true` · `45` · `true` | Start-Elytra, wo sie startet, Schub mit F |
 | `tnt` · `creeper-damage` · `fire-spread` · `enderman-grief` | `true` | Welt-Schalter (`false` = aus) |
-| `hard-dragon` | `true` | Mächtiger Enderdrache: dreimal so viel Leben (600), härtere Treffer, ruft bei ¾, ½ und ¼ Leben Phantome zu Hilfe, gibt mehr Erfahrung |
+| `hard-dragon` | `true` | Mächtiger Enderdrache an/aus |
+| `dragon.health` · `dragon.damage` | `600` · `175` | Leben (über 1024 zählen Treffer entsprechend weniger) · Treffer-Stärke in Prozent |
+| `dragon.attack-seconds` · `dragon.rage-percent` · `dragon.xp` | `12` · `25` · `3000` | Zeit zwischen Angriffen (in der Wut halb so lang) · Wut ab so viel Prozent Leben (0 = nie) · Extra-Erfahrung |
+| `dragon.brood` · `lightning` · `fireballs` · `fangs` · `endermen` · `levitation` · `shockwave` · `crystals` · `egg` | alle `true` | Brut (Phantome bei ¾, ½, ¼), Blitze (vorher Funken), Feuerregen, Bodenzähne (vorher Rauch), Endermen-Angriff, Schwebe-Geschosse, Flügelschlag, drei neue Endkristalle in der Wut, Drachenei bei jedem Sieg |
 | `welcome` · `sidebar` | `true` · `true` | Begrüßung beim ersten Betreten · Leiste rechts |
 | `update-check` | `true` | Admins Bescheid geben, wenn es eine neue Version gibt |
 | `link` | leer | Link zu einer Befehls-Seite pro Spieler (`{name}` = Spielername) |
