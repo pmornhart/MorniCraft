@@ -216,6 +216,10 @@ Alle Befehle darf jeder. Dazu:
 | `mornicraft.admin` | OP | `/mornicraft reload` |
 | `mornicraft.moderate` | OP | Team-Werkzeuge: Gefängnis, Stumm, Einfrieren, Team-Fenster (in MorniHosting: Rang-Schalter „Moderieren“) |
 
+## Im MoinMorni-Netzwerk
+
+Läuft auf dem Server das Plugin des [MoinMorni-Netzwerks](https://moinmorni.net), schaltet MorniCraft von selbst in den Netzwerk-Modus: Ränge, Chat, private Nachrichten, Strafen und die Sprache jedes Spielers kommen dann vom Netzwerk, alle Einstellungen aus dem MoinMorni-Panel (sofort, ohne Neustart). Spawn, Zuhause, Teleports, Clans (Kürzel nach dem Rang), Gräber, Start-Elytra, Drache, Portale, Leiste und Streamer-Modus bleiben MorniCrafts eigene. Die Spawn-Insel baut MorniCraft dort beim ersten Start selbst (über einem tiefen Meer; `spawn-island: on` macht das auch ohne Netzwerk), Admins nehmen `/mcadmin reload | drache <angriff>`. `network: off` in der `config.yml` schaltet den Netzwerk-Modus ab.
+
 ## Bedrock-Spieler
 
 Mit **Geyser + Floodgate** funktioniert alles auch auf Handy, Konsole und Windows: Bedrock-Spieler gleiten am Spawn genauso (Schub mit **Schleichen**), Teleport-Anfragen kommen als Ja/Nein-Fenster und `/info` öffnet ein Menü mit Knöpfen (Spawn, Nach Hause, Zuhause speichern, Nachrichten, Regeln).

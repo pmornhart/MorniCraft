@@ -128,8 +128,15 @@ final class HardDragon implements Listener {
     this.waves = new NamespacedKey(plugin, "dragon_waves");
     this.rage = new NamespacedKey(plugin, "dragon_rage");
     this.brood = new NamespacedKey(plugin, "dragon_brood");
-    Bukkit.getScheduler().runTaskTimer(plugin, this::check, 40L, CHECK_TICKS);
-    Bukkit.getScheduler().runTaskTimer(plugin, this::attackLoop, 60L, LOOP_TICKS);
+    // Messages in each player's language (in the network); afterwards nobody's language stays set.
+    Bukkit.getScheduler().runTaskTimer(plugin, () -> {
+      check();
+      plugin.quiet();
+    }, 40L, CHECK_TICKS);
+    Bukkit.getScheduler().runTaskTimer(plugin, () -> {
+      attackLoop();
+      plugin.quiet();
+    }, 60L, LOOP_TICKS);
   }
 
   private boolean on() {
@@ -308,7 +315,7 @@ final class HardDragon implements Listener {
       w.strikeLightningEffect(at.clone().add(Math.cos(a) * 8, 0, Math.sin(a) * 8));
     }
     if (cfg().crystals() && crystals(w, CRYSTALS) > 0) {
-      for (Player p : w.getPlayers()) p.sendMessage(plugin.ui().note("✦", Ui.MAIL, "dragon.crystals"));
+      for (Player p : w.getPlayers()) plugin.speak(p, () -> p.sendMessage(plugin.ui().note("✦", Ui.MAIL, "dragon.crystals")));
     }
     nextAttack.put(d.getUniqueId(), System.currentTimeMillis() + interval(d) / 2);
   }
@@ -421,6 +428,7 @@ final class HardDragon implements Listener {
     boolean angry = raging(d);
     List<Location> spots = new ArrayList<>();
     for (Player p : players) {
+      plugin.voice(p);
       Location at = p.getLocation().clone();
       spots.add(at);
       if (angry) {
@@ -437,6 +445,7 @@ final class HardDragon implements Listener {
     int count = raging(d) ? FIREBALLS_RAGE : FIREBALLS;
     ThreadLocalRandom r = ThreadLocalRandom.current();
     for (Player p : players) {
+      plugin.voice(p);
       p.playSound(SHOOT);
       for (int i = 0; i < count; i++) {
         Location target = p.getLocation().clone().add(r.nextDouble(-4, 4), 0, r.nextDouble(-4, 4));
@@ -457,6 +466,7 @@ final class HardDragon implements Listener {
     World w = d.getWorld();
     List<Location> spots = new ArrayList<>();
     for (Player p : players) {
+      plugin.voice(p);
       Location ground = ground(p.getLocation());
       if (ground == null) continue;
       p.playSound(PREPARE);
@@ -486,6 +496,7 @@ final class HardDragon implements Listener {
     World w = d.getWorld();
     ThreadLocalRandom r = ThreadLocalRandom.current();
     for (Player p : players) {
+      plugin.voice(p);
       p.playSound(SCREAM);
       List<Enderman> near = new ArrayList<>(w.getNearbyEntities(p.getLocation(), ENDERMEN_REACH, 16, ENDERMEN_REACH,
           e -> e instanceof Enderman).stream().map(Enderman.class::cast).toList());
@@ -510,6 +521,7 @@ final class HardDragon implements Listener {
     World w = d.getWorld();
     int each = raging(d) ? 2 : 1;
     for (Player p : players) {
+      plugin.voice(p);
       p.playSound(SHULKER);
       for (int i = 0; i < each; i++) {
         w.spawn(d.getLocation().add(0, 2 + i, 0), ShulkerBullet.class, b -> {
@@ -526,6 +538,7 @@ final class HardDragon implements Listener {
     Location at = d.getLocation();
     particle(w, at, 6, 3, "EXPLOSION_EMITTER", "EXPLOSION_HUGE", "EXPLOSION");
     for (Player p : players) {
+      plugin.voice(p);
       p.playSound(FLAP);
       Vector away = p.getLocation().toVector().subtract(at.toVector()).setY(0);
       if (away.lengthSquared() < 0.01) away = new Vector(1, 0, 0);
