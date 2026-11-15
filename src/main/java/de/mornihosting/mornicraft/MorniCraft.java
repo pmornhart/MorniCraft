@@ -38,9 +38,16 @@ public final class MorniCraft extends JavaPlugin {
   private Portals portals;
   private HardDragon dragon;
 
+  /** The MoinMorni network, when its plugin runs here (else null: alone or under MorniHosting, as always). */
+  private Network network;
+  private NetworkMode networkMode;
+
   @Override
   public void onEnable() {
     saveDefaultConfig();
+    reloadConfig();
+    network = Network.find(this, getConfig());
+    if (network != null) getLogger().info("MoinMorni network found: ranks, chat, punishments and settings come from it");
     load();
     store = new PlayerStore(this);
     bedrock = new Bedrock(this);
@@ -83,11 +90,15 @@ public final class MorniCraft extends JavaPlugin {
     pm.registerEvents(dragon, this);
     seats = new Seats(this);
     pm.registerEvents(seats, this);
-    pm.registerEvents(new UpdateCheck(this), this);
+    if (network == null) pm.registerEvents(new UpdateCheck(this), this);
+    if (network != null) {
+      networkMode = new NetworkMode(this);
+      pm.registerEvents(networkMode, this);
+    }
     commandFilter = new CommandFilter(this);
     pm.registerEvents(commandFilter, this);
     // After the server finished loading: then the other plugins' commands are known and stay theirs.
-    Bukkit.getScheduler().runTask(this, rankCommands::registerCommands);
+    if (network == null) Bukkit.getScheduler().runTask(this, rankCommands::registerCommands);
     for (String name : COMMANDS) {
       PluginCommand c = getCommand(name);
       if (c != null) {
@@ -106,12 +117,24 @@ public final class MorniCraft extends JavaPlugin {
     if (ranks != null) ranks.release();
     if (rankCommands != null) rankCommands.unregisterCommands();
     if (seats != null) seats.release();
+    if (networkMode != null) networkMode.release();
   }
 
   private void load() {
     reloadConfig();
-    settings = Settings.from(getConfig());
+    if (network != null) Network.overlay(this, getConfig());
+    settings = Settings.from(getConfig(), network != null);
+    Ui.theme(network != null);
     ui = new Ui(new Texts(settings.language()), p -> bedrock != null && bedrock.is(p));
+  }
+
+  /** The MoinMorni network, or null (alone or under MorniHosting). */
+  Network network() {
+    return network;
+  }
+
+  NetworkMode networkMode() {
+    return networkMode;
   }
 
   private CommandFilter commandFilter;
@@ -119,7 +142,7 @@ public final class MorniCraft extends JavaPlugin {
   void reload() {
     load();
     if (ranks != null) ranks.load(getConfig());
-    if (rankCommands != null) rankCommands.registerCommands();
+    if (rankCommands != null && network == null) rankCommands.registerCommands();
     if (streamer != null) streamer.load();
     if (sidebar != null) sidebar.rebuild();
     if (commandFilter != null) commandFilter.refresh();

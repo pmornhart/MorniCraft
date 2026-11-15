@@ -740,6 +740,14 @@ final class Moderation implements Listener {
       });
       return;
     }
+    if (plugin.network() != null && (slot == JAIL || slot == MUTE || slot == KICK)) {
+      // In the MoinMorni network punishments are the network's: they apply on every server and in Discord.
+      later(p, () -> {
+        p.closeInventory();
+        networkPunish(p, target);
+      });
+      return;
+    }
     switch (slot) {
       case GO -> later(p, () -> {
         p.closeInventory();
@@ -793,6 +801,22 @@ final class Moderation implements Listener {
       default -> {
         // The glass and the head do nothing.
       }
+    }
+  }
+
+  /** The network's commands for this player, ready to send (click → in the chat line), and their panel page. */
+  private void networkPunish(Player p, Player target) {
+    String n = target.getName();
+    java.util.function.BiFunction<String, String, Component> b = (label, cmd) -> Ui.button(Component.text(label),
+        Ui.GOLD, Component.text(cmd, NamedTextColor.WHITE), net.kyori.adventure.text.event.ClickEvent.suggestCommand(cmd));
+    List<Component> buttons = List.of(b.apply("⚑ " + ui().flat("mod.jail"), "/gefaengnis " + n + " 1h "),
+        b.apply("✉ " + ui().flat("mod.mute"), "/mute " + n + " 1h "),
+        b.apply("⚐ " + ui().flat("mod.kick"), "/kick " + n + " "),
+        b.apply(ui().english() ? "⛔ Ban" : "⛔ Bann", "/ban " + n + " 1d "));
+    p.sendMessage(ui().note("ℹ", Ui.ACCENT_2, "net.punish.hint"));
+    Ui.rows(buttons, Component.text("  "), Ui.CARD_PX).forEach(p::sendMessage);
+    if (plugin.settings().net() != null && !plugin.settings().net().panelPlayers().isEmpty()) {
+      plugin.teamBoard().networkLinks(p, target);
     }
   }
 

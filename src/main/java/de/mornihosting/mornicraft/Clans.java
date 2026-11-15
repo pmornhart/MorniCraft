@@ -165,6 +165,13 @@ final class Clans implements Listener {
     return c == null ? Component.empty() : Component.text("[" + t + "] ", colorOf(c));
   }
 
+  /** The colour of this player's clan tag as "#rrggbb" (no clan: ""). */
+  String tagColour(UUID id) {
+    String t = tagText(id);
+    Clan c = t.isEmpty() ? null : of(id);
+    return c == null ? "" : colorOf(c).asHexString();
+  }
+
   /** The clan tag of this player ("MC"), or "" (no clan, clans off). */
   String tagText(UUID id) {
     if (!on()) return "";

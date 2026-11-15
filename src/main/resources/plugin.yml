@@ -2,7 +2,7 @@ name: MorniCraft
 version: '${project.version}'
 main: de.mornihosting.mornicraft.MorniCraft
 api-version: '1.17'
-softdepend: [floodgate]
+softdepend: [floodgate, MoinMorni]
 description: Spawn, Zuhause, Teleports, Nachrichten und Start-Elytra für MorniCraft-Server (MorniHosting).
 author: MorniHosting
 website: https://github.com/pmornhart/MorniCraft
