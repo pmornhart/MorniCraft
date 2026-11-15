@@ -13,7 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class MorniCraft extends JavaPlugin {
   private static final List<String> COMMANDS = List.of("spawn", "sethome", "home", "homes", "delhome", "back", "tpa",
       "tpahere", "tpaccept", "tpdeny", "msg", "r", "mail", "ignore", "afk", "seen", "near", "getpos", "ping", "info",
-      "rules", "leiste", "team", "streamer", "abzeichen", "gefaengnis", "frei", "stumm", "entstummen", "einfrieren", "ansehen", "rang", "teamdashboard", "mornicraft", "clan", "cc", "nether", "end");
+      "rules", "leiste", "team", "streamer", "abzeichen", "gefaengnis", "frei", "stumm", "entstummen", "einfrieren", "ansehen", "rang", "teamdashboard", "mornicraft", "mcadmin", "clan", "cc", "nether", "end");
 
   private Settings settings;
   private Ui ui;
@@ -41,6 +41,12 @@ public final class MorniCraft extends JavaPlugin {
   /** The MoinMorni network, when its plugin runs here (else null: alone or under MorniHosting, as always). */
   private Network network;
   private NetworkMode networkMode;
+  private SpawnIsland spawnIsland;
+
+  /** The plugin's own jar (the spawn datapack is packed into it). */
+  java.io.File jarFile() {
+    return getFile();
+  }
 
   @Override
   public void onEnable() {
@@ -84,6 +90,9 @@ public final class MorniCraft extends JavaPlugin {
     clans = new Clans(this);
     pm.registerEvents(clans, this);
     portals = new Portals(this);
+    // The spawn island (in the network, or with "spawn-island: on"): built once, when the worlds are there.
+    spawnIsland = new SpawnIsland(this);
+    Bukkit.getScheduler().runTaskLater(this, spawnIsland::start, 20L);
     // Portals built the old way move to their new place once the worlds are there.
     Bukkit.getScheduler().runTaskLater(this, portals::migrate, 40L);
     dragon = new HardDragon(this);
@@ -126,6 +135,21 @@ public final class MorniCraft extends JavaPlugin {
     settings = Settings.from(getConfig(), network != null);
     Ui.theme(network != null);
     ui = new Ui(new Texts(settings.language()), p -> bedrock != null && bedrock.is(p));
+  }
+
+  /** From now on (this thread) the texts in this player's network language; {@link #quiet} ends it. */
+  void voice(org.bukkit.entity.Player p) {
+    if (network != null && p != null) Texts.use(network.language(p.getUniqueId()));
+  }
+
+  void quiet() {
+    if (network != null) Texts.use(null);
+  }
+
+  /** Builds and sends something in the receiver's language (in the network; alone: the server's). */
+  void speak(org.bukkit.entity.Player to, Runnable r) {
+    if (network == null || to == null) r.run();
+    else Texts.as(network.language(to.getUniqueId()), r);
   }
 
   /** The MoinMorni network, or null (alone or under MorniHosting). */
@@ -236,6 +260,10 @@ public final class MorniCraft extends JavaPlugin {
 
   HomeMenu homeMenu() {
     return homeMenu;
+  }
+
+  Graves graves() {
+    return graves;
   }
 
   Moderation moderation() {

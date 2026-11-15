@@ -33,7 +33,9 @@ final class DefaultCommands {
         c(en, "/lobby", "Zurück in die Lobby von MoinMorni", "Back to the MoinMorni lobby"),
         c(en, "/sprache <de|en>", "Deine Sprache im ganzen Netzwerk", "Your language in the whole network"),
         c(en, "/freunde", "Deine Freunde im Netzwerk", "Your friends in the network"),
-        c(en, "/party", "Mit Freunden zusammen spielen", "Play together with friends"))));
+        c(en, "/party", "Mit Freunden zusammen spielen", "Play together with friends"),
+        op(en, "/mcadmin reload", "MorniCraft neu laden (Einstellungen kommen sonst von selbst)", "Reload MorniCraft (settings arrive by themselves otherwise)"),
+        op(en, "/mcadmin drache <angriff>", "Drachen-Angriff zum Ausprobieren", "Try a dragon attack"))));
     for (Settings.Group g : groups(en)) {
       if (g.commands().stream().anyMatch(c -> c.use().startsWith("/mornicraft"))) continue;
       if (!s.clans() && g.title().equals("Clan")) continue;

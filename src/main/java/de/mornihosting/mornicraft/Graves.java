@@ -874,6 +874,24 @@ final class Graves implements Listener {
   }
 
   /** For /mod: how many graves someone has lying around. */
+  /** Where this player's graves are (for the MoinMorni panel): world, x, y, z, things inside, since when. */
+  List<java.util.Map<String, Object>> summaryOf(UUID owner) {
+    List<java.util.Map<String, Object>> out = new ArrayList<>();
+    for (Grave g : graves.values()) {
+      if (!g.owner.equals(owner) || g.blocks.isEmpty()) continue;
+      String[] at = g.blocks.keySet().iterator().next().split(";");
+      java.util.Map<String, Object> m = new java.util.LinkedHashMap<>();
+      m.put("world", at[0]);
+      m.put("x", Integer.parseInt(at[1]));
+      m.put("y", Integer.parseInt(at[2]));
+      m.put("z", Integer.parseInt(at[3]));
+      m.put("items", g.items.stream().filter(java.util.Objects::nonNull).mapToInt(ItemStack::getAmount).sum());
+      m.put("since", g.created);
+      out.add(m);
+    }
+    return out;
+  }
+
   long countOf(UUID owner) {
     return graves.values().stream().filter(g -> g.owner.equals(owner)).count();
   }

@@ -482,6 +482,23 @@ final class Texts {
     else PLAYER_LANG.set("en".equalsIgnoreCase(language) ? 1 : 0);
   }
 
+  /** Language before each {@link #enter} (an event inside an event gives the outer one's back afterwards). */
+  private static final ThreadLocal<java.util.ArrayDeque<Integer>> BEFORE = ThreadLocal.withInitial(java.util.ArrayDeque::new);
+  private static final int NONE = -1;
+
+  /** From now on this language, until {@link #leave} gives back the one before. */
+  static void enter(String language) {
+    Integer before = PLAYER_LANG.get();
+    BEFORE.get().push(before == null ? NONE : before);
+    use(language);
+  }
+
+  static void leave() {
+    Integer before = BEFORE.get().poll();
+    if (before == null || before == NONE) PLAYER_LANG.remove();
+    else PLAYER_LANG.set(before);
+  }
+
   /** Runs something with the texts in this language, then back to what was before. */
   static void as(String language, Runnable r) {
     Integer before = PLAYER_LANG.get();

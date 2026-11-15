@@ -122,6 +122,7 @@ final class Network {
       "build", Set.of("mornicraft.build"),
       "gamemode", Set.of("minecraft.command.gamemode"),
       "creative", Set.of("mornicraft.creative", "minecraft.command.gamemode"),
+      "ranks", Set.of("mornicraft.admin"),
       "admin", Set.of("mornicraft.admin", "mornicraft.build", "mornicraft.unlimitedhomes", "mornicraft.instant",
           "mornicraft.moderate", "mornicraft.creative", "minecraft.command.gamemode"));
 

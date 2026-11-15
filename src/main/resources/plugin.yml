@@ -109,6 +109,12 @@ commands:
       usage: '/rang <spieler> <rang> [weg]',
       aliases: [rank],
     }
+  mcadmin:
+    {
+      description: 'Admin: Einstellungen neu laden oder Drachen-Angriff (im MoinMorni-Netzwerk statt /mornicraft)',
+      permission: mornicraft.admin,
+      usage: '/mcadmin reload | /mcadmin drache <angriff>',
+    }
   mornicraft:
     {
       description: Einstellungen neu laden oder einen Drachen-Angriff starten,

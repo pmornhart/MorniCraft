@@ -65,13 +65,15 @@ final class Commands implements TabExecutor {
       sender.sendMessage(ui().note("ℹ", Ui.ACCENT_2, "net.command", Ui.v("usage", NETWORK_USAGE.get(name))));
       return true;
     }
-    if (name.equals("mornicraft")) {
+    // In the MoinMorni network /mornicraft belongs to the network (its settings): the same as /mcadmin here.
+    if (name.equals("mornicraft") || name.equals("mcadmin")) {
+      String own = "/" + name;
       if (args.length == 2 && List.of("drache", "dragon").contains(args[0].toLowerCase(Locale.ROOT))) {
         plugin.dragon().command(sender, args[1]);
         return true;
       }
       if (args.length != 1 || !args[0].equalsIgnoreCase("reload")) {
-        sender.sendMessage(ui().fail("usage", Ui.v("usage", "/mornicraft reload")));
+        sender.sendMessage(ui().fail("usage", Ui.v("usage", own + " reload · " + own + " drache <angriff>")));
         return true;
       }
       plugin.reload();
@@ -531,10 +533,10 @@ final class Commands implements TabExecutor {
     } else if (name.equals("clan") && args.length == 2
         && List.of("invite", "kick", "leader").contains(args[0].toLowerCase(Locale.ROOT))) {
       Bukkit.getOnlinePlayers().forEach(o -> options.add(o.getName()));
-    } else if (name.equals("mornicraft") && args.length == 1) {
+    } else if ((name.equals("mornicraft") || name.equals("mcadmin")) && args.length == 1) {
       options.add("reload");
       options.add("drache");
-    } else if (name.equals("mornicraft") && args.length == 2 && args[0].equalsIgnoreCase("drache")) {
+    } else if ((name.equals("mornicraft") || name.equals("mcadmin")) && args.length == 2 && args[0].equalsIgnoreCase("drache")) {
       options.addAll(HardDragon.ATTACK_NAMES);
     } else if ((name.equals("tpaccept") || name.equals("tpdeny")) && args.length == 1 && sender instanceof Player p) {
       options.addAll(plugin.social().askers(p));

@@ -51,6 +51,12 @@
         <directory>src/main/resources</directory>
         <filtering>true</filtering>
       </resource>
+      <!-- The spawn island's datapack: MorniCraft builds the island itself (network, or spawn-island: on). -->
+      <resource>
+        <directory>datapack</directory>
+        <targetPath>spawnpack</targetPath>
+        <filtering>false</filtering>
+      </resource>
     </resources>
   </build>
 </project>

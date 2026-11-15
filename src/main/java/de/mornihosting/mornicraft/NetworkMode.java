@@ -40,9 +40,73 @@ final class NetworkMode implements Listener {
     Bukkit.getScheduler().runTaskTimer(plugin, this::tick, EVERY_TICKS, EVERY_TICKS);
   }
 
+  private int ticks;
+
   private void tick() {
     plugin.ranks().watchNetwork();
     for (Player p : Bukkit.getOnlinePlayers()) tag(p);
+    if (++ticks % SUMMARY_EVERY == 0) {
+      for (Player p : Bukkit.getOnlinePlayers()) summary(p.getUniqueId(), true);
+    }
+  }
+
+  // ---------------------------------------------------------------- what the MoinMorni panel shows about a player
+
+  /** Every few seconds (only what changed is written; the network plugin sends it to the hub). */
+  private static final int SUMMARY_EVERY = 5;
+  static final String SUMMARY_DIR = "summary";
+  private static final int MAX_HOMES_SHOWN = 20;
+  private static final int MAX_GRAVES_SHOWN = 10;
+  private final java.util.Map<UUID, String> written = new java.util.HashMap<>();
+
+  /**
+   * A small read-only summary for the MoinMorni panel: homes, clan, graves, online/AFK, as
+   * plugins/MorniCraft/summary/<uuid>.json – the network plugin hands it to the hub ("mode-player").
+   */
+  void summary(UUID id, boolean online) {
+    PlayerStore.Data d = plugin.store().get(id);
+    java.util.Map<String, Object> m = new java.util.LinkedHashMap<>();
+    m.put("online", online);
+    Player p = Bukkit.getPlayer(id);
+    m.put("afk", online && p != null && plugin.social().isAway(p));
+    java.util.List<java.util.Map<String, Object>> homes = new java.util.ArrayList<>();
+    d.homes.forEach((name, h) -> {
+      if (homes.size() >= MAX_HOMES_SHOWN) return;
+      java.util.Map<String, Object> hm = new java.util.LinkedHashMap<>();
+      hm.put("name", name);
+      hm.put("world", h.world());
+      hm.put("x", (int) Math.floor(h.x()));
+      hm.put("y", (int) Math.floor(h.y()));
+      hm.put("z", (int) Math.floor(h.z()));
+      homes.add(hm);
+    });
+    m.put("homes", homes);
+    Clans.Clan c = plugin.clans().of(id);
+    if (c != null && plugin.settings().clans()) {
+      java.util.Map<String, Object> cm = new java.util.LinkedHashMap<>();
+      cm.put("name", c.name);
+      cm.put("tag", c.tag);
+      cm.put("colour", plugin.clans().tagColour(id));
+      cm.put("leader", id.equals(c.leader));
+      cm.put("members", c.members.size());
+      m.put("clan", cm);
+    } else {
+      m.put("clan", null);
+    }
+    java.util.List<java.util.Map<String, Object>> graves = plugin.graves().summaryOf(id);
+    m.put("graves", graves.size() > MAX_GRAVES_SHOWN ? graves.subList(0, MAX_GRAVES_SHOWN) : graves);
+    String json = new com.google.gson.Gson().toJson(m);
+    if (json.equals(written.get(id))) return;
+    written.put(id, json);
+    try {
+      java.nio.file.Path dir = plugin.getDataFolder().toPath().resolve(SUMMARY_DIR);
+      java.nio.file.Files.createDirectories(dir);
+      java.nio.file.Path tmp = java.nio.file.Files.createTempFile(dir, "s", ".tmp");
+      java.nio.file.Files.writeString(tmp, json, java.nio.charset.StandardCharsets.UTF_8);
+      java.nio.file.Files.move(tmp, dir.resolve(id + ".json"), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+    } catch (java.io.IOException e) {
+      plugin.getLogger().warning("Could not write the summary for the MoinMorni panel: " + e.getMessage());
+    }
   }
 
   /** The clan tag as metadata on the player (the network plugin puts it into the chat line). */
@@ -69,15 +133,11 @@ final class NetworkMode implements Listener {
 
   // ---------------------------------------------------------------- the player's language while MorniCraft answers
 
-  /** From now on the texts in this player's language (until the event is through). */
-  void speak(UUID player) {
-    Network net = plugin.network();
-    if (net != null) Texts.use(net.language(player));
-  }
-
+  /** From now on the texts in this player's language (until the event is through, then the one before). */
   private void speak(Event e) {
     Player p = playerOf(e);
-    if (p != null) speak(p.getUniqueId());
+    Network net = plugin.network();
+    Texts.enter(p != null && net != null ? net.language(p.getUniqueId()) : null);
   }
 
   private static Player playerOf(Event e) {
@@ -90,7 +150,7 @@ final class NetworkMode implements Listener {
   }
 
   private static void done() {
-    Texts.use(null);
+    Texts.leave();
   }
 
   // Lowest: before every other MorniCraft listener; monitor: after all of them.
@@ -101,7 +161,13 @@ final class NetworkMode implements Listener {
   @EventHandler(priority = EventPriority.LOWEST)
   public void a(PlayerQuitEvent e) { speak(e); }
   @EventHandler(priority = EventPriority.MONITOR)
-  public void z(PlayerQuitEvent e) { done(); }
+  public void z(PlayerQuitEvent e) {
+    summary(e.getPlayer().getUniqueId(), false);
+    written.remove(e.getPlayer().getUniqueId());
+    // The data was needed once more for the summary: out of the cache again (as Welcome does).
+    plugin.store().forget(e.getPlayer().getUniqueId());
+    done();
+  }
   @EventHandler(priority = EventPriority.LOWEST)
   public void a(InventoryClickEvent e) { speak(e); }
   @EventHandler(priority = EventPriority.MONITOR)
