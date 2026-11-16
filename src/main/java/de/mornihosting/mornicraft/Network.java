@@ -49,7 +49,7 @@ final class Network {
 
   /** The network, when its plugin runs here and config.yml doesn't say "network: off"; else null. */
   static Network find(MorniCraft plugin, FileConfiguration config) {
-    if ("off".equalsIgnoreCase(config.getString("network", "auto"))) return null;
+    if ("off".equals(Settings.mode(config, "network", "auto"))) return null;
     Plugin net = Bukkit.getPluginManager().getPlugin(PLUGIN);
     if (net == null || !net.isEnabled()) return null;
     try {

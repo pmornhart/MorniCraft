@@ -120,6 +120,12 @@ final class HardDragon implements Listener {
   private final NamespacedKey brood;
   private final Map<UUID, Set<String>> fighters = new ConcurrentHashMap<>();
   private final Map<UUID, Long> nextAttack = new ConcurrentHashMap<>();
+  /**
+   * Game time in milliseconds (50 per tick), counted by the attack loop – attacks follow the game, not the wall clock
+   * (a lagging server or /tick rate would otherwise bring them more often).
+   */
+  private long gameMs;
+  private static final long MS_PER_TICK = 50;
 
   HardDragon(MorniCraft plugin) {
     this.plugin = plugin;
@@ -317,7 +323,7 @@ final class HardDragon implements Listener {
     if (cfg().crystals() && crystals(w, CRYSTALS) > 0) {
       for (Player p : w.getPlayers()) plugin.speak(p, () -> p.sendMessage(plugin.ui().note("✦", Ui.MAIL, "dragon.crystals")));
     }
-    nextAttack.put(d.getUniqueId(), System.currentTimeMillis() + interval(d) / 2);
+    nextAttack.put(d.getUniqueId(), gameMs + interval(d) / 2);
   }
 
   /** Brings back up to this many end crystals on pillars that lost theirs. */
@@ -369,8 +375,9 @@ final class HardDragon implements Listener {
   }
 
   private void attackLoop() {
+    gameMs += LOOP_TICKS * MS_PER_TICK;
     if (!on()) return;
-    long now = System.currentTimeMillis();
+    long now = gameMs;
     for (EnderDragon d : dragons()) {
       if (!isHard(d) || d.getPhase() == EnderDragon.Phase.DYING) continue;
       List<Player> players = fighters(d.getWorld());

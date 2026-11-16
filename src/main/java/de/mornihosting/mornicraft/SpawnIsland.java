@@ -57,7 +57,7 @@ final class SpawnIsland {
 
   /** Wanted here? */
   private boolean wanted() {
-    String mode = plugin.getConfig().getString("spawn-island", "network");
+    String mode = Settings.mode(plugin.getConfig(), "spawn-island", "network");
     if ("off".equalsIgnoreCase(mode) || plugin.getConfig().getBoolean("managed-by-panel", false)) return false;
     return "on".equalsIgnoreCase(mode) || plugin.network() != null;
   }

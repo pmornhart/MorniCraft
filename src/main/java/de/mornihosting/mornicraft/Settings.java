@@ -126,6 +126,16 @@ record Settings(
 
   private static final int MAX_COMBAT_SECONDS = 120;
 
+  /**
+   * A switch like "network: auto|off" or "spawn-island: network|on|off". YAML reads a bare on/off (also yes/no,
+   * true/false) as a boolean – then getString would give "true"/"false" and the switch did nothing.
+   */
+  static String mode(FileConfiguration c, String key, String fallback) {
+    Object v = c.get(key);
+    if (v instanceof Boolean b) return b ? "on" : "off";
+    return v == null ? fallback : String.valueOf(v).trim().toLowerCase(java.util.Locale.ROOT);
+  }
+
   static Settings from(FileConfiguration c) {
     return from(c, false);
   }
