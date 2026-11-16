@@ -218,7 +218,7 @@ Alle Befehle darf jeder. Dazu:
 
 ## Im MoinMorni-Netzwerk
 
-Läuft auf dem Server das Plugin des [MoinMorni-Netzwerks](https://moinmorni.net), schaltet MorniCraft von selbst in den Netzwerk-Modus: Ränge, Chat, private Nachrichten, Strafen und die Sprache jedes Spielers kommen dann vom Netzwerk, alle Einstellungen aus dem MoinMorni-Panel (sofort, ohne Neustart). Spawn, Zuhause, Teleports, Clans (Kürzel nach dem Rang), Gräber, Start-Elytra, Drache, Portale, Leiste und Streamer-Modus bleiben MorniCrafts eigene. Die Spawn-Insel baut MorniCraft dort beim ersten Start selbst (über einem tiefen Meer; `spawn-island: on` macht das auch ohne Netzwerk), Admins nehmen `/mcadmin reload | drache <angriff>`. `network: off` in der `config.yml` schaltet den Netzwerk-Modus ab.
+Läuft auf dem Server das Plugin des [MoinMorni-Netzwerks](https://moinmorni.net), schaltet MorniCraft von selbst in den Netzwerk-Modus: Ränge, Chat, private Nachrichten, Strafen und die Sprache jedes Spielers kommen dann vom Netzwerk, alle Einstellungen aus dem MoinMorni-Panel (sofort, ohne Neustart). Spawn, Zuhause, Teleports, Clans (Kürzel nach dem Rang), Gräber, Start-Elytra, Drache, Portale, Leiste und Streamer-Modus bleiben MorniCrafts eigene. Die Spawn-Insel baut MorniCraft dort beim ersten Start selbst (über einem tiefen Meer; `spawn-island: on` macht das auch ohne Netzwerk), Admins nehmen `/mcadmin reload | drache <angriff>`. `network: off` in der `config.yml` schaltet den Netzwerk-Modus ab. Solange jemand im Kampf ist, meldet MorniCraft dem Netzwerk „spielt gerade“ – dann fragt „/lobby“ erst nach, denn wer im Kampf geht, verliert sein Leben (ab Netzwerk-Schnittstelle 2; mit einer älteren läuft alles wie bisher).
 
 ## Bedrock-Spieler
 
