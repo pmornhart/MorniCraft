@@ -33,8 +33,17 @@ final class Network {
   /** The settings the hub sends (MoinMorni panel → hub → network plugin writes this file → /mornicraft reload). */
   static final String SETTINGS_FILE = "network.json";
 
-  /** A rank of the network: id ("owner"), symbol ("♛"), colour ("#ff5555"), position (0 = highest). */
-  record Rank(String id, String symbol, String colour, int position) {}
+  /**
+   * Set by the network plugin on each player while the network shows rank badges: the key of the rank's badge ("♛ ",
+   * empty for a rank without a symbol). Missing = badges are off.
+   */
+  static final String BADGE = "moinmorni:badge";
+
+  /**
+   * A rank of the network: id ("owner"), symbol ("♛"), colour ("#ff5555"), position (0 = highest) and the key of its
+   * badge (null = badges off, see {@link #BADGE}).
+   */
+  record Rank(String id, String symbol, String colour, int position, String badge) {}
 
   private final Object api;
   private final Method rank;
@@ -115,14 +124,26 @@ final class Network {
   /** The player's rank in the network (everyone without one: "player"). */
   Rank rank(UUID player) {
     Object r = call(rank, player);
-    if (r == null) return new Rank("player", "", "#aaaaaa", Integer.MAX_VALUE / 2);
+    String badge = badgeOf(player);
+    if (r == null) return new Rank("player", "", "#aaaaaa", Integer.MAX_VALUE / 2, badge);
     try {
       Class<?> c = r.getClass();
       return new Rank(String.valueOf(c.getMethod("id").invoke(r)), String.valueOf(c.getMethod("symbol").invoke(r)),
-          String.valueOf(c.getMethod("colour").invoke(r)), ((Number) c.getMethod("position").invoke(r)).intValue());
+          String.valueOf(c.getMethod("colour").invoke(r)), ((Number) c.getMethod("position").invoke(r)).intValue(),
+          badge);
     } catch (ReflectiveOperationException | RuntimeException e) {
-      return new Rank("player", "", "#aaaaaa", Integer.MAX_VALUE / 2);
+      return new Rank("player", "", "#aaaaaa", Integer.MAX_VALUE / 2, badge);
     }
+  }
+
+  /** The badge key the network plugin hung on the player, or null (badges off, or no profile yet). */
+  private String badgeOf(UUID id) {
+    Player p = Bukkit.getPlayer(id);
+    if (p == null || !p.hasMetadata(BADGE)) return null;
+    for (org.bukkit.metadata.MetadataValue v : p.getMetadata(BADGE)) {
+      if (v.getOwningPlugin() != null && PLUGIN.equals(v.getOwningPlugin().getName())) return v.asString();
+    }
+    return null;
   }
 
   private Object call(Method m, Object... args) {

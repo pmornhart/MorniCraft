@@ -176,9 +176,10 @@ final class Sidebar implements Listener {
     Ranks.Rank rank = plugin.ranks().of(p);
     if (rank != null && !rank.fallback()) {
       boolean picture = !rank.tag().isEmpty() && plugin.ranks().seesBadges(p);
-      // In the network: the network's rank ("♛ Owner"), in the player's language.
+      // In the network: the network's rank ("♛ Owner"), in the player's language – with the network's badges the
+      // badge (the picture with the pack, "♛ Owner" without).
       Component value = plugin.network() != null
-          ? Component.text(rank.symbol() + " " + Network.rankName(rank.id(), ui.english()), rank.color())
+          ? rank.badge(Network.rankName(rank.id(), ui.english()))
           : picture ? plugin.ranks().label(rank, p) : Component.text(rank.name(), rank.color());
       rows.add(new Component[] {dot(rank.color()), Component.text(ui.flat("sidebar.rank"), Ui.SOFT), value});
     }
