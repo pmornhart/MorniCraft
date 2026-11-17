@@ -10,7 +10,24 @@
 
 ## Stand (16.11.2026)
 
-- Version 1.11.2 (Branch `claude/zurueck-ins-spiel`, wartet auf Philips Go): **keine Lobby aus Versehen im Kampf**
+- Version 1.12.0 (Branch `claude/streamer-netz`, wartet auf Philips Go): **Streamer-Modus aus dem Netzwerk,
+  Befehls-Seite, Team-Werkzeuge nur nach unten.** Im Netzwerk liest `Streamer` den Zustand des Netzwerks aus den
+  Metadaten `moinmorni:streamer` (Teile mit Komma, fehlt = aus; setzt das Netzwerk-Plugin aus dem Profil des Hubs),
+  `/streamer` beantwortet der Proxy (über `/mornicraft:streamer` erreicht → Hinweis), `NetworkMode` prüft jede Sekunde,
+  ob sich etwas geändert hat (`Streamer.watchNetwork` → Namen mit ● LIVE und Leiste neu); ohne Netzwerk alles wie
+  bisher. Eigene Adressen nur noch als eigener Name (`moinmorni.network` bleibt lesbar). `Commands.pageOf` im Netzwerk
+  → `https://<Domain>/befehle/mornicraft?spieler=<Name>` (/info, Begrüßung, Leiste), Text „Alle Befehle auf einer
+  Seite“. `Ranks.level`/`outranks`: Team-Werkzeuge (Gefängnis, Stumm, Einfrieren, Rauswerfen, Team-Fenster samt
+  Inventar/Endertruhe, `/ansehen`, Ducken + Rechtsklick, jeder Klick im Fenster) und die strafenden Aufträge des
+  Team-Dashboards (`TeamBoard.below`, auch offline) nur für niedrigere Ränge; ohne Netzwerk Reihenfolge der Ränge in
+  MorniCraft und OPs als höchster Rang, im Netzwerk die Position des Netzwerks; Meldung `mod.higher` de/en ersetzt
+  `mod.protected`. Gebaut gegen API 1.17.1 (Java 17) und 26.3 (Java 25). Echt mit Velocity 4.3.1 + Paper 26.1.2
+  (Lobby und MorniCraft, Netzwerk-Plugin, Test-Hub): `moinmorni.net/tools/netz-test/streamer-test.cjs` **29/29**;
+  allein ohne Netzwerk `mornicraft-test.cjs --allein` **6/6** und Ränge allein **5/5** (Moderatorin friert/sperrt den
+  Owner nicht ein, öffnet sein Team-Fenster nicht, friert eine Spielerin ein; Owner friert die Moderatorin ein).
+  Enthält 1.11.2 (von `main` hereingeholt). **Noch nachziehen:** MorniHosting `plugins/mornicraft/`.
+
+- Version 1.11.2 (16.11. veröffentlicht, Release v1.11.2): **keine Lobby aus Versehen im Kampf**
   (Philip: „mitten im Spiel nochmal fragen, ob man wirklich zur Lobby will“). `Network` findet die Methode `playing`
   der Netzwerk-Schnittstelle 2 per Reflexion (fehlt sie – älteres Netzwerk-Plugin –, bleibt sie null und nichts
   passiert); `Combat` meldet „spielt gerade“, sobald jemand frisch in den Kampf kommt, und „spielt nicht mehr“, wenn
