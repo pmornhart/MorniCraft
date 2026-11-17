@@ -25,7 +25,18 @@
   (Lobby und MorniCraft, Netzwerk-Plugin, Test-Hub): `moinmorni.net/tools/netz-test/streamer-test.cjs` **29/29**;
   allein ohne Netzwerk `mornicraft-test.cjs --allein` **6/6** und Ränge allein **5/5** (Moderatorin friert/sperrt den
   Owner nicht ein, öffnet sein Team-Fenster nicht, friert eine Spielerin ein; Owner friert die Moderatorin ein).
-  **Noch nachziehen:** MorniHosting `plugins/mornicraft/`.
+  Enthält 1.11.2 (von `main` hereingeholt). **Noch nachziehen:** MorniHosting `plugins/mornicraft/`.
+
+- Version 1.11.2 (16.11. veröffentlicht, Release v1.11.2): **keine Lobby aus Versehen im Kampf**
+  (Philip: „mitten im Spiel nochmal fragen, ob man wirklich zur Lobby will“). `Network` findet die Methode `playing`
+  der Netzwerk-Schnittstelle 2 per Reflexion (fehlt sie – älteres Netzwerk-Plugin –, bleibt sie null und nichts
+  passiert); `Combat` meldet „spielt gerade“, sobald jemand frisch in den Kampf kommt, und „spielt nicht mehr“, wenn
+  der Kampf endet (Zeit um, Tod – auch für den Gegner –, Rauswurf, Gegner geflohen). Kein „Platz freihalten“
+  (`holdSlot`): wer wiederkommt, steht ohnehin dort, wo er war. Gebaut gegen API 1.17.1 (Java 17) und 26.3 (Java 25).
+  Echt mit Paper 26.1.2 + Test-Netzwerk (Schnittstelle 2) und zwei Test-Spielern, `combat-seconds: 5`: **10/10** –
+  ohne Kampf spielt niemand, Treffer → beide spielen, Zeit um → beide nicht mehr, Tod beendet es für beide, Flucht im
+  Kampf (Bert stirbt wie bisher) → Anna frei, kein holdSlot, Log ohne Fehler (Test-Skript nur lokal). **Noch
+  nachziehen:** MorniHosting `plugins/mornicraft/` (dort nicht geändert).
 
 - Version 1.11.1 (Branch `claude/trailer-funde`, wartet auf Philips Go): Funde aus dem Trailer-Dreh. `Settings.mode` liest
   Schalter wie `spawn-island`/`network` auch, wenn YAML ein bloßes on/off als Boolean liefert (vorher baute
