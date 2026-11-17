@@ -28,7 +28,7 @@ final class DefaultRanks {
   }
 
   private static Ranks.Rank rank(String id, String name, String symbol, String hex, List<String> perms, boolean fallback) {
-    return new Ranks.Rank(id, name, symbol, TextColor.fromHexString(hex), perms, List.of(), fallback, "");
+    return new Ranks.Rank(id, name, symbol, TextColor.fromHexString(hex), perms, List.of(), fallback, "", null);
   }
 
   static List<Ranks.Rank> ranks() {

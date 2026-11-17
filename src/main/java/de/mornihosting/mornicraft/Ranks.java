@@ -56,17 +56,48 @@ final class Ranks implements Listener {
     }
   }
 
+  /**
+   * {@code netBadge}: in the MoinMorni network with rank badges on, the key of the rank's badge ("♛ ", see {@link
+   * Network#BADGE}); null alone and when the network has badges off.
+   */
   record Rank(String id, String name, String symbol, TextColor color, List<String> permissions, List<Member> players,
-      boolean fallback, String tag) {
+      boolean fallback, String tag, String netBadge) {
     /** "♛ Owner" in the rank's colour (just the name when there is no symbol). */
     Component badge() {
-      return Component.text(symbol.isEmpty() ? name : symbol + " " + name, color);
+      return badge(name);
     }
 
-    /** What goes in front of a player name: "♛ " – or nothing. */
+    /** Like {@link #badge()}, with the name in the viewer's language. In the network with badges: the badge. */
+    Component badge(String shownName) {
+      String text = symbol.isEmpty() ? shownName : symbol + " " + shownName;
+      if (netBadge != null) return networkBadge(netBadge, text, color);
+      return Component.text(text, color);
+    }
+
+    /**
+     * What goes in front of a player name: "♛ " – or nothing. In the network with badges a translation of the badge
+     * key: games with the network's badge pack show the picture, all others don't know the key and show it as it is –
+     * the symbol, as before (exactly like the network plugin does on every other server).
+     */
     Component prefix() {
+      if (netBadge != null) return Component.translatable(netBadge, color);
       return symbol.isEmpty() ? Component.empty() : Component.text(symbol + " ", color);
     }
+  }
+
+  /**
+   * The network's badge as a whole label (bar, /team): with the pack the picture (it carries the rank's name), without
+   * it the fallback text "♛ Owner" (games from 1.19.4; older ones show the key = the symbol). The fallback is newer
+   * than the API MorniCraft is built against: set by reflection, plain translation where it's missing.
+   */
+  static Component networkBadge(String key, String fallback, TextColor color) {
+    net.kyori.adventure.text.TranslatableComponent.Builder b = Component.translatable().key(key).color(color);
+    try {
+      net.kyori.adventure.text.TranslatableComponent.Builder.class.getMethod("fallback", String.class).invoke(b, fallback);
+    } catch (ReflectiveOperationException | RuntimeException | LinkageError older) {
+      // Only the key.
+    }
+    return b.build();
   }
 
   private final MorniCraft plugin;
@@ -265,7 +296,7 @@ final class Ranks implements Listener {
       String name = cut(text(m.get("name"), id), MAX_NAME);
       String symbol = cut(text(m.get("symbol"), ""), MAX_SYMBOL);
       out.add(new Rank(id, name, symbol, color(text(m.get("color"), "")), strings(m.get("permissions")),
-          members(m.get("players")), Boolean.TRUE.equals(m.get("default")), text(m.get("badge"), "")));
+          members(m.get("players")), Boolean.TRUE.equals(m.get("default")), text(m.get("badge"), ""), null));
     }
     return List.copyOf(out);
   }
@@ -324,7 +355,7 @@ final class Ranks implements Listener {
     // "player" (and every rank without a symbol) is everyone else's: no prefix, no line in the bar.
     boolean plain = n.symbol().isEmpty();
     return new Rank(n.id(), Network.rankName(n.id(), false), n.symbol(), color(n.colour()), List.of(), List.of(),
-        plain, "");
+        plain, "", n.badge());
   }
 
   /** The ranks of everyone online, highest first (the teams sort the tab list by them). */
@@ -334,7 +365,8 @@ final class Ranks implements Listener {
     for (Player p : Bukkit.getOnlinePlayers()) {
       Network.Rank n = net.rank(p.getUniqueId());
       netRanks.put(p.getUniqueId(), n);
-      byId.putIfAbsent(n.id(), n);
+      // The badge key is the same for everyone with the rank – but a player who just joined has none yet.
+      byId.merge(n.id(), n, (had, now) -> had.badge() == null ? now : had);
     }
     return byId.values().stream().sorted(java.util.Comparator.comparingInt(Network.Rank::position))
         .limit(MAX).map(Ranks::fromNetwork).toList();

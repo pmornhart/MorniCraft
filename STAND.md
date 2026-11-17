@@ -10,6 +10,19 @@
 
 ## Stand (16.11.2026)
 
+- Version 1.12.1 (17.11., Branch `claude/abzeichen-netz`, wartet auf Philips Go): **Rang-Abzeichen des Netzwerks in
+  Tab-Liste, über dem Kopf und in der Leiste.** Im Netzwerk malt MorniCraft diese drei selbst – dort standen noch die
+  Symbole, im Chat (Hub) schon die Abzeichen. Das Netzwerk-Plugin hängt jetzt den Schlüssel des Abzeichens („♛ “) als
+  Metadaten `moinmorni:badge` an jeden Spieler (fehlt = Abzeichen aus); `Network.Rank` liest ihn mit (`badge`, nur
+  Metadaten des Plugins „MoinMorni“), `Ranks.Rank.netBadge` → `prefix()` = `translatable(key, Rangfarbe)` (Team-Präfix:
+  Tab-Liste + über dem Kopf, Clan-Kürzel dahinter, LIVE bleibt Suffix), Leiste und `/team` als Übersetzung mit
+  Ersatztext „♛ Owner“ (`networkBadge`, `fallback` per Reflexion über `TranslatableComponent.Builder`, weil die API
+  1.17.1 ihn nicht kennt). Ändert sich der Schlüssel, malt `watchNetwork` neu. Ohne Netzwerk und mit Abzeichen aus
+  alles wie 1.12.0. Gebaut gegen API 1.17.1 (Java 17) und 26.3 (Java 25). Echt: Velocity 4.3.1 + Paper 26.1.2 +
+  Netzwerk-Plugin (Branch `claude/mornicraft-abzeichen`) + MorniCraft + Test-Hub, `tools/netz-test/mornicraft-abzeichen-test.cjs`
+  im Netzwerk-Repo **10/10** (Owner/Moderatorin als Übersetzung in Rangfarbe, Leiste mit Ersatztext, Clan-Kürzel,
+  Abzeichen aus → Symbol als Text, wieder an), Log ohne Fehler. **Noch nachziehen:** MorniHosting `plugins/mornicraft/`.
+
 - Version 1.12.0 (Branch `claude/streamer-netz`, wartet auf Philips Go): **Streamer-Modus aus dem Netzwerk,
   Befehls-Seite, Team-Werkzeuge nur nach unten.** Im Netzwerk liest `Streamer` den Zustand des Netzwerks aus den
   Metadaten `moinmorni:streamer` (Teile mit Komma, fehlt = aus; setzt das Netzwerk-Plugin aus dem Profil des Hubs),
